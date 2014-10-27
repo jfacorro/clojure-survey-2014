@@ -2,6 +2,8 @@
   (:require [clojure.string :as string]
             [clojure.java.io :as io]))
 
+(declare lines)
+
 (def stop-words 
   (-> (io/resource "stop-words.txt")
     slurp
@@ -22,8 +24,8 @@
 
 (defn tokenize
   [s]
-  (->> (string/split s #"[^\d\w'\.]+")
-    (filter (partial re-matches #"[\w\d']*"))
+  (->> (string/split s #"[^\d\w'\.<]+")
+    (filter (partial re-matches #"[\w\d'<]+"))
     (filter (comp not empty?))
     (map string/lower-case)))
 
@@ -40,18 +42,28 @@
     (map remove-stop-words)
     (map #(mapcat (fn [n] (ngrams n %)) [1 2 3]))))
 
+(defn update-count
+  [[ngram n]]
+  (let [f (-> ngram (string/split #"-") count)]
+    [ngram (* n f f)]))
+
 (defn process-file
   [filename exceptions]
-  (->> (sentences "clj-feature.txt")
+  (->> (sentences filename)
     (reduce into [])
     (filter (comp not exceptions))
     frequencies
-    (sort-by second >)
-    (filter #(< 1 (second %)))))
+    (filter #(< 1 (second %)))
+    (map update-count)
+    (sort-by second >)))
 
 (def features (process-file "clj-feature.txt" #{"clojure" "clojurescript" "better" "feature" "support" "like"}))
-(def features (process-file "clj-feature.txt" #{"clojure" "clojurescript" "better" "feature" "support" "like"}))
-
 (take 100 features)
+
+(def weakness (process-file "clj-weakness.txt" #{"clojure" "clojurescript"}))
+(take 100 weakness)
+
+(def general (process-file "clj-general.txt" #{"clojure" "clojurescript" "language"}))
+(take 100 general)
 
 
