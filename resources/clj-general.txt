@@ -1,0 +1,534 @@
+" Keep up the good work."
+""In which domains are you applying Clojure, ClojureScript, or ClojureCLR?"
+"Other" 
+
+We use Clojure heavily for test engineering---to write automated functional and integration tests, and to apply techniques like generative testing."
+""No pull request" culture becoming pervasive and toxic, also if you say no pull request and then copy someone's code from a bug report, you've lost whatever legal stance you wanted and in fact violated copyright.  Instead of auditing a pull request for a contributor agreement, now you have to go audit every bug report to see who started copying code from the community and what customers are impacted."
+""Not accepting pull requests" mantra should go away"
+"(keyword "-)")"
+"* It would be great to have a central service which would gather tickets from Clojure and Clojure-related libraries which were easy for newcomers to work on, such as https://openhatch.org/search/?q=&toughness=bitesize"
+"."
+"..."
+"1. After 2 years of playing with Clojure and using it for side-projects, I still love it.  But I have yet to get my development team at work to accept it.  These are people who have only known Java for their entire career.  Clojure adoption requires too many changes and they are afraid of it.  I want to be more effective as a Clojure evangelist so that I can influence some of the braver members of the team to try it out.  I would love to see a sub-community form around evangelism.
+
+I am personally getting kind of lost with the plethora of concurrency and asynchronous programming options now within the mainstream of Clojure.  STM, reducers, transducers, core.async, libraries from ztellman and clojurewerkz, etc.  This area of Clojure development feels very experimental.  Sure would be great if someone really smart could boil it down for the rest of us."
+"<3"
+"<3 Clojure!"
+"<3 clojure"
+"<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3 Clojure"
+"A big thank you to Rich and crew on creating, maintaining and enhancing the language."
+"A bit more activity around the CLR would help, too, when I need to run things under .NET. Clojure-py hit a sweet spot there that I think people are overlooking."
+"A good debugger would be nice..."
+"A nice pearl ;)"
+"A super nice language that introduced me the functional programming world. Even though I love it, I am not sure is ready for complex systems yet. "
+"A type checker would really help, maybe something based on HM.
+
+Also I find extremely frustarting writing unittest, test.core is not powerful enough while midje is not mature IMHO... I spend more time fighting midje than writing code."
+"A year ago I might have clicked several of the checkboxes for "what is frustrating you". Runtime performance is still up in the air. Cursive has made a huge difference for Clojure on multiple levels.
+
+I think the web site could use a significant face lift; further, several of the community-based solutions should be incorporated (such as clojuredocs, and many of the tutorials and cheatsheets).
+
+I would like to see Codox adopted for generating the documentation for Clojure and its core libraries. I would like to see greater use of Markdown syntax (supported by Codox) in Clojure docstrings.
+
+I'm certainly on public record about secondary issues, such as how exceptions should be presented to the user; however, that's just one aspect of a greater issue I refer to as "Feedback" and have had some success with over the years. 
+
+-- Howard Lewis Ship"
+"After getting over that initial hurdle of approachability myself I would just like to thank the community and Cognitect for such a thoughtful language and community to be a part of."
+"After working on my back end in clojure, it's really painful going back to objective c.   I never really thought about how ugly that language is."
+"Alan Dipert should be given large sums of money to do nothing but inspire the community by building cool stuff. He is our "why the lucky stiff". Micha too."
+"All in all, developing in Clojure is very rewarding."
+"Along with blog post, there may/should be a video channel for using Clojure in a better way. Short instant lessons recommended/approved/official by cognitect. 
+Also, a stackoverflow channel. "
+"As a whole the performance is great, here and there autp detection of typing for numbers i.e without the ned of type hints or annotations would be useful.
+
+Also tooling, we seriously need to equivalent of java ide and debug tools.
+"
+"As community we have to ship more thing other people can use like Datomic/Storm/Lighttable so they can see actually why Clojure matters"
+"As mentioned above, I wish there were more Clojure opportunities available."
+"As much as it is nice to piggy back on the JVM, a direct to machine code compiler and run-time would allow Clojure to compete with Go and move into a number of areas where absolute performance is required.  Might help movement into Apple iOS devices too (though that isn't clear, what about compiling into Swift?)."
+"As someone who is just starting to learn the language, this survey forced me to answer some questions in a way that felt untruthful. "In which domains"... Other -> I'm just learning the language for the joy of learning the language. "How useful have each of these aspects been"... I worry that by saying "Not Useful" because I haven't used them, that I'm giving these features a negative skew, when I am actually really excited to get to learn them. "What version of the JDK do you target".. I have no idea, I just use LightTable. The questions about Clojure libraries were particularly painful — my experience hasn't been good, mixed, or poor — it's been nonexistent. Finally, the thing that has most kept me from using Clojure more, and has been frustrating, is the fact that I don't have enough free time in my life to learn Clojure well enough to start folding it in to my real programming work — a factor entirely outside the domain of the language itself, and not even alluded to by any of the available choices."
+"Beautiful language, but still hard to be mainstream yet. "
+"Beside some problems, it's a pleasure to use since it's well integrated into big ecosystem. Still, a lower level clojure would be nice (command line scripting, integration with low level hardware...)"
+"Big thanks to Rich Hickey and everyone who's making the Clojure world."
+"By far my favorite language I've ever used. "
+"By studying Clojure I've got one of the best jobs I had, which, while lasting only 5 months, was a very profound experience."
+"Clojure Rocks! 
+Thank you, Rich Hickey and all Cognitects for your great inventions and everyday work!
+Especially I love Datomic and Transducers invention.
+Keep on doing awesomeness!"
+"Clojure Rocks! Keep up the great work, everyone!"
+"Clojure community seems to celebrate highly esoteric projects and largely ignore the essentials: documentation, beginner friendliness, high quality libraries for "boring" problems.
+
+If Clojure is to get adopted more widely, this must change."
+"Clojure could benefit from some design guidelines for application and library authors, e.g. like the SOLID principles. I've heard from more than one developer who might be inclined to give Clojure a try that they aren't sure how to architect a system in a functional language. When you add in capabilities novel to many developers like channels, the picture becomes even more daunting.
+
+The more or less wretched state of affairs with regards to sql libraries is a sore spot as well. clojure.java.jdbc is adequate at a low-level, I suppose, but it both goes too far (automatic transaction wrapping by default?) and not far enough. Korma doesn't compose well and encourages var abuse, honeysql is incomplete and appears abandoned; there's not a really good story to tell to developers coming from e.g. ActiveRecord who are used to being able to compose queries from named clauses."
+"Clojure development is really nice. We adopted Clojure & ClojureScript in my startup as our primary (currently only) language. The other programmers had not used Clojure previously and learned it very quickly and now love it!"
+"Clojure eco-system is great. Please do more marketing for enterprise adoption."
+"Clojure has introduced me to so many interesting and useful computer science concepts. I'm truly grateful to the community for helping me to learn so much. "
+"Clojure hits a sweet spot between being an inspiring and a pragmatic tool. I haven't been this happy working on code for years."
+"Clojure in Clojure would open up many possibilities...
+Also, a bit scary that all Clojure development is controlled by Cognitect.
+Datomic doesn't feel like a finished product, we've hit many bugs in production — 1.0 would be appreciated."
+"Clojure is a beautiful language and a pleasure to work with, but in order to use it you DO in fact need to know about every layer below it.  Sometimes this is a barrier because you need to go learn everything UI & javascript related in order to *really* make use of Clojurescript and go learn everything Java and JVM related in order to *really* make use of Clojure.  That said, it is a worthwhile endeavor and an amazing language, even among other Lisps.
+
+"
+"Clojure is a great language. It is very fast to learn (new member of our team started to be productive with it in two weeks). The pure and lazy data structure  approach is great. It really help think about things and make the code faster to write, cleaner to read, etc...
+
+My only huge complains is about the lack of really usable static typing. core.typed is great, but its adoption should far wider. The simple fact to add a library not typed make most of your application not typable. And this is a great problem. On the other hand, works like schema can manage 80% of typing problems.
+
+Most of the community is great and the actual trend is clearly toward a better functional future. So I love clojure."
+"Clojure is a great language. It should gain more acceptance over time. It should be easier to run Clojure programs in a web environment than having to install Tomcat over Apache. "
+"Clojure is a joy to work with."
+"Clojure is a lovely language and a pleasure to learn more about."
+"Clojure is a pleasure to program with."
+"Clojure is an awesome language that is ahead of Ruby on many fronts, but the community is way worse than the Ruby community because of a general arrogance and unwillingness to create and embrace beginner resources and simple explanations. Examples Examples Examples are needed to help bridge the gap from beginner to Clojure developer. "
+"Clojure is awesome and I wish it continued success and more broader acceptance across the programming community. "
+"Clojure is awesome! My team is running full stack clojure and we are slowly converting the rest of our org over :)"
+"Clojure is awesome, and its philosophy/community/ecosystem has definitely challenged me and made me a better programmer."
+"Clojure is awesome, best designed language."
+"Clojure is awesome.  As I said, a type-inferencer could do duck-typing to find NullPointerExceptions and the like at compile-time instead of runtime.  That wouldn't require any object-oriented thinking on the part of the programmer and could add a lot of value, especially when refactoring.  "Hey, you just passed a map lacking an :firstName key to a function that will throw an NPE if there's no such key!""
+"Clojure is easily the best language I have used to work with data,
+however much of the time, I am spitting it out to use with scipi / C++ code
+that uses GPUs and advanced optimization libraries, it would be much nicer
+if I could do modelling of  advanced mathematics and engineering problems
+within clojure!"
+"Clojure is fun and pleasant to develop in, but I always have a feeling that I created a mess from the standpoint of code organization. Ideally I would prefer more guidance from language/platform on best practices on how to organize large projects (state management, configs, dev/prod settings, components organization).
+
+Additionally, the state of code analysis tools is not that great. Lint tools catch only obvious issues which can be avoided with some practice, but there is a great potential of improvement."
+"Clojure is great and i love it."
+"Clojure is great language for programming and experimeinting. It's great to see a popular lisp."
+"Clojure is great, its community is great. Thank you!"
+"Clojure is great, keep on keeping on!"
+"Clojure is great, made my life amazing!"
+"Clojure is great. Any time I try to tackle a new problem, I find the solution was easier than anything I was envisioning. "
+"Clojure is inspiring and intuitive!"
+"Clojure is not beginner-friendly.  I am very experienced with many languages and have been very determined to learn/use Clojure. However, it seems I am always encountering needless roadblocks in just trying to do simple things.  Something as simple as a misplaced paren in the (ns) form yields an incomprehensible stack trace.  Or, the form (:missspelled-kw my-map) yields nil, which is hard to trace down. We need to do better.
+
+It is true that, if one never makes an error, Clojure will work beautifully on the first try.  However, we need to ensure that a small error has a small cost to detect/fix."
+"Clojure is on the right track. The best thing about it is that once a year or so Rich comes out with a solution to a problem he's been thinking about. And the solutions tend to be really good.
+
+On a practical level, using it in production has been great, except for long build times and cryptic backtraces.
+"
+"Clojure is really, really great. Thanks!"
+"Clojure is still pure awesomeness!"
+"Clojure is the bomb. I love using it and I probably can't even articulate why but it's simply the best programming language I've worked with. There's a bit thrashing around tools and libraries still."
+"Clojure is the language I enjoy working in the most.  Thank you."
+"Clojure is the most inspiring peace of technology I encountered in the last 15 years. Thank you."
+"Clojure is very useful and fun."
+"Clojure make me extremely effective (I hope). Having the same language on the server and in the browser make "full stack" sensibly doable. Keep up the great work. I'm extremely grateful to be able to stand on the shoulders of some seriously great people."
+"Clojure might not be perfect (yet), but it's close and it's a real joy to use.
+
+The language has been incredibly stable over the last 6 years, and I'm amazed at the quality of ideas in the language and community.  I'm very much looking to transducers arriving, and getting to try them out properly.
+
+Finally I should say that I'm really just an average programmer, but Clojure has absolutely  massively amplified my abilities.  The Dijkstra quote about Lisp letting people think previously impossible thoughts is certainly true.  I started a new job a year ago, and told my new employers a vision for two projects I thought we should deliver.  There was a lot of skepticism from them initially that these projects were impossibly ambitious.  However within 2 weeks we had a working prototype on one project, and a green light to start implementing the other.  Clojure is now fast becoming one of the most central parts of our technology platform and we now have 3 or 4 other employees coming up to speed.
+
+I could not have achieved this is any other language I know (and I know quite a lot of languages).
+
+So I really can't thank Rich and the core team enough!"
+"Clojure needs a non-JVM (LLVM or BEAM) implementation. "
+"Clojure needs more concurrent thread-safe kittens!"
+"Clojure really rocks :-)"
+"Clojure remains the best-designed language I've ever used. It's a joy. I'd love to use it more outside of work and for smaller scripting tasks (I use Hy for such things, currently, which is clojure/CL inspired but compiles to Python AST).
+
+The community is full of smart and mostly decent people but in general isn't the most warm or welcoming place. It's really hard for beginners to get started with the language (the Clojure Koans are the only thing I'm truly comfortable suggesting to people looking to learn Clojure and they don't cover enough).
+
+Protocols, multi-methods, and records are full of confusing overlap and the documentation on such features doesn't do much to elucidate what to use and where.
+
+Finally, there is no good single place for docs. In a given day I use (doc) from my REPL, the grimoire, clojuredocs (even though it's 3 versions out of date) and official Clojure web documentation. It's crazy."
+"Clojure rocks"
+"Clojure's a great language. With some more open leadership, we could make it a great community, too."
+"Clojure's awesome."
+"Clojure's doc strings are not particularly intelligible for new comers. They are great if you already understand what the function does, but if you don't then you may need to look to clojuredocs for examples from the community."
+"Clojure's in a really healthy spot right now. No major issues that need to be addressed, good PR in the industry, excellent people writing ground-breaking libraries."
+"Clojure, ClojureScript and the Clojure community are excellent. As I know more, I hope a reasonable path for using ClojureScript for mobile and embedded development becomes clear to me. [It may be there; I am not ready to look seriously.]
+Clojure adoption will be much less than it deserves until the most proficient developers play a bigger role in the adoption of Cursive, LightTable, etc. The point of unification should be paredit. Some will prefer an IDE like Cursive; some something lighter weight, but the potential of paredit for proficiency and adoption is not realized, I think.
+Again, great community."
+"Clojure, ClojureScript and the surrounding ecosphere are a great achievement. Thank you for all your work. It was very exciting to part of Clojure's development to a mature language."
+"ClojureScript could be more accessible from within Clojure, it would be nice to be able to write a function once and then compile it to different target, similarly how mathematica handles code."
+"ClojureScript should be self-hosted (so macros work correctly) and namespaced the same as Clojure (i.e., clojure.core instead of cljs.core)."
+"Code as data is aaaaaawesome! :)
+
+Thanks Rich for introducing me to the world of unicorns that live in the land of Lisp!"
+"Cognitect builds amazing things that I'm personally and professionally grateful for.  Thanks for that!"
+"Cognitect's input to clojure is better than any other product you have put out there. Keep it up."
+"Coming from a Java background, all in all it has been a joy working with Clojure. I'd only wish there would be more jobs available for Clojure programmers."
+"Coming from a non CS background, I've learned more interesting stuff about programming and CS from the Clojure community than in the 15 years before.  Thanks."
+"Coming from python where the core library is so large, there is a set of libraries that it would be nice to have  a "Just use that because you will always have it in the core". JSON serialization is a a good example. There are three 3rd party libs that can do/might do what I want that I know of. Its also confused by the "contrib" libs.
+
+I do love coding in clojure thought.. makes my brain think different :)"
+"Community seems to be backed by few key companies. Should be more inviting and interactive at individual level."
+"Datomic docs are not very good."
+"Despite the internal-Java-class-details weaknesses listed above, the core of Clojure that is provided (in Clojure) is incredible.  Clojure has taken the lead as my #1 preferred language in a very short time.  The community attitude towards simplicity and "data-all-the-things" is, in my opinion, unsurpassed by any other programming language/libraries community. "
+"Error messages in Clojure are so bad, I now have competent debugging skills. "
+"Eventually, I'd like a native Clojure (and a pony). I don't trust Oracle; I have doubts about OpenJDK's independent viability; I won't develop on or deploy to Windows or Mono; and Node isn't as capable a host. I don't value Java interop much, despite (or perhaps because of) years in the enterprise trenches. I use Clojure because I love the language itself, and I'd like to see it outgrow the platforms on which it's been bootstrapped."
+"Exciting language, but I wished there was more interest in filling out the "boring" parts of a language, like good solid cryptography"
+"Extending core.async to work with network i/o would be awesome."
+"First, I absolute love clojure. Given that...
+
+I find that development of Clojure itself is very insular, and much of it takes place behind closed doors. Contrast this with other popular languages, where development is much more open. Even in cases where there's a BDFL.
+
+It's unclear what to expect in upcoming versions, patches go into weird black holes, and in some cases aren't accepted at all (like for transit). These things give me concern about the longer-term viability of the language. I look at the clojure-dev list, and I see a pretty stagnant community.
+
+I think this ethos is reflected in a great many (weird) decisions:
+
+* The requirement for physical CLA's (rectified finally, but *way* too late and after deterring contributors for years) is a policy that benefits the few folks who are extremely close to existing committers or Rich.
+
+* There are odd references to "things Rich is working on" (like fastload) in tickets, but the community has zero idea what to make of that. Why isn't he commenting himself? What significance does that work have? How come that branch isn't advertised on the dev list where community members can actually have a conversation about it? Again, this is indicative of a situation where development happens behind closed doors, where people talk in private, but barriers exist for those on the outside
+
+* The refusal to accept pull requests is, in 2014, pretty annoying. Again, that's indicative of a process streamlined for the few folks who are in the inner circle as opposed to a process designed to foster collaboration more broadly.
+
+I love clojure, and I've built a large company around it. But I think the entire community (including cognitect itself) would benefit from more transparency and diversity of thought/opinion."
+"For non-professional programmers like me (an actuary) who nevertheless write programs to get our work done, it would be good to see improvements with respect to ease of connecting to data sources (though already pretty good) and more development of the CLR version (since I have to work in Windows and Excel whether we like it or not)."
+"For us, the startup time is the single biggest hole, loading code that might not ever be used. Runtime performance is fine, though if we could have a release mode where we lose the getVarRoot overhead that would be perfect."
+"General documentation style of many libraries is too minimalistic"
+"Generally love clojure and its community, look forward to watching it grow :)"
+"Generated code is currently one-liners, why not format it for better debugging?"
+"Give Jim Duey a job writing a Clojure compiler"
+"Great Language!"
+"Great community and quality of libraries."
+"Great job you guys! :D "
+"Great language when everything goes well. Complicated error handling is a real challenge, but it forces me to test frequently and make only small changes, which is probably a good thing. I find that it has infuenced my programming style to take more time to make small, well written functions (often rewriting them several times). It can take me longer to write a Clojure program than a Python one, but I'm generally happier with the final Clojure code. "
+"Great language, weak compiler. The Lisp curse, while not as bad as in some other dialects, is very much influencing clojure communities: libraries are easy to start and get to a somewhat working condition ... but getting a well designed, thought out and well implemented library is rare."
+"Happy to be doing Clojure development professionally since February!  Still love the language."
+"Happy with FP and Clojure! IMHO, nice community, similar to Ruby world... :)"
+"Hard to put it down to one very specific thing.
+
+Some general issues with FP: tendency towards opaque smart-assery, especially from the zealous newly-converted. I'm keen on "FP in the large" (which often adds a lot of value to software design) but obsessing over "FP in the small" can sometimes just get in the way.
+
+Some general issues with dynamic programming and LISPs: while I'm not horribly hung up on static typing, the thing I miss the most about it is structured traversibility of a codebase, and the documentation about datatypes (and about which code expects those datatypes) which it gives you for free. In clojure it's not usually clear where things "live", and clear and consistent documentation about datatypes has to be an ad-hoc effort. I did look at the typed clojure stuff, which while very neat in theory, in practise feels a bit clunky, awkward, bolt-on, not widely adopted. Note that dynamic OO languages have these properties to some degree, because the OO model forces you to lay out your code in a way which makes certain basic assumptions about which datatypes get passed to which code (as "self" at least) explicit."
+"Having a core API that all clojure versions support would be good, for examle simple functions like Integer/parseInt and such. With such abstractions we could use clojure on more platforms with less problems."
+"Having blessed (maybe like JCP) versions targeting other platforms, like the luajit, python, or C ones before seems like it'd increase the reach of clojure and be managable through validation suites/criteria for "qualification""
+"I <3 Clojure. Keep up the great work."
+"I [heart] Lisp. I [heart] Clojure most of all."
+"I absolutely love Clojure. The more I learn about it, the more I love it. Which is rare."
+"I absolutely love the Clojure language, but the JVM is a huge pain in the ass.  Some specific issues: Huge startup times, huge memory footprints, and one particular windows-specific bug where child java processes are not cleaned up and I have to kill them manually with the process manager.
+
+The jvm also adds another layer of complexity to everything.  My clojurescript development environment has a *lot* of moving parts - Emacs/Swank/(Slime/Cider)/Java/Clojure/Austin/Closure/Figwheel.  The result is amazing, but I've had failures in most of those connections, and it's pretty frustrating.
+
+So much awesome being held back by something that I recognize is a huge plus for some people, but not for me."
+"I am just a beginner in clojure. I do data analysis at work and started using R a few years ago as a replacement for unwieldy excel spreadsheets. Now, I would like to add clojure in my "toolbox" for the purpose of building small applications (or even "notebooks") used for data analysis. My domain is test development for hardware manufacturing and failure analysis."
+"I didn't expect clojure to be so useful and hassle free. "
+"I enjoy playing around with Clojure on my free time, but sadly I don't see any chance to use it directly at work, because on my area (Fortune 500) the customers get to choose which languages are used.
+
+So this means, Dalvik = JVM = Java, CLR = C#, Browser = JavaScript. Very seldom it deviates from this pattern.
+
+If I had more free time, I think the projects I would contribute to, would be one of the projects trying to create implementations that target native code generation."
+"I feel like Clojure is awesome, but it's such a paradigm shift from the programming most people are used to that it's hard to get people on board with developing in it unless they're already familiar with FP/lisps."
+"I find it difficult to use clojure when I am reading a book on java and trying to write the mutable examples using clojure. "
+"I got back to program because of Clojure"
+"I greatly miss hands-on tutorials for creating "standard" applications: desktop GUIs, MVC applications (or the clojure equivalent)... it looks like most available tutorials are about obscure features of the language, very advanced functional programming and small libraries that solve obscure CS problems."
+"I have had a great time learning and using Clojure, and hope to keep using it professionally in the long term"
+"I have lately used haskell over closure, because it gives me more confidence in program correctness."
+"I have one additional feedback; some 3rd party libraries, prominent one's, are maintained rather poorly. They work fine, they have decent docs but when you look inside the trunk you see dirt. Either code is not written in a clean, well organized way. Or the maintainer is not responsive. Or both. This is a problem because these projects should grow with Clojure and get more contributors. (Like Python & Django)"
+"I have the time/opportunity to use Clojure pretty infrequently. Which often creates a two-steps forward, one-step back situation where I am often relearning much. I do think better IDEs would be nice. Code analysis tools (lint/checkstyle/etc) have helped me learn the idiomatic styles of other langues and improve my code. I haven't played with eastwood yet.
+
+One way I've been able to incorporate new languages into the day job, is using them for scripting one off tasks. Lately I've been using Groovy because Grape is extremely handy."
+"I haven't really used Clojure enough to speak to some of the topics above."
+"I hope Clojure continues to grow :)"
+"I internally delivered our first Clojure-based "microservice" application this year, a replacement for an existing data-processing app written Ruby. Clojure wasn't always an easy sell, but seeing our app go from a 60-machine EC2 Ruby deployment down to a single EC2 node running the new Clojure version, while still having performance headroom, was extremely eye-opening for the project stakeholders.
+
+Reducing deployment and adoption friction, so that we can get Clojure apps into production quickly and without undue pain, will help to expose the benefits of the language and its ecosystem. The more apparent its tangible benefits are to people making critical business decisions, the better."
+"I just started Clojure an Clojurescript and it was long time that I had so much fun programming. And after 2 weeks I am already very productive with it while still learning new stuff."
+"I just wanna say that Clojure really changed the way I see software, and I'm very thankful for all the community that supports it, I personally always use Clojure for everything that I can now, so, thanks!"
+"I like Clojure and I want to see it target more and more platforms."
+"I love Clojure!"
+"I love Clojure!"
+"I love Clojure's (a) rational management of libraries and features [compare Common Lisp's Wild West], (b) easy Java interop, (c) supportive community, (d) trivially easy parallelism (not in all cases, but sometimes) (one of the best benefits of laziness), (e) and most importantly, that it's a lisp, (f) that it's pretty efficient.  I began with Clojure over a year ago, and it's a joy.  I guess I wish that Leiningen would start up faster, but that's OK, and it's not really Leiningen's fault."
+"I love Clojure's simplicity of syntax."
+"I love Clojure, I think that Rich did an awesome job and got a lot of stuff right, and the community is made of the nicest brightest people I've worked with yet. Familiarity breeds contempt as the saying goes. Stay awesome and thanks for the hard work."
+"I love Clojure, and I feel pretty self-sufficient when it comes to coding and figuring things out.  I'm thinking about trying to teach Clojure to some newbies.  It would be interesting to have a separate survey for people who are new to the language or maybe just thinking about investing more time in Clojure.  What can we do to help the community grow?  What are the best resources for newbies?  I'm going to start with ClojureBridge curriculum and Clojure for the Brave and True."
+"I love Clojure."
+"I love Clojure.  It is a great language to write in, but it is really slow compared to the languages that most people use in my field (Fortran and C)."
+"I love Clojure. I have built a lot of stuff with it, couldn't have done things better."
+"I love Clojure. When I say that certain features haven't been useful, I mean I haven't used them!"
+"I love clojure"
+"I love clojure!"
+"I love clojure, wish I could use it more."
+"I love how much care and thought is put into every aspect of the language and that not every request is honoured in order to keep Clojure simple. E.g. adding types is often requested, but would complicate Clojure core too much and make it less flexible"
+"I love it!"
+"I love the emphasis on simplicity in Clojure, and miss it terribly when I have to work in another language.  *cough*scala*cough*"
+"I love the fact that the language is very stable. And just to repeat myself, that the biggest pain point is the lack of a serious editore/IDE. My hopes are all in cursive!"
+"I love the language and the community. Kudos to all involved, and thanks for making (and continuing to improve) the language and its ecosystem. Cheers!"
+"I love working with Clojure; I'm hooked and am very much interested in learning more and deepening my knowledge of and work with the language"
+"I rarely use any clojure libraries outside of org.clojure for the reasons mentioned above. The java libraries tend to be excellent, and I see no need to replace them. I'd like to see more "ground-up" work in specific domains -- libraries that strive for correctness over ease-of-use. The ease-of-use layer can come later."
+"I read my first book on Clojure in 2011, now I’m doing Clojure and ClojureScript as my everyday job along with bits of Ruby and Erlang and I can’t be more happy with it. I love the language, the community and how it makes my life simpler."
+"I really do wish that Clojure was more appropriate for scripting. Fortunately there are other Lisps that are, but still. I wish."
+"I really enjoy Clojure!"
+"I really enjoy Clojure."
+"I really enjoy clojure and hope to see it continue to mature. "
+"I really love the zen of clojure and its minimality. Keep up the good work!"
+"I respect Rich Hickey and the way he thinks a lot."
+"I see some people keep making another languages inspired from clojure, they have ideas to improve clojure but clojure seems not  like them and does not response quickly, I am not sure if it is suitable to say clojure is a old man/woman."
+"I still have trouble getting others/superiors on board.  In particular, the enterprise-style Java/Spring/ORM crowd (even with people relatively young) has been hard to win over.  That is not Clojure's fault."
+"I think Clojure is awesome! The hardest problem that can't be solved by the language is that when I show it to people, their eyes glaze over at the parentheses. :) It can be tough to get someone to look beyond the unfamiliar syntax and to appreciate the power and expressiveness that Clojure offers. But for me, learning Clojure has affected my programming in positive ways even when I code in other languages."
+"I think clojure is pretty great right now and would be hesitant to add language features."
+"I think documentation "targeting" people comming from outside the functional world would ease the adoption. Often I would like a bit more advanced examples which actually combines some funcitons which I think would give a better idea what is actually possible. I'm not looking for tutorials "building" some app but just multiple examples using the same functions from a library in different ways, to get a better understanding of it."
+"I think the JVM host environment isn't worth it. Really slow startup, dynamic languages on a static runtime seems awkward, having to keep the JDK updated, etc."
+"I think we should start promoting clojure as a solution for specific domain problems, just like go has claimed "systems programming"."
+"I took the time to learn Clojure about 3 years ago because the concurrency story was/is so far ahead of a lot of the mainstream. It is still years ahead of mainstream Java/Groovy. Thank you for introducing me to some fantastic tools for reasoning about my programs more effectively (immutability, persistent data structures, state isolation). Though my day job uses Java/Groovy/JavaScript, I use what I've learned from Clojure constantly. Learning Clojure was a real and lasting paradigm shift!"
+"I use Clojure primarily for academic research (in AI) and for computer science education (typically in AI and genetic programming courses). The environment seems much more geared toward commercial developers, which makes some sense, but I think that more attention to academic environments could help to grow and strengthen the community (along with making my life easier :-)."
+"I used to be able to keep abreast of most of the developments in Clojure-land, but no longer… which is great! There's more good stuff becoming available all the time as far as learning resources, language features, libraries, and software systems go, and I'm now faced with the need to be more selective in what I commit to learning and using.
+
+I am still very happy that I decided to adopt Clojure as my principal programming language for personal projects, and am promoting it at work by writing software, evangelism, etc. with the eventual aim of getting larger software systems written using it.
+
+I would love to see a book about software architecture and development practice in Clojure added to the canon. I find that the sheer malleability of Clojure, combined with the breadth of features and my less than perfect knowledge of the language sometimes leads to decision paralysis when trying to design a new piece  of software. As a fallback I tend to do the simplest thing that I feel will work and then commit to redesign and refactoring as my understanding of the language and the problem domain improves, but some guidance in this area would be really valuable. I'd settle for something about CL but would stand in line to buy that book if about Clojure specifically."
+"I want Clojure on Android to become more popular."
+"I want a native (C-based) Clojure with small footprint, fast start-up time, and easy interop with C libraries."
+"I want to have the babies of everyone who has helped make Clojure what is it today.  It is [redacted] fantastic!!!!!!!!!!!!!"
+"I wish there was an easier way to understand what the core team's plans for Clojure over the next few years are."
+"I would REALLY like to see Clojure become a useful tool for mobile app development! Unfortunately I don't know much about native mobile, but I'm up for helping out where I can. ClojureScript quickly made me a "competent JS frontend developer", I'm hoping Clojure on mobile can do the same :)"
+"I'd like to contribute clojure community and I'd like to create clojure community in Japan (currently no active community here."
+"I'd like to see better stack traces. I know I can do it myself, but maybe have some option to filter out the Compiler.java etc. parts of stacktrace which (we assume) are generally correct, and show just the user-space part?"
+"I'd love to see in-browser CLJS compilation (CinC)."
+"I'd love to see more debugging/profiling tools, but even without those, Clojure is still my favorite language for development."
+"I'd love to see the book "Land of Lisp" ported to Clojure."
+"I'd love to see the incorporation of projects like KISS (https://github.com/mikera/kiss) and the built-in feature to target various platforms (like cljx but taken into the language standard)."
+"I'm a UX professional, and I use Clojure(Script) to create live prototypes. Much of the design philosophy behind Clojure are things that have direct parallells in UX."
+"I'm a happy camper in general. I find that I don't use some of the new Clojure features (reducers, transducers) or some of the old ones (protocols, multimethods, macros) much or at all! For me the most important functionality is the functionality, persistent data structures and all around practicality of the language and the many quality libraries. Some of them use all of these for implementation and that's fine."
+"I'm a long-time ruby programmer who is using Clojure to learn about functional programming. I really enjoy it, compared to other "recent" languages I have been exploring such as Go and Scala. The JVM integration is really important, since I'm exploring some Apache projects for scaling with one consulting client, and I would rather program in Clojure than Java."
+"I'm an infrastructure admin/dev at work, and decided to tinker with using clojure for small web facing projects (used in combo with CLJS), but our core development is entirely java, and the possibility of moving fully to Clojure is zero given the platforms we work with (Oracle e-commerce), and dev team we employ (java contractors). As much as I love it our Clojure work is going to be just me and small side projects only."
+"I'm in love with Clojure and Lisps in general :)"
+"I'm moving to Haskell in the medium term. I do not believe that much in dynamic languages anymore.
+
+There are three services I'm bootstrapping. It's very likely one of them will succeed. I will continue to develop them in Clojure, and create/maintain libraries that pop out of it. That being said, future projects will likely be in Haskell. 
+
+Also, Clojure is just not penetrating the asian market. As someone wishing to move to Asia, specially Japan, that makes me sad. The whole Functional Programming scene in Asia is sad. But.. I guess I'll have to change that a little."
+"I'm new to Clojure so my opinions might be off the map. I have 30 years experience with common lisp, however."
+"I'm no expert.   I think there is too much of the feeling of a wall between OOP and Functional.     Yet Clojure provides OOP when that is the right choice.  I think the tricky bit is getting Java people to think differently.   
+
+One approach might be to take the 10 ten java demo projects, and implement them as Clojure projects.    For example, start with the old "Java Pet Store" - and make a clojure example.
+
+I think what cognitect is doing with examples of clojure projects that have met or exceeded customers needs,  is great!
+"
+"I'm part of a group that's trying to use Clojure in education, but a lot of our issues come from the completely useless errors that Clojure throws. A java stacktrace is not a error message - it makes sense when you can understand all of Clojure's source, but otherwise, it relies on the user knowing java."
+"I'm scared static typing, which outside of avoiding reflection in interop areas offers no performance benefits, will become the norm and that Clojure will lose its lispy way and become more like Haskell or Scala."
+"I'm very excited about react.js & Om"
+"I've been really pleased with the performance of Clojure and the reliability of its libraries. There aren't always libraries available, and they aren't always as prettily documented as their Ruby/Python equivalents, but whenever they exist they are usually rock solid technically."
+"I've been using Clojure for five years, but in the past year or two I've stopped using it for new development and only maintain the open source libraries I've written. Part of it is that, Clojure being the first dynamically typed language I've used nontrivially, I've come to realize that I don't like dynamically typed languages. Another part of it is that I don't know what kind of future it has. It's always been hard to get an idea of what is coming up in Clojure, when that development is happening, and so on. Stuff just appears suddenly one day, and it's usually not the thing that has been giving you a headache, but some interesting, half-academic new abstraction. It has in the past been hard to get attention for issues and submit improvements that aren't important to the key maintainers. I don't know if that's still the case, as I am much more peripherally in the community now, but that's hard to get over and feel enough confidence to build new things on it again.
+
+Leiningen is still the best build tool I've ever used, and I use it on non-Clojure projects."
+"I've enjoyed clojure so far, but I'm curious to see how far I can go before I come up against limits of the language."
+"I've had real success introducing Clojure in places that aren't typically welcoming to new languages (specifically, a PHP shop buried under mountains of legacy code). People have a hard time understanding what Clojure is all about at first, but when they see concrete examples of what using it enables, they get excited. The language is solid, many of its libraries are great, and I've noticed the barriers to entry have shrunk considerably over the last two years."
+"IMHO many of the productivity benefits of Clojure are being absorbed by substandard development & debugging tools particularly for Clojurescript. While Intellij - Cursive is very good, but having to jump to browser based dev tools to debug and inspect a running app is archaic. I come from a Smalltalk background and the ability to debug, inspect, modify a function while in the debugger or editor during a breakpoint, compile just that function and continue running from that point (hot swap) is still superior and we are now 25 years down the road"
+"IMHO, Clojure is generally a good language to utilize many-core computers. Its persistent collections and concurrency stuffs help me to write bug-free multi-thread programs."
+"Idiomatic Clojure[JVM|CLR] code that is clean, beautiful, and well-factored tends to be significantly slower than idiomatic, clean, beautiful C#, for example.  Hopefully compiler macros and build targets/profiles will partially address this in Clojure."
+"If Clojure disappeared and no other functional (ideally lispy) languages replaced it I would probably consider another career at this point."
+"If Clojure supported Cocoa then that would change my professional life profoundly. :)"
+"In general it's a nice language. I've been pleased about the way that my use of it has panned out, and it's been a pleasant addition to my toolkit."
+"In general, I think that Clojure and Clojurescript are going to be great programming languages, greater than they already are. I hope to see a lot more professional use of Clojure in the future."
+"In spite of concerns, Clojure/script is my favourite general-purpose language, and I see a bright future (but anything that helps convince employers/managers that it's heare to stay  will be welcome!)"
+"Is Clojure in Clojure the answer to targeting more runtimes? Specifically would that help with targeting Erlang/BEAM?"
+"It continues to be an enjoyable language to work in."
+"It is difficult to contribute meaningful compiler error reporting improvements due to a lack of a simple and standard way of handling errors that are detectable and reportable. This is a problem worth solving."
+"It is often very difficult to read the compilation/interpretation error messages. At this point, I can usually intuit what went wrong by looking at the stack trace, but they're a major turn-off."
+"It would be really neat if Clojure the language had any meaningful independence from its Java implementation. "
+"It's not encouraging that Storm is directly competing with Spark, but Spark seems winning the popularity. I don't think Clojure needs to defend itself against Scala, but it'd be nice for Clojure to grow out of a "Start-up language". "
+"Just keep up the good work, on the language, libs, media, conferences and especially the wonderful community."
+"Keep on being awesome!"
+"Keep up the awesome work!"
+"Keep up the excellent work"
+"Keep up the good work on the tooling side!"
+"Keep up the good work!"
+"Keep up the good work!"
+"Keep up the great work!"
+"Keep up the great work!"
+"Learning Clojure has given me a whole new perspective on programming. The Clojure way of thinking, with immutability, code as data and so on, has been a huge boon. This mindset has improved all of the code I write, regardless of programming language."
+"Love CLJ and CLJS. Keep getting better."
+"Love Clojure and grateful to Rich Hickey, as well as Stu Halloway & Sierra, David Nolen and all at Cogitect.
+Really like how clojure is always doing interesting mix of practical and cutting edge stuff like transducers, core.async, core.logic, stm, agents etc etc, as well as datomic, hammock-driven, simplicity."
+"Love Clojure and the community"
+"Love Clojure! :D"
+"Love Clojure."
+"Love clojure. I wish it were easier to understand best practices / conventions, and to get junior people through the worst of the learning curve faster."
+"Love it, especially since have been able to work it into the day job."
+"Love it. Keep going."
+"Love the language and its stewardship. I don't care if features seem to go in at a snail's pace. Keeping a tight ship is vital. Other languages suffer a lot from incompatibilities and dependency problems."
+"Love the language, I come from Python/Ruby/Javascript/Erlang and did Java early in my career and I am finding Clojure to be on the most innovative and pleasant languages to work with. Only other contenders for me are this year: Julia and Elixir, even though a lot less mature.
+Keep up the good work!"
+"Love the language, thanks for all the hard work."
+"Loving it!"
+"Maybe Clojure needs to add better team tools like typing, better debugging, better errors etc. in order to become that mainstream language, if thats what we want of course"
+"Memory footprint is starting to become a concern in the embedded realm I work in. Easily configurable items would be nice."
+"Mitigated by a ton of freely given blogged examples, tutorials, stackoverflow responses, and a great community."
+"Much of the Clojure library ecosystem is well written, but there are an increasing number of bloated libraries that try to take over everything or are needlessly complex."
+"My boss loves Clojure.  I think he may have wet dreams about it.  I'm too young in my career to have strong opinions about any one language, but I really like Clojure so far."
+"My interests in Clojure are because I wanted to code with less boiler plate and Clojure (lisps in general) provide and elegant solution which I like.
+I am struggling at the moment but I will stick with it as long term I can see myself using it for all development from desktop to web/mobile (this is also a big attraction).
+
+My main development tasks evolve around automation a host application with their .net API (AutoCAD and Bricscad) and I'm struggling to find good examples of how to do this. Most of the work is manipulating the system's objects rather than creating an application that uses some .net libraries and getting my head around mixing 'objects' with mutable data into clojure code is proving a big task at the moment."
+"My main wish right now is to see start up time minimized. The time lost waiting during JVM startup, even when done only when necessary, is still significant."
+"My most frustrating moments are when repl development is going smoothly (usually due to certain environments not being friendly to clojure.tools.namespace/refresh) causing me to restart my repl session more frequently than I would like."
+"NOTE: I already filled out a survey - please do not count this one! I am attempting to amend my previous survey answer:
+
+We would like to be able to use clojure/script in embedded systems work at our company but we don't have the JVM nor Node.js available (PPC architecture + size constraints prohibit both of those options.)
+
+It would be nice to support LLVM as a target for clojure or some other C/C++ based runtime, maybe via racket or ???. I've seen some work done in this area but it would be nice to have official support for such a thing. Of course, I might just have to start my own project to get this to happen :-)
+
+Thanks for listening and all your hard work on clojure and clojurescript!"
+"Offline workflow is too difficult or impossible (tried Counterclockwise, LightTable, NightCode). Emacs is too weired for me. I stick to Notepad++ / Terminal / Leiningen copy and paste !"
+"Om is a huge unique selling point for ClojureScript at the moment."
+"Om needs documentation that doesn't involve LightTable."
+"On the one hand, my Clojure tools feel like a poor man's this and that; and performance analysis is difficult. On the other, I don't need refactoring that much, my codebase is compact, dense but not complex. I'm happy with the results."
+"Once again, it would be nice to see a culture of practical, opinionated web-oriented Clojure solutions from an authoritative figure. Those that survive the Java and the lisp often are left wondering why they should care. Throw me a freaking bone, here. Help me tide them over with some ready-made solutions so they stick around long enough to see the elegant beauty.
+
+God help me, I'm asking for rails.clj. "
+"Only Rich can use the + on 6+ years :), but I'm amazed that I'm celebrating my sixth anniversary of using Clojure and I love it even more than when I first discovered it."
+"Opaque build errors aren't uncommon enough either. "
+"Overall feels like community growth/use has stagnated, and I fear it falling out of favor a la smalltalk. Clojure's focus on "Simple" often doesn't make things "Easy" enough for newcomers and it hampers clojure uptake and use."
+"Performace improvements on all fronts would be critical for clojure to survive imo"
+"Perhaps a Truffle/Graal VM Clojure option could remedy the startup time issue. Other than that, Clojure is amazing."
+"Perhaps a google form for event organizers & support"
+"Please consider working with the FSF."
+"Please leave any general thoughts or opinions here..."
+"Please provide better compiler/runtime error messages/stack traces."
+"Probably the best thing about Clojure is that it makes programming fun again!"
+"Props to the Clojure community for being so nice and friendly.  Also, instaparse is a great project."
+"Redesign completely clojure.org. Clojure is a language so full of good ideas that they must be promoted better we want Clojure to gain more traction. "
+"Rock on"
+"Some important libraries are slow to move, and there seems to be real resistance to improving them if someone else wants to do it another way.
+The language itself is great, and I appreciate the improvements. But for those who want a typesafe language, TypedClojure isn't "there" yet."
+"Somebody should really sit down and write default library for the web security."
+"Source level debugging, Useful exception stack traces would be very nice.  But some of us learned to debug long before there was such a thing as source level debugging. :-)"
+"Startup time has been a noticeable annoyance. Exception messages and stack traces are still pretty cryptic. I would love to use it professionally for web dev, but I worry about future staffing problems."
+"Startup times are really painful on large projects."
+"Still after one year of Clojure I don't give up, tried Scala few times not fun at all. Unfortunately only fun yet at the moment, cannot convince any manager to use it fro real applications. This is where the struggle comes not enough real-life- enterprise  examples"
+"Still exciting!"
+"Still looking for the perfect self-contained development environment. I live in Emacs so it's worth the setup pain, but for new users it's a big hurdle."
+"Still love love love Clojure! I wish I could see my coworkers and other teams switching to use it, but there is still too much friction in changing a big Enterprise-y shop. We need to keep pushing the benefits of functional style and Clojure's advantages. The more we can get the word out, the better."
+"Still lovin' it!"
+"Still my favorite language to play with."
+"Stu Halloway is a sexy beast when he sings karaoke in Aruba."
+"Super, super satisfied with Clojure. Heartfelt thanks to everyone involved! And want to add a special mention for Alex Miller who's been doing a great job helping herd the community in productive directions."
+"Thank you Rich for making a language that I can learn"
+"Thank you all Clojure contributors!"
+"Thank you for making such a wonderful language, tools, community!"
+"Thank you for the most amazing language I've ever used. 
+The main worry is to keep the community spirit. I'm starting to notice hubris here and there. That is wrong."
+"Thank you for your time, survey people.
+
+Clojure is nice.
+
+An excess of state is a rather dreary thing."
+"Thank you thank you thank you!!!!!"
+"Thanks"
+"Thanks Rich !"
+"Thanks all for your efforts on clojure!"
+"Thanks for Clojure!"
+"Thanks for Clojure! You are doing a good job maintaining it. Focusing on backwards compatibility and quality of implementation will be a win in the long run."
+"Thanks for Clojure, programming is fun again! :)
+
+Latest development (eg transducers) is truly inspirational. "
+"Thanks for all your hard work, Clojure is still, by far, my favorite language!"
+"Thanks for making Clojure. After years of Java programming, I'm having fun again!"
+"Thanks for such a great product :-)."
+"Thanks for taking the effort to do this :)"
+"Thanks for the survey!"
+"Thanks to Rich and everyone in Clojure core. I now can hack again after 14 years of hiatus from the hacking world (I used to be a Common Lisper, but leaved the programming world to become a teacher). I discovered clojure on Nov 5th last year, and been coding in it everyday ever since :)"
+"Thanks to everyone in throughout the Clojure community for making such an amazing language an absolutely fantastic ecosystem."
+"Thanks!"
+"Thanks!"
+"The Clojure community is fantastic - friendly and supportive. Makes any other downsides worth it (well, the language itself does that, too)."
+"The Clojure language and community have contributed so much to my improvement as a software developer and how much I enjoy my career. Thanks!"
+"The biggest unknown for me with Clojure (and data-oriented programming) is what is the best way to make projects simple to refactor and maintain.  Core.typed and Prismatic/Schema come to mind, but I have not seen enough yet on how real-world teams properly make production Clojure-based systems maintainable for the long haul.
+
+Technical debt is hard to fight as it is, so I feel that tooling and language features should lower the barrier to performing refactoring and maintenance as much as possible."
+"The clojure community and ecosystem are amazing, but I think the community needs more company/corporate sponsorship on important projects to boost the confidence in adoption."
+"The clojure(script) landscape is still changing very quickly and it's sometimes difficult to maintain compatibility between clojure(script) and libraries. This is the price of advancement and I'm guessing we'll have to live with it. 
+
+Simple tooling continues to be an issue (Lighttable is good but still early and Emacs/Cider/nRepl/Blah is not for the faint of heart (or newbies)).  Cursive Clojure is the best "out of the box" experience so far for me.
+
+One gap in the docs has been a discussion of how to setup larger functional projects for new programmers to Clojure and functional languages in general. There's great docs at the language level but once you get past solving 4Clojure problems there's not a lot of guidance on how to architect medium to large systems.
+"
+"The community is amazingly smart."
+"The community is such that the language's weakness is surmountable, with enough effort."
+"The compiler and libraries need constant improvement to compete with other languages and adapt to new use cases."
+"The contribution process can be streamlined. Leveraging GitHub for contributions would likely attract many more people willing to help (especially for smaller things), but unwilling to deal with JIRA and patch files. Puppet also have a CLA that needs to be signed, but have implemented a simple mechanism to check whether the author(s) of PR has signed the agreement (see https://github.com/puppetlabs/puppet/pull/3169). I think the Clojure team can learn a thing or two from them."
+"The lack of a debugger (ritz is dead and nothing has replaced it), tail calls, continuations, and reader macros are all major and unpleasant issues."
+"The language is already great, and I thinik there should be no hurry on adding features, so I'm not suggesting any; I trust the guys at Cognitect for thoughtful and careful improvements like transducers.
+For Clojure to go mainstream (and it may well not be ready for that, that's not my point), the community will have to provide better resources for beginners. I truly believe Clojure is a great first language, better so than even Python or Ruby or JavaScript for a large number of students, because of its simplicity and consistence; plus they don't have to unlearn all their imperative and object-oriented background."
+"The language is pleasant to use for development, compared to the viable alternatives in a restricted target environment."
+"The language, the direction, the community and the basic libraries and toolsets are all great.  Keep up the good work!"
+"The long time it takes to start up makes me reconsider using Clojure sometimes. But I love the language and tools."
+"The pace of Clojure development, particularly around ClojureScript, Transducers and Typed Clojure is impressive. Clojure hasn't stopped being my go-to language for over six years now."
+"The prejudice against odd-looking syntax presents an initial obstacle when raising discussions about the language. While to my mind, the syntax is far simpler than c-style, it evokes the "line noise" of Perl to many. (I struggled with Perl as a part-time language until I found the line in the Camel that starts with "You will be miserable until..."). Perhaps it's GUI or Millenial culture that rejects anything different with an immediate, if slight, hill to the learning curve, but I find it difficult and nauseating.
+
+Clojure shouldn't change, but the world's fixation on c-style function calls and block definitions require a prepared answer if  you want to discuss the merits of clojure with someone enamored with Java ready to dive into Java8. "
+"The questions in this survey really need revamping. For example: "How useful have each of these aspects of Clojure been to you and your projects?" Does this mean "Which of the following have you used" OR "When you used these features, how useful were they"? If the latter, then need a column for "Not Used""
+"The recent trend of Cognitect libraries to be "open source" but not accept contributions worries me.
+
+It sets an example which I think is dangerous for the community and against the openness that is encouraged in the wider open source community.
+
+This is certainly a red flag to me when considering clojure against other language ecosystems."
+"The structure of a leiningen project is somewhat documented, but it is difficult to understand what is really going on and why.
+
+For Ruby and Rails, there is a lot of easily available tutorial information. This is not true of Clojure. This is particularly important as the programming approaches are very different than the traditional procedural/OO approach.
+
+The JVM is both a strength and a weakness. In places where the JVM is already in use, clojure is a realistic migration, and the availability of Java libraries is helpful. Where the JVM is unavailable (iOS) or the JVM startup is an issue, it is a weakness."
+"There are very few video tutorials about doing stuff with Clojure."
+"There have been many improvements to the Clojure community process since Alex took it over, and things get better every day.  The effort is relentless and does not go unnoticed.  Some larger issues remain: there is a clearly defined process, but no defined cadence as to when a ticket will be screened and bounced back for cleanup.  A list of screeners is on the wiki, but only a handful actually seem to regularly partake in screening.  Screening is an important part of not only getting quality patches, but also having the community *feel* engaged.  (Perception is important for tribal happiness) Even if something isn't a desired issue (let's face it, a lot of tickets aren't) the process helps disseminate quality through the community, and the next contribution from someone will be better.  Even in an issue that is ultimately closed without a committed change, the process is important, and rigorous screening (as well as Rich's always pointed comments).  I'm certainly not asking for changes to be applied faster, but for the process to happen with both more predictable cadence, and respect to contributors time and effort.  Time constraints exist on the development side as much as on the review side of a patch.  Patches having to be rebased to the latest master 10+ times is surely frustrating.  Again, things have gotten much better."
+"Things are much better with Alex running the show.  "
+"This is my first functional language and clojure has been a perfect transition.  Now all I use is clojure and possibly because of that I don't see much wrong with the state of this language.  Keep up the good work"
+"This questionnaire does not adequately capture my environment, which is supporting unfunded, full-time research.  I have older equipment that doesn't support the latest versions, in particular the latest JVMs.  Moreover, if it ain't broke, don't fix it, encourages staying with older versions rather than trying to keep up with the latest and greatest."
+"This survey should offer "not applicable" or "no opinion" options. E.g. if I have never interacted with a library maintainer, for a question like "Their maintainers are receptive to feedback, patches, etc.", why can I only choose "True", "Mixed bag", or "False"? Or if I have never used transducers, how can I judge how useful they are? The results from these questions will likely be useless now."
+"Though I've started learning Haskell still love this language and have VERY pleasant memories using it."
+"Transducers and core.async have been HUGE successes."
+"Transducers, or any other feature that significantly modifies clojure.core functions, need more motivation than one blog post.  E.g. concrete example code that solves a problem that can't be solved any other way."
+"Using clojure in production has turned out to make our most stable performant and trustworthy components in our system. Clojure is driving 4 of the most fundamental services in Xamarin Test Cloud, and we love it!"
+"Want to see more Clojure on the native mobile apps field."
+"Was positively surprised that my Emacs shows even stack traces well now :) Clojure seems to move ahead pretty well. What I miss currently maybe most is a good distributed systems story. Actors and RX get a lot of eyeballs now, I don't know that well what would be the Clojure story in that respect. How to structure around core.async a distributed system."
+"We hired 2 full time clojure devs in the last 3 months. It was much easier than I would have thought, given that I listed it as one of my fears in the last survey"
+"We need more composable, data-driven libraries for low-level tasks like I/O, networking, and handling binary protocols."
+"We need videos on ease of debugging in Clojure. 
+
+Rich does great stuff that is often better than what is out there. But he needs to put it in a table explaining why it is better - otherwise the message is lost too quickly. "
+"We run into "current staffing concerns", where teams that might have chosen to use it, opt for PHP instead, due to a % of devs being unwilling to ramp up with it."
+"We've got simplicity in the language, what about "easiness" in the usage?"
+"What has been most frustrating for you in your use of Clojure; or, what has kept you from using Clojure more than you do now? -> Difficulty finding clojure employment/difficulty convincing existing co-workers to adopt. "
+"When you come to Clojure as a web developer with a Django background you notice the complete freedom you have in your choices. On the one hand this is liberating but on the other hand it is also a burden. What are the best practices? Which library do I use to persist my data? Do I really have to reimplement update-or-insert!? How do I handle migrations? Which of the myriad of deployment options is the one for me?"
+"Who cares about datomic, focus on tooling and performance."
+"Wish I could use it more, and had gotten involved sooner.  I wish it had greater adoption, and that the fundamental principles of Clojure, immutability, reference types, protocols, homoiconicity, etc. were more widely understood.  I see that in many ways clojure is sitting at the junction of a set of converging technical implementation solutions, and I wish the 20 years of my career spent in software development hadn't been spent in OO.  I kept eyeballing lisps and functional languages in a wistful way without ever really appreciating that my intuition was telling me something important that I needed to pay attention to."
+"With the strength of the JVM and interoperability comes the weakness of most Java developers and support that they rather stick to Java and their full-blown application servers."
+"Wonderful technology, but unfortunately the benefits are difficult to explain to decision makers with limited understanding."
+"Would LOVE to see more concrete examples from Rich and the Clojure community on how Clojure fits into an entire process of 1. problem identification 2. planning and design and then 3. final implementation in Clojure. I feel like learning Clojure effectively is about more than just learning the language; it's also about simplifying the problem and designing the solutions and I'd love to see more about how the masters are doing that."
+"Would be beneficial with a "don't know/apply" alternative. "
+"Would love to see a more transparent / simple process for contributing to Clojure (e.g. accepting pull requests)"
+"Yay! A lisp I can use at work! If I can get my team onboard...."
+"You are doing fantastic work and I'd like to thank all of you! Special thanks to Alex Miller for his fantastic work in gluing the community together. Keep it up!"
+"You might want to include emacs + `lein repl` in your development environments list next time."
+"awesome language and community.  right balance of elegance, pragmatism and research from the past 40 years."
+"clojure is awesome - I am currently flipping back and forth between clojure and haskell as a go-to language.  I love lisp but also love types (and I'm not yet convinced core.typed is sufficient)"
+"clojure is the best thing ever since sliced bread"
+"clojure works great for me, but it is difficult getting people started with functional programming"
+"continue good work"
+"core.async rocks"
+"debug is a moving (moved?) target - ritz? other? Stacktraces still hard to fathom. "
+"debugging tools are also still a weak point"
+"generally I <3 clojure and it's become my daily tool/weapon of choice - so thanks!"
+"i like what happening in the functional reactive programming world. Gorilla-REPL looks nice as do the om-based tools. Also I like core.matrix. Seems like a clojure-based ecosystem for data analysis and presentation is almost there. I am still more competent and comfortable with python but I can imagine a clojure that is competitive with pandas/numpy but benefits from immutabile/parrallel and also can compile to the web."
+"i love clojure. i was a bit of a language hopper before clojure, but its feature set hasn't left me wanting to look elsewhere. i still only use it for hobby programming; i unfortunately don't live anywhere near where clojure is picking up traction. but i enjoy it a lot. it's usually quick and easy to spit out some code, hook up a repl, and hack away. overall it just feels really accessible. like, this is how programming should be. or something really similar to this."
+"i'm mostly happy with Clojure, just annoyed the dev environments are so unfriendly, even to experienced users."
+"it's not just REPL-driven _development_ that is a critical advantage of Clojure.  I could not function without the ability to use a liverepl to introspect on a running server."
+"keep it simple"
+"keep rocking, you guys are much more intelligent than me and this is what impress me more in following this community. It is, for sure, the most intense learning experience that I'm having. Clojure is turning the LISP magic mainstream in a majestic way."
+"keep up the good work"
+"lein is a big reason I use Clojure, to avoid JVM classpath hell. Developing in vim and at the CLI is paramount for me and most JVM languages basically require an IDE like Eclipse or IntelliJ."
+"lisp syntax is a little scary at first, and many people are also unfamiliar with functional programming in the first place. so clojure needs to work harder if it want to attract new programmers."
+"my way is: assembler, turbo c, pascal in 90x, VS6.0 in early 2000x, java in later 2000x.
+I think clojure is a brilliant. The clojure  forces us to write code which represents the essence of our thoughts.
+Most expressive language i ever see.
+
+mike"
+"not much  to say on the negative side, it's been an awesome ride so far!
+a dumbed down version of clojure providing the same promises than go or rust (standalone, no dependency executables) for writing small-overhead system & command-line tools would be amazing"
+"ns-related tooling could be better. Defining namespaces in terms of other namespaces or as exposing bits and pieces of various related things isn't a well defined operation, and that sort of thing gets more and more common as a code base ages."
+"special kudos to cursive clojure for making the learning curve within the "enterprise" far smoother"
+"start up time is long"
+"still enjoying clojure"
+"thanks thanks thanks"
+"thanks to community!"
+"thanks!"
+"the most enjoyable language to code with (coming from C, Perl, R, Ruby)"
+"we need best practices guides, code style - quality metrics from large clojure projects"
+"wish i could find more job options available in it."
+"you rock!"

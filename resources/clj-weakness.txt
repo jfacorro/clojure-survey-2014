@@ -1,0 +1,1055 @@
+" I think the greatest strength is the fantastic group of people around it, including the core group at Cognitect. But the biggest weakness is right there also: this core group is not that large, and not that full-time. So once you step outside of the most well trodden parts of Clojure, things get iffy and maybe-1.0-someday-ish. Even big and popular parts like ClojureScript are not in danger of converging on 1.0 soon as far as I can see."
+" impenetrable stack traces"
+""No pull request" culture becoming pervasive and toxic, also if you say no pull request and then copy someone's code from a bug report, you've lost whatever legal stance you wanted and in fact violated copyright"
+""On by default" type inference leading to warnings (not necessarily compile time checks) would be nice."
+"* JVM runtime is a bit too heavyweight for some scenarios. Makes Clojure unsuitable for small daemon-like utilities, mobile apps and cmd-line tools.
+
+* Having Clojure compiled to native binaries would open up a few more uses cases for me. 
+
+* Having a "standard lib",  specially for I/O,  would be nice so that Clojure code can be more easily portable across "hosts" (Clojure/Script/CLR/native)
+
+* Error reporting is sometimes confusing, even for non-newbies (try making a mistake on the (ns ...) form)
+
+* Function (in? seq elm) is missing from core ;-)
+
+"
+"* The Clojure homepage is terribly outdated and it's not welcoming at all. Visit either Haskell.org, ruby-lang.org or scala-lang.org and compare to Clojure.org ... ClojureScript.org is just a redirect to the Github repo!"
+"* mutable namespaces
+* clojure.reducers/fold and clojure.reducers/reduce behave differently on maps
+* clojure functions should be serialisable (this would )
+* clojure could need more debugging and introspection capabilities"
+"* the JVM, one of Clojure's greatest strength and weakness at the same time. 
+* Debugging, the stack trace is a pain sometimes to figure out what is wrong. Better debugging capabilities would take my productivity to 2x.
+* Repeated issue with clj-time incompatibilities and random issues at compile time (personal rant ;)"
+"- Compiler still stops compilation on the first syntax error. When I was demoing Clojure to fellow developers, this was way bigger show-stopper for them, than parens ;-).
+- Runtime stack traces are ugly - this was also a show-stopper when I tied to introduce Cojure to fellow developers."
+"- Confusion over lazy seqs and large/cryptic stack traces.
+
+- By opting out of a framework approach, we force the newcomer to find, evaluate, and learn to use a large number of libraries and associated concepts to build a real app.  It can be daunting.  It is also a source of risk to depend on so many maintainers."
+"- I'm looking forward for native Feature Expressions "
+"- Java stack traces, more of a slightly "ugly" thing rather than a problem"
+"- assuming everybody is a java programmer by default in books, posts, tutorial etc (hint: we are not)
+- inability to explain things simply -- newcomers to functional programming & java will struggle with how to build simple applications, the gap between first time repl user and first simple application is too big"
+"- cryptic compiler error messages
+- debugging (although Cursive is very promising)
+- many libraries seems abandoned
+- lack of clear roadmap "
+"- initial learning curve (way better than Scala, slower than Python)
+- very easy to abuse with Macros
+"
+"- startup performance
+- jon opportunities"
+"- tooling (missing debugger), though it is getting better everyday thanks people working on Cider etc
+
+- slow startup / heavy runtime which impacts tooling (run lein cljsbuild auto, lein cljx auto, lein repl and you are running out of memory on decent hw)
+
+- accidental differences between clj and cljks (et protocol names etc)
+"
+"1) Easy debugging
+2) There is a lot of thought that has gone into a lot of the different things Clojure offers. It can be very difficult to find the reasoning behind them so you can properly understand how to use them. In depth examples can also be hard to find."
+"1) not sufficient indepth documentation about core coll types/protocols/interfaces - it's hard to implement own coll types
+2) super messy source code in clojure.lang.* (really no style guide, docs or formatting needed?)
+3) not sufficient in-depth docs about compile process, hence making it hard to help w/ or work around issues
+4) many new lang additions (async, reducers / transducers etc.) would *highly* benefit from more examples along w/ their announcement posts"
+"1. DOCUMENTATION -  reference APIs are OK, but no "getting started" and no documented "best practices", specially core.async; 
+
+2. lack of examples in reference docs;
+3. no compiled version - it will be great to have hosted version for golang, or haskell. There's some hacks, most promising is targeting gambit scheme, but sadly this project is dead; Is it possible to organize community support to get more hosted versions? 
+
+4. Any research to target it on unikernels(XEN) as oCaml/Erlang and Haskell?"
+"1. Documentation targeted at the level between advanced beginner and expert.  2. Typed languages are starting to get better."
+"1. Lack of easily usable optimization and debugging tools.
+2. Undeveloped ecosystem for building Relational Database Applications."
+"1. runtime performance
+2. bad stacktrace,the runtime problem cannot tell me the location of code
+"
+"1. startup time
+2. distributed"
+"1.slow startup time. i have a pci ssd drive, its not acceptable to wait for 6+ to 10+ sec for my apps to lunch.
+2. huge memory usage. compared to other functional languages like erlang or haskell.
+3.no battery included in library (compared to golang for example), i should download and configure many packages for a simple web project."
+"A complete, opinionated web library a la rails accessible by ordinary developers in the industry. I think web is the path to adoption by masses."
+"A few issues:
+
+* There aren't yet comprehensive web frameworks like Django or Rails. Not that this is necessarily a bad thing, but starting a new Clojure web project means you'll have to implement functionality yourself that you'd get "for free" elsewhere 
+
+* On top of the already steep learning curve, in most cases learning Clojure means also learning Emacs or Vim
+
+* I've faced pushback when trying to use it professionally from a manager concerned about it being "exotic" / "impossible to hire for"
+
+* The start-up time of the JVM makes it unsuitable for small scripts"
+"A gap between English and non-English community"
+"A lot of ceremony to get a project running. Light Table tries to fix this problem but there is a lot of room for improvement."
+"A native-compilation"
+"A) The most glaring weakness for me has been the start-up time. Apparently this has been improved with Clojure 1.7. But I have yet to thoroughly test it out. 
+
+B) Also debugging facilities have been lacking. Wasn't able to get a working ritz session, last few times I tried. "
+"AOT compilation."
+"AOT compiling"
+"Abundance of data type definition functions (see https://github.com/cemerick/clojure-type-selection-flowchart) some of which are deprecated."
+"Adoption rate is still too low among Java developers"
+"An "official" free documention source."
+"An intergrated web framework to compete with Django/RoR."
+"Android please.
+Also, is the JVM to heavy for the brave new world of containers/Docker?
+
+"
+"Approachability for beginners. Sometimes I think it is an artifact of Simple made Easy. Clojure is a very simple language (which is why I love it), but often it requires a modicum of context before the language can be used effectively. Take the docs, for example. It is very straight forward, yet has a very 'Clojurey' language. Terse and to the point. I don't have a solution, but I have seen this get in the way of several coworkers before they can even start playing with the language."
+"Approachability. Most of my Java trained coworkers have been scared off by "lisp" and "functional programming". Overcoming that challenge has and will continue to be a sore spot."
+"As a community we need to sell Clojure more in the enterprise space. Most companies are loath to adopt it because it isn't supported by a big name company (Microsoft, Oracle). People are quick to see the positive aspects of the language once they see a few success stories in the enterprise space."
+"As a consultant, selling clojure for clients is lot harder than say scala. There are no technical reasons, just sales difficulties. "
+"As a developer and a university faculty member, I'd like to use Clojure more in courses (especially intro courses), but the development environments and documentation are (so far) really geared more towards experienced developers and it's been hard to bring Clojure into intro courses."
+"As a long-term clojure user, my biggest fear is community fragmentation. With stuff from inside cognitect, it's very "our way or the highway", which is good. In the wider community anything goes and there is lots of duplicated effort and very similar code bases, which is also good because everyone has different needs. The problem is, that people from the reasonable middle zone tend to either get pushed out or soaked up by cognitect."
+"At times difficult to decipher error stack traces
+"
+"Availability of documentation (including "real world" examples) about when to use the new features like core.async, reducers, transducers ,... And what are the implications of them."
+"Bad apples in the otherwise fantastic community"
+"Batteries-included web stack similar to Grails or Play; especially the CRUD scaffolding."
+"Being a Lisp-like language, it comes off as strange to people with preconceptions that C-style programming is all they'll ever need."
+"Being hosted on the JVM means there's an underlying assumption of a lot of Java knowledge."
+"Beside the curse of lisp. I would say startuptime"
+"Better documentation of the inherent complexities of implementation and being JVM (and/or javascript) hosted would help.  e.g. records needing to :import'ed from different namespaces because they are java classes.
+
+Clojure always values simplicity which is great. Some complexity is necessary due to the environment or may be a trade off for performance. It would be great to have these issues and choices well documented."
+"Bluntly I think it's the core team. The community is awesome, the library infrastructure is vibrant and growing. However the core team seems conservative to the point of unresponsive. There seems to be little official interest in documentation, examples or specification. Most other "modern" languages have excelent official web docs. Scala and Python are some of the best. In both cases, I was able to learn the language from the official docs alone. That no effort at equal quality official docs has been made I lay squarely on the Core team. That third parties have built ClojureDocs, Grimoire and CrossCLJ should be evidence enough that such a thing is sorely wanted. Frankly Paul Philips' recurrent line "your time has no value" with respect to the apparent responsiveness and priorities of the Scala core team feels true of the Clojure world some days and that just rots."
+"Boot time can be painful for some types of apps. Being in many ways radically different to other popular languages can make it hard to convince team members so come aboard. (For the record: That does *not* mean I would like to see Clojure become more similar to other languages, I am merely stating that it is a problem :) )"
+"Boot-up time"
+"Build times and startup times. My projects can take 4.5 minutes to build (lein uberjar) on a resonably powerful machine, this is becoming a serious problem.
+"
+"Can't even think of anything here ... ClojureScript is definitely hard to start with."
+"Carelessness toward beginners."
+"Clear "best in class" libraries for a wide variety of problems that are of high-quality and regularly-maintained. The most common problems are well covered, but as soon as you get below that the library story gets very weak, lots of partially implemented abandonware with uncertain futures and no clear winner, as compared to something like Python/Perl where their repository is much more mature. Host language integration helps a lot but isn't ideal. Popularity and time hopefully solve this."
+"Clojure can be extremely unfriendly towards mistakes of many kinds, both those made by beginners, and even those made with years(!) of experience. Common programming errors frequently result in a cryptic (and unreadable) exception, rather than a proper error message that provides adequate assistance in resolving the problem. Often, Clojure falls down in terms of describing where an error occurs (perhaps attributing it to the wrong line, occasionally to the wrong file).
+"
+"Clojure core dev is quite a closed system. OTOH this has produced a high quality language and implementation. So I have mixed feelings in the end."
+"Clojure does a lot to help with incidental complexity, so I'd say the biggest unaddressed problem is static typing. So much of the incidental complexity in my programs these days comes down to lack of a good static typing option.
+
+Also, I'm using ClojureScript pretty actively right now, and I still think getting up and running is incomprehensible. The only way I can get things going is via https://github.com/swannodette/mies. Really makes me wary of writing any "work" programs with it."
+"Clojure has a beautiful syntax, but it's foreign to eyes that have only ever seen C-style function calls and block definitions. It's not a problem with the language, but something advocates have to have a good and ready answer for.."
+"Clojure has a very intellectual, deeply thought out philosophy, and prioritizes conceptual beauty. And it delivers on this goal for the most part. Buuuut... lately I've been using languages that are the exact opposite of that: dumb, shoddily designed, embarrassing. But they place their focus on more mundane practical matters, like performance, large team productivity, deployment, and low-level implementation details, and I've found that package has been more compelling than Clojure's beauty ever was."
+"Clojure has features that make less easily optimizable than it could be. Efforts like Oxcart or Kiss could be an inspiration for the Clojure of the future."
+"Clojure is an absolute joy to use, but I don't think it's possible to understand that joy without using it in anger.  This creates something of a chicken-and-egg problem when trying to advocate Clojure's use within an existing development team that's using something else (Java, in my case)."
+"Clojure is currently focused in the big data thing. It is usually used in the enterprise environment or we development. It needs to be used for desktop and mobile applications, but this means to start deliverying other tools and thinkering with guis."
+"Clojure is not as nicely "packaged" as Python, Ruby or Java.
+
+I'd like for a new user coming to clojure.org to see:
+- Better graphic design.  There are several weaknesses from a visual design standpoint, including styling, typography, and even the logo.
+- Better writing of the "marketing" parts of the site.  Maybe get Chouser and Fogus to revamp what's there?
+- Better and more comprehensive documentation.  The core documentation is lean when compared to e.g. Python's....
+- ... also, links to (or, better yet, absorption of) Grimoire (http://grimoire.arrdem.com/) and CrossCLJ (http://crossclj.info/).
+
+A look at Websites for other languages such as Ruby, Haskell and, especially, Python show that the bar is high.  I think we can do better."
+"Clojure is so good that people who have not used it generally don't believe it."
+"Clojure itself does not have any glaring problems or weaknesses (for my purposes at least). People are sometimes uncomfortable using the language because many of its most popular libraries seem to be maintained by individuals or a small groups of people, and they worry about what will happen if the libraries are abandoned."
+"Clojure leads to a lot of small libraries (which is a nice thing). But this leads to a lot of small dependencies with "beta versions" (lots of 0.x.y) that may or may not be updated in some feature. I really like to see some "stabilization" on this, but I recognize this problem is really a broader community responsibility.
+
+Also related, I would like to some some more tools (those who bring incremental enhancement) become close integrated/absorbed by the core. A good example is cemerick's piggyback or the lib who brings better core.test assertion messages.
+
+This is something that (look like) the Elixir community is pretty strong and I would like to see some movement for our beloved Lisp."
+"Clojure libraries that wrap Java APIs, adding complexity without adding any additional functionality."
+"Clojure stack traces are hard to interpret. "
+"Clojure throws Java stacktraces. I have no Java experience."
+"Clojure's boot/start-up time."
+"Clojure's most glaring weakness is adoption.  I immensely enjoy using it solve problems.  However, adoption within my organization took considerable risk on my part.  That said it has been a great success for us, even with a one holdout that I personally believe reflects more on that individual.  The unoriginal arguments regarding staffing are the primary dissents.
+
+My perception of the contribution process is that it's not something worth putting any effort too beyond filing detailed bug reports.
+
+Additionally, some community comments from Cognitect employees (some with Brian Marick come to mind) come across as unnecessarily aggressive and cause reluctance in consulting engagements.
+"
+"Clojure's most glaring weakness is its general lack of good tooling."
+"Clojure* is designed to be hosted, but not designed to be hosted by more than one platform with the same code base.  For example, I have projects that I would love to run on
+  * Both Clojure CLR and Clojure JVM, but the libraries are different on each platform
+  * CLJS on NodeJS and a browser, but the way to get HTTP "GET /person/1234" are different , so it's hard to have one code base."
+"Clojure, the language has great documentation and support; Clojure, the ecosystem does not. Eg. we have a bunch of videos from Rich about datomic's architecture but there isn't a lot of stuff about how to code with it. Core.logic has a similar story; all the tutorials talk about grandmas and grandpas or zebras but it doesn't tell you how to make your project better."
+"Clojure.org website really does not represent the language well."
+"ClojureScript compiler can't run without JVM."
+"ClojureScript could be (and will be!) of higher quality. IMO it's not at Clojure(JVM)'s standards. Hopefully you are looking at the work that Nicola is doing with tools.analyzer.js. I think his work could be a path forward for cljs. "
+"Code formatters, let's just build once, it is homoiconic."
+"Cohesion and polish when it comes to the core language tutorials and documentation.  Relying on random, well intentioned people to perform this task is fraught with many problems.  Better would be to have people with a very deep understanding of the language create these durable artifacts or, at worst, vet the contents to prevent dissemination of incorrect information."
+"Coming from Java it is a GIANT leap. You miss static typing a bit and debugging complex functional code is not easy. It is easier to test but harder to debug."
+"Community libraries lacking documentation and tests"
+"Community's fixation on new and shiny. Even official Cognitect libraries lack a level of polish and attention to detail that "mature" libraries in other communities do. What results are many truly novel libraries and approaches desperately in need of documentation and maintenance."
+"Compatibility with Windows systems"
+"Compilation speed.
+We AOT compile uberjars (in part to catch missing deps, typos, &c. on the build server), but this can take upwards of 5--10 minutes.
+
+That leiningen / Clojure sometimes runs into caching issues with old classfiles laying around makes us constantly paranoid "lein clean"."
+"Compiler and runtime errors suck "
+"Complier error reporting. Which would be fixable with a more powerful assertion form."
+"Comprehensive debugging tools - first question asked when showing someone the language
+
+Learning curve; plus, how to explain to an OO developer that most of their "patterns" are irrelevant in this language..."
+"Contrib library are less concerned about Clojurescript."
+"Convincing my Ruby colleagues of Clojure is hard."
+"Cryptic error messages. 
+For me, this is the single biggest hurdle learning and using Clojure. As a neophyte functional programmer (and a non-Java guy), it makes it especially difficult to make any progress when you don't understand what the compiler is telling you. "
+"Currently on my usage, the major issue is when I try to mix Clojure and ClojureScript, there is the cljx which helps, and I see that there have being a lot of work on the clojure feature expressions, so I'm looking forward to it."
+"Debugger, old/out of date libraries or documentation/blog entries. To some extent the lack of available clojurists. "
+"Debugging"
+"Debugging"
+"Debugging"
+"Debugging (especially in ClojureScript) is hard and most of the stack traces are not very informative"
+"Debugging Java exceptions"
+"Debugging and proper tooling offering debugger 
+Slow starting process"
+"Debugging can be difficult, especially when Java exceptions are thrown (huge stack traces)"
+"Debugging is getting better but still hard for newcomers"
+"Debugging options."
+"Debugging, especially the horrible stack traces"
+"Debugging."
+"Debugging."
+"Debugging."
+"Debugging."
+"Debugging/error handling."
+"Debuging/stack traces"
+"Decent Android performance could open some new possibilities."
+"Defining macros with proper error locations/messages is too hard."
+"Dependance on JVM, machine code would be much better target, I like the clojure -> clojure-scheme -> gambit-c pipe, but the compilation is awfully slow."
+"Dependence on the JVM ecosystem."
+"Dependency management is less than pleasant, even when using Leiningen."
+"Dependency on Java is a double edged sword"
+"Development tools, particularly profiling tools, can be very difficult/confusing/impossible to integrate into a project."
+"Different levels of quality of code documentation. Not even the standard lib includes essential information about corner cases, source and domain value ranges and types, etc. Basically every function of clojure you either will throw dozens of "interesting" (for you) values at to see what it does or you end up reading the source. In which case the documentation is just clearly and plainly a failure. And I'm not talking about comprehensive, manual, article or book type stuff. I'm talking about the docstrings of the clojure methods. They are shallow at best."
+"Difficult to refactor"
+"Difficulty getting started. Lack of comprehensive project templates."
+"Docs"
+"Docs - core and libraries!
+Development experiences/environment"
+"Documentation"
+"Documentation (complete reference manual)"
+"Documentation and help can be hard to find. Documentation that does exist (third party) tends to be brief."
+"Documentation is abysmal, even for core lib this stuff is unparseable to a non-expert. Learn from Microsoft here, they write documentation for "regular people" which turns out to be most of us.
+
+I know all the names of the people talking about Clojure. Need a broader ecosystem, and more Netflix type [pseudo-]success stories.
+
+Clojure can be too academically inclined. It may introduce too many new concepts (beyond parens) to be accessible/approachable."
+"Documentation of core or important libraries is often sparse or confusing. I don't want to have to look at source code for libraries just to understand an API."
+"Documentation of types.  I always find I have to read the code first hand to have any real understanding of the types that are allowable as inputs to a function."
+"Documentation, although the recent clojuredocs and grimoire developments help."
+"Documentation, hands-down."
+"Documentation."
+"Documentation."
+"Documentation."
+"Documentation.  For example, clojure.org has a few blind spots in documentation -- pages with little more than links.  (The reducers page used to be a good example of this, but I see that it has been fleshed out!)  Lack of good comprehensive documentation is especially true of ClojureScript."
+"Documentation. Need more concrete examples.
+"
+"Documentation/resources for beginners."
+"Dogmatic historical pre-conceptions against Lisp languages."
+"Dynamic typing is bittersweet. Makes development fast until you have a significant codebase."
+"Ease of adoption."
+"Ease of entry could be better. Like for example having a good and simple enough Leiningen http-kit template would help. Also a template for using the components library could be neat (some boilerplate ahead otherwise). After some thought, having better and faster shell scripting support would also ease entry to Clojure. I do a lot of short term data munging and Clojure excels, especially with destructuring, in that area. I'd want a system that would compete with Python: 1) easy to modularize scripts since CWD is on "classpath", just import them 2) just write a module with test_foo() functions and nosetests finds them 3) blazing fast startup time
+
+Sorry for the long description :)"
+"Ease of use for newcomers, especially non-Java programmers or new programmers. Things have continued to improve steadily in this area, but there is still a ways to go before things are where they should/could be IMHO."
+"Emacs culture"
+"Enterprises adoption. E.g. Cascalog is a great tool to run Hadoop jobs for some years, yet it seems that libraries like Scalding in Scala have more traction for the Mere fact that Twitter is big in Scala nog in Clojure. It seems all big companies have individuals running clojure, but nog complete divisions. I might be mistaken of course. Im happy to be part of a company that bets on clojure though."
+"Error debugging (long complicated stack traces, etc.)"
+"Error handling "
+"Error handling, Java stack-traces suck."
+"Error messages & stack traces are still impenetrable to newcomers"
+"Error messages - have had to build up a mental map if what an error says to what it actually means "
+"Error messages / stack traces"
+"Error messages and debugging options"
+"Error messages are often cryptic "
+"Error messages are often unclear. "
+"Error messages are readable with experience, but are very offputting to newcomers."
+"Error messages are the most obvious, particularly for those who have never really touched Java. For wider adoption of Clojure, I think more useful error messages are a must for those just getting started."
+"Error messages, both read and runtime"
+"Error messages, especially stack traces. This has been the case for many years now and I unfortunately see almost no effort to improve this area.
+Also, for large systems, the lack of static typing sometimes hurts. There are options such as Schema and Typed Clojure, but I would like to see more "official" support for them."
+"Error messages."
+"Error reporting & call stacks"
+"Error reporting for debugging.
+
+Lack of conventions / good examples for how to 'put it all together'."
+"Errors/Stack traces."
+"Even after using Clojure for approximately 6 years, I find that most of my errors are type errors that could probably be prevented by not being dynamically typed.  I keep meaning to try core.typed to help alleviate this.
+
+Startup performance could definitely be better - but it's never really been an issue.
+
+Also one of the biggest annoyances are the errors you can get at startup when you have a namespace/compile error.  You get used to it, and I'm much better at fixing these problems these days - but it's very easy to into these states during a refactoring - especially as you only see the problems when you restart the program/REPL.
+
+Perhaps the profiles work will help in this case?  Also better reloading at the REPL would be great!
+
+Also as an Emacs/Cider user I find it particularly annoying how brittle Cider can be, especially problematic is their use of SNAPSHOT builds for very long periods.  A faster release cycle on stable builds would go a long way to making me feel more confident in my Emacs environment still working tomorrow!"
+"Everything comes down to composition, so you end up composing small libraries rather than using big frameworks. This is great if you are an experienced developer but terrible if getting started. One good thing about things like rails and .NET is that there is an obvious right way to do things. 
+
+We need some guides along the line of "just use this and things will work" (editors, libraries, code idioms etc.) Scala's Play! is a good example."
+"Faster startup time! Clojurescript setup remains byzantine"
+"Few standout/must have features to entice people who aren't already into lisp or FP to look into it.  Simplicity is a "killer feature" but it's not an easy sell."
+"Finding clojure programmers to hire ;)"
+"Finding signatures for some higher order functions like reduce-kv."
+"For my needs, the biggest obstacle currently is the state of flux in the ecosystem of web development libraries. Should I use Om or wait for Datascript based solutions to mature? Ring or Pedestal? Is Friend suitable for SPAs? Etc."
+"For my own projects, as well as many commercial ones, I feel like I'm up to speed with Clojure and there is no limitation for its use. However, in many cases, the customer chooses the tools and in those cases I'm sometimes unable to sell Clojure because of its niche status. When I say future staffing concerns or language viability is the limitation I mean just that when I'm gone from the projects, will they curse me for using Clojure or will they be able to handle it?"
+"GPL license incompatibility, "
+"GUI debuggers that are easy to use; "
+"General programming community prejudices about Lisp"
+"Get off the JVM..."
+"Getting a working dev environment set up."
+"Getting co-workers to accept a lisp is tough. I'm sure what can be done about this, other than education on the merits of lisp and focus on how clojure solves many of the problems associated with lisp in the past. "
+"Getting co-workers to use it. "
+"Github libraries don't build communities which you need to a maintain a mature library once the author has moved on. Authors should warn of their likely involvement level..  its crickets to ztellman's bug reports."
+"Go and Scala are growing quickly, we need to promote clojure as a viable option to use instead of those languages.  If Go and Scala keep growing at the pace they are, I fear clojure will be relegated to something that is not viable to use because of staffing issues."
+"Good runtime performance in Clojure is usually possible, but often requires non-idiomatic code, and it may not always be obvious where the problem lies.  It'd be nice to have some way of making writing high-performance code easier."
+"Handling muitidimensional arrays is the most glaring weakness in Clojure. It requires more lengthy code in Clojure than ones in other JVM languages, such as Scala and Java.
+"
+"Hard to put it down to one very specific thing.
+
+Some general issues with FP: tendency towards opaque smart-assery, especially from the zealous newly-converted. I'm more keen on "FP in the large" (which often adds a lot of value to software design) than "FP in the small", which is often gets a bit too hung up on finding the true FP-ish way to do fiddly little small-scale things, and results in unreadable chains of combinators, fns, recursion etc, when a simple iterative algorithm would have been sufficient and more readable.
+
+Some general issues with dynamic programming and LISPs: while I'm not hung up on static typing, the thing I miss the most about it is structured traversibility of a codebase, and the documentation about datatypes which it gives you for free. In clojure it's not usually clear where things "live", and clear and consistent documentation about datatypes has to be an ad-hoc effort. I did look at the typed clojure stuff, which while very neat in theory, in practise feels a bit clunky, awkward, bolt-on, not widely adopted."
+"Having a "Rails" like framework, that you can use to quickly get your product up and running. Of course it can be done otherwise, by picking the right libs and assembling them, which is also more idiomatic. In fact I'd rather prefer always do things that way. But I find myself having a hard time justifying this while bootstrapping ideas. So the ability to get some app running with oauth2 with some ORM already wired is clearly a killer feature that misses to the clojure ecosystem.  Luminus is indeed working toward that but it still feel like a bunch of libs grouped than a consistent framework."
+"Having to jump to java/js for some constructs breaks the flow of thought. ( I'm a beginner user though)"
+"High bar of entry for new users. Most Clojure IDEs are still not very friendly to new users who want to try things."
+"How radically different it is.
+
+This is also a great strength"
+"Huge stack traces for syntax errors."
+"I don't think there's anything to worry about."
+"I get the general impression that Clojure adherents are a little too dogmatic and unwilling to possess (or express) dissenting opinions."
+"I have to run my code frequently so that when something breaks, I can track back through my most recent changes. If I'm refactoring and something breaks, sometimes the error is just too unhelpful and I end up reading through my code line by line to catch the problem. For example, sometimes my only hint is that the error is in an anonymous function. Or there's an error on line1:col1. Wish I could supply actual examples."
+"I love clojure and clojurescript. The philosophy and productivity is great ! However followings are weakness and problem of Clojure.
+
+Popularity(especially, in Japan), lack of clojure developers, learning materials ( I felt very hard to understand when I started learn clojre), opportunity to use clojure for business.  "
+"I really love Clojure, but it's sometime hard to "sell" it, folks are somehow "intimidated" by lipy syntax"
+"I really miss a Clojure variant that compiles into native code, has low memory footprint and can interact with C libraries."
+"I think Java(Script) interop is great in Clojure, but you can't get very far in the language(s) before having to use it. Clojure's a really great language, it would be nice to "stay in" Clojure more.
+
+I'm disappointed with Clojure's approach to open source. GitHub pull requests and issues seem like they would be a vast improvement over the current JIRA/patchfile process. Especially when you look at the speed at which other languages are developing (specifically Rust)."
+"I think it has grown enough to wean itself off the jvm specifically. I would like to see a more minimal core that runs on more environments. "
+"I think it is too far a jump for most Java developers.   I think the tooling still isnt as excellent as the java based tooling is.   I think a developer want to have mastery over a domain of code, and a sophisticated IDE helps the developer answer questions about what a lump of code does, as well as what transformations can easily and safely done on it.     Clojure's tooling doesnt yet make the developer feel in control."
+"I think it's the barrier to entry for newcomers. I think the syntax, installation and the fast pace of the community puts people new to Clojure off. The fast pace of the community is a good thing but also a bad thing - it's great for people who know Clojure, but it means that frequently documentation for libraries becomes outdated which makes it hard for newcomers."
+"I think the Java-parts of Clojure core are very difficult to understand for someone trying to understand the language internals and help improve things.  The complete lack of documentation inline in the code, or "offline" elsewhere in some comprehensive design documentation, makes it a "treasure hunt" to understand new or known defects, performance bottlenecks, etc.
+
+Much of the Clojure Compiler seems to be a growing hacked together (ever growing) blob.  This relates to above, that better design documentation and/or inline Java doc would help improve this in my opinion."
+"I think the lack of a blesses fully fleshed out documentation system is the biggest problem. There seem to be a bunch of sets of core language documentation websites and none of them are the "right" one. "
+"I think the tooling is the biggest problem.  "
+"I use Python (specifically cPython, not Jython or PyPy) and Clojure for scientific computing applications. The Python community has had a huge head start in growing an ecosystem of powerful libraries (NumPy, SciPy, matplotlib, etc.). I wish that Clojure had a comparable ecosystem."
+"I wish Clojure put some more work into being developer friendly. It's been out a for quite a long time now, but the default DEV experience (say from a repl) still involves interpreting huge stacktraces from the compiler, which I don't think anybody outside Clojure core has *ever* wanted too see.
+That's a specific case, but there are a lot more like it. It's pretty difficult even to get started on a new project, for example. Assembling 10 different libraries just to get a project with e.g. good reloading of code (rather than restarting the repl every 10 minutes) running sucks"
+"I wish for a library full of conventions like ruby on rails, which would introduce me to good coding practises from the start. "
+"I worry about Clojure's dependence on the JVM, but then, I live in the SF Bay Area. Worrying about Larry Ellison's mental state is right up there with anxiety about earthquakes because there's no rational way of predicting either but the outcome is rarely favorable."
+"I would like to see it decoupled from the JVM.  For instance I would like to do iOS development in Clojure.  ClojureScript is not an option for me.  "
+"I would love to see Clojure on par with Python for analytics.  Incanter is nice but doesn't cover the full Python stack of iPython notebook, numpy, scipy, matplotlib, scikit-learn.  I found a couple ML libraries but they were limited and not well maintained.
+
+ it would be great if Clojure had an official notebook project and on-par equivalents to scikit-learn, numpy, scipy, and matplotlib."
+"I would love to see more work on coordinating concurrent jobs across multiple machines. The multicore parallelization is brilliant, but would love to see this simplicity extended to the harder distributed cases."
+"I'd like to see a version of Clojure that generates native code or LLVM bitcode. The JVM isn't appropriate for all tasks."
+"I'm ok with the tooling and docs but they are an obstacle for wider use in my team, or rather the burden is on me... i can't just say google it as there is too much stale info that confuses. I guess a result of the great improvements over the past year or two. Maybe a good landing page with links to the best and most current writings... dunno."
+"I'm personally working on developing learning materials for Clojure.
+
+I think we need to show new developers a working picture of the best practices. 
+
+A working, full-stack, functional immutable system with generative and simulation tests, all nicely documented and described, pointing out how the principles have affected the code and why those outcomes are good.
+
+So often I am told that 'it's great for toy apps, but what about using it in anger? what does it look like in the large?'.
+
+Things like trapperkeeper and puppet server help with this.
+
+Another angle of attack is to attempt to match the ease prevailent in the rails world. support clojars, support leiningen (or boot2 or...) and provide a clear picture for starting developers, from the first console command all the way through to querying a simulation database result.
+
+why do all this? so that when we're asked, 'but how do i ...?' we can simply point them at the relevant bit of sample code or documentation.
+
+clojurescript one by brenton ashworth was a good stride in this direction.
+
+right now the clojure ecosystem is chock full of awesome libraries that bring genuinely useful and different (to OOPland) approaches to modern software dev, but it's all quite a lot to take on for a new developer. 
+
+anything we can do to ease them into it all is worth investing time and attention."
+"I'm really not sure what that would be. Perhaps finding a way to woo schools and universities to use Clojure in education might be a way to make it more mainstream down the line. Perhaps find a suitable partner university, and team up to offer a Clojure course on Coursera, for example with http://mooc.cs.helsinki.fi/clojure"
+"I'm used to develop web applications with Scala / Lift. As such I'm used to the guided set of coherent libraries to use for a project. My greatest problem in developing web applications with Clojure/ClojureScript is to find the right combination of libraries and hoping to pick the ones that will still be supported a year later."
+"I've been building up my clojure web development environment incrementally, and it's slow going. There are a lot of great tools-- ring, hiccup, lib noir, sqlkorma, ragtime, liberator, compojure. So far, I like every one of these libraries a lot, but I'd be hard pressed to tell somebody to dive straight into clojure for their next web application. They'll have a far easier job getting started with Rails. In some ways I really like how much I've learned from building my own ring-based application stack, but I also envy how in Rails, most of these cowpaths are already paved. Even though Rails is less enjoyable to work with when it comes to the actual application code you write, I appreciate how quickly I can get things done. Maybe more beginner-oriented documentation, blogs, and resources on how to get started would help?
+
+Also, not sure that this is something Clojure can solve, but the stacktraces I get when I make typographical errors are kind of obscure a lot fo the time."
+"I've found it hard to get other developers to get over their fear of parenthesis/functional programming and actually take the time to understand the language."
+"I've recently started using core.typed and have remembered the good old days of the compiler catching my mistakes. Repl driven development is amazing but I find most of my time spent on small bugs that could have been caught by the compiler. More support should be given to Ambrose on core.typed"
+"IDE - Cursive Clojure is fine, but could be ways better. Still it is more of a personal taste problem I guess. Other stuff with Clojure is awesome!"
+"Ignorance!"
+"Immature in the sense that core language implementation seems to contain some lingering inconsistencies/bugs/warts."
+"Impedance mismatch when gluing components together"
+"Inability to easily interop with non-JVM based languages"
+"Inclusivity."
+"Inconsistency leading to nasty runtime surprises.
+
+1) Many functions lack reasonable behavior for their base cases (e.g. no  nullary case for clojure.core/=). This also makes using apply problematic.
+2) The use of nil to mean the empty version of potentially any collection type (cf. (assoc nil 1 2) and (conj nil [1 2])) means that identities can change type over time in unforeseen ways.
+"
+"Inconsistent return value semantics. Same function can return different things. Also very few of the core functions document return value. 
+
+For example working with array-map is awful as it changes it's type. Working with sorted sets and maps is  ridden with perils as the sorteness property is often lost (select-keys for example)."
+"Introspection / self-hosting issues. The turtles need to extend a little further down before running into the JVM/JS runtime limitations. "
+"Is not easy to make the change in paradigm. To think in terms of immutability after a life of variables is hard. More examples on how to approach this way of thinking are still required."
+"It can be hard to debug."
+"It doesn't feel like the community is involved in the development of Clojure the language. Patches move very slowly, and the process is difficult. I understand why the process is the way it is, but I can't point to any other project with a similar process."
+"It is a moving ecosystem so best practices are not stable enough."
+"It is a pain to write scripts I can distribute to the non-technical scientists we work with and have them be able to run them easily. I'd also love to use Dataomic in some of our projects, but the licensing model is so confusing I have no idea if I can do it without paying or not. Stack traces in Clojure are really gross as well, which makes non-technical users bug reports more difficult than it could be."
+"It is challenging to learn.  "
+"It is extremely difficult for the community to contribuite to clojure itself."
+"It is hard to envision a system built fully in clojure. there are classic scenarios of how data is loaded from databases to enrich a message or how to use immutable entities in different threads and consolidate the results"
+"It needs a debugger like Perl."
+"It needs a more dynamic debugger.  Something similar to the debuggers in smalltalk and common lisp."
+"It should be agnostic to its host VM enviroment i.e. run not walk to get off the JVM and minimise the disparity between CLJ & CLJS"
+"It still seems to be tooling. There are clear drawbacks to almost every single "IDE" whether it is Cider or Sublime Text or Vim or whatever."
+"It took me several months before I found a comfortable workflow."
+"It was astonishingly frustrating and futile trying to find a way to do something that should be simple:  dynamically reference classes from a jar.  Maybe this is a leiningen / counterclockwise problem."
+"It would be nice to have a really easy way for non-sophisticated users to build basic GUI's: dialogs, with typical controls and graphical elements."
+"It's a bummer having to work around GC for timing in Overtone."
+"It's a lisp, hard to pull people to use it"
+"It's difficult to see how to use Clojure, etc in much smaller environments: mobile and embedded devices. I'm not sure the current solutions serve effectively and efficiently, and the JDK Jigsaw projects is frustratingly far off."
+"It's greatest strengths: "lisp in form, functional in nature" are the most difficult to grok for us curly-bracket neanderthals.  Fortunately the community is great.  ;-)"
+"It's hard to contribute to the language core."
+"It's hard to explain to non-technical people why we shouldn't just use Java or C#"
+"It's lisp nature splits developers into lovers-haters, no matter how good the language features are it's very hard to convince developers to get past the parens. In my experience, only those inclined to make the quantum leap are destined to fall in love. The others will reject the whole thing at once."
+"It's more of a PR problem than anything else. Lots of people think Clojure is just for really smart people - we know the cause and effect is the other way around, but it's hard to rectify. While I was filling this out, one of my HTM friends said "though clojure is asymptotically close to Greek for me".."
+"It's not a descendent of the C family of languages. Unfortunately the biggest pool of potential Clojure developers are the ones currently using a C-derived language and those parentheses and prefix notation are extra hurdles to overcome. "
+"It's not easy for newbies to find a clear path to get started. Clojure.org is not very helpful for newbies."
+"It's run with a rather tight fist by the main owners. A little more community interaction is always good for an OSS project. "
+"It's too far from mainstream for better take up. Takes effort, will and time to get over the LISP / Functional hump for us mere mortals. That's not really a Clojure problem to fix though."
+"It's very difficult to get into because some the community is quite small and homogenous so often a very real niche (like command line interface) is very poorly matured and missing major features that other languages take for granted (i.e., compulsory argument options, auto fail on invalid arguments, etc)"
+"Its dependence on the jvm makes it less suitable for short scripts commonly written in python/perl/bash, which makes clojure harder to use for day-to-day automation tasks."
+"Its error messages are very scary looking, and I'm still getting the hang of how to reason about them. If progress has been made in contrib on that, that progress should be in core ASAP."
+"Its lack of a relatively self-contained "platform" download/installer that people could experiment with. This could include both JVM and JS targets of Clojure, all the core libs, and a richer REPL environment. Folks still have to either download/build the JAR themselves, or pick up Leiningen/Maven to get started."
+"Its license. It's GPL-incompatible. No excuse for this."
+"Its symbiosis with Java? But OK, let's keep it constructive. Android. "
+"JIRA"
+"JVM"
+"JVM is a blessing and a curse. I lean on Racket for more CLI type jobs because of startup speed. Am interested in using CLJS to build node apps (again for startup speed) but there is a serious lack of documentation on that matter."
+"JVM start up."
+"JVM startup and Clojure bootstrap time"
+"JVM startup time"
+"JVM startup time"
+"JVM startup time"
+"JVM startup time AND dynamic typing are not a strong combination."
+"JVM startup time and confusing exceptions are still my biggest pain points day to day."
+"JVM. This includes startup time and instead of helpful error messages, you sometimes get java stacktraces."
+"Java Stack traces"
+"Java dev-ops, java stacktraces, and lisp. The typical Java developer isn't interested in the language because of the lisp and other developers don't always survive the combined Java/ Clojure learning curve. This delightful language is VERY hard to sell. A non-Java implementation would solve half of these problems.
+
+Since Clojure is probably going to remain complected with Java for the time being, let's talk about something potentially actionable.
+
+I see a general lack of maturity in Clojure libraries that deal with rapid web prototyping. Specifically, it would be very nice to see some conventions with regards to
+* frontend build process for non-Google Closure Compiler libraries
+* database migrations
+* non-datomic database access
+* folder structure
+* function names
+* automated deployment
+
+In other words, it would be nice to see Clojure developers get some shit done after they stand up out of their hammocks."
+"Java developers' willingness to use alternate / superior tools"
+"Java is the biggest asset and weakness.  Many Java libraries though are just not that good.
+
+Would like more higher-level application tutorials -- how do you structure a non-toy large-scale app.  Lisp is a blank canvas, and many bad paintings are possible."
+"Java stack traces are horrendous
+Due to the above and probably nil, Clojure may well become the trojan horse for more Haskell adoptions
+Boot times. It's not trivial to create a different Stuart Sierra workflow for every project to avoid this problem, but that's what I'm doing
+Clojure tooling is still hard, but I remember very well it was hell with Ruby On Rails, so.."
+"Lack of HOWTO documentation to create complete applications."
+"Lack of Machine Leaning support"
+"Lack of Scala-scale propaganda"
+"Lack of Static typing is a curse when you are used to it.
+
+Using resources in jar was far from natural (many libraries needs files).
+
+Lack of type in documentation can be terrible. I sometimes doesn't know which parameter goes first or second, if I can use nil or not. If I can use a map or a list, etc...
+
+nil and Java null pointer exception are terrible!
+
+The 10k lines of java stack trace is hard to read and no, I don't want this problem to be fixed in the IDE part. I want clojure to clean the error when it is displayed in command line.
+
+The macros are too powerful and as consequence break the modularity of the overall language. This is the greatest problem in the core language I experienced. Mainly, a macro shouldn't be able to manipulate part of its parameters and that might fix most of the problems. But the worst bug I experienced were with bad written macros who made assumption on the parameter they took."
+"Lack of a "secure our of the box" web application framework."
+"Lack of a debugger"
+"Lack of a fully supported and documented standard library. I thought contrib was the right way to go."
+"Lack of a native compiler targeting x86 and ARM (would love to use clojure to develop for iOS, embedded systems and other low-level stuff)"
+"Lack of a standard code formatting library/tool, makes homoiconicity less useful and hampers the development of code refactoring libraries/tools."
+"Lack of accessibility to novice programmers. Errors and stacktraces are hard to understand, and along with docs, often use highly technical and strangely case-specific terms when simpler language with commonly-known terms could be used."
+"Lack of approchable stable dev tool"
+"Lack of beginner resources. General arrogance of community and unwillingness to encourage beginners. Too ideologically driven. Tendency to think things are "inferior" or "wrong" if not written in Clojure.
+
+Lack of a Rails-like framework for web development. Wayyy too much configuration needed to do simple tasks. A simple framework to generate web api's that works out of the box would go a long way -- especially if it came pre-baked with clojurescript build tools and datomic integration."
+"Lack of best practice information, especially for people transition from OO languages.  Information about how one would solve a problem differently in Clojure than, say, Ruby."
+"Lack of capability, (or documentation), for using clojure for scripting.  It's the last area, and causes lots of drag when you have to keep something else in mind.  If this can be solved with ClojureScript + node.js, then we need a "ClojureScript for System Administration" book."
+"Lack of community driving core Clojure - too wrapped up inside Cognitect."
+"Lack of complete demos of web applications, tendency to prefer small libraries over frameworks (sometimes it leads to fragmentation)."
+"Lack of concern for problems which arise in serious projects. In general the community seems to regard certain valid points as "implementation details" while other language communities regard them as "basic features" or patterns. This slows down the development as people reinvent the wheel and also makes Clojure community seem like a bunch of hackers who are not seriously interested in professional software development.
+
+This will change over time. We have published our solutions for others already and other people are doing the same. But this is the attitude I can see in Compojure and Korma for example. As a concrete example, when a Compojure  web app starts it will not reveal which routes were actually defined. Also, it will not care if a request doesn't match any route. If you accidentally define a nil route it will burn, instead of complaining about nil when it is defined. Easy things to fix and standard stuff in other libraries/languages.
+
+"
+"Lack of continuations and tail-cail optimization"
+"Lack of curated and simultaneous releases in the style of the Eclipse release train.  I don't want to have to hunt for all the quality libraries I need.  I want a single download that contains all of the needed dependencies with integrated tooling.  Enterprise customers sometimes have to account for licenses/FOSS (free and open source) usage and having a single package to download and import into that environment would help adoption. "
+"Lack of custom reader macros"
+"Lack of delimited continuations: monadic style is so much more tedious than direct style!
+"
+"Lack of documentation for too many libraries."
+"Lack of extensive debugging facilities (think Java). Step-by-step debugging would be really useful for newcomers to starting figuring things out more quickly."
+"Lack of good debug tool."
+"Lack of good native compilation options. Being tied to the jvm,v8, or clr limits my ability to use it as a game developer, even if I use it for practically anything else :)"
+"Lack of good understandable error messages and stack traces. I think development priority has focused on the right things but it would be nice to see this get addressed in the future."
+"Lack of good/easy documentation/tutorials for both the language itself and most libraries, e.g. Friend and Component."
+"Lack of interest and resources applied toward native code compilation."
+"Lack of lifecycle handling, though Stuart Sierra's component library is a solution for this."
+"Lack of native compiler"
+"Lack of optional static typing tightly integrated into the language."
+"Lack of readable error messaging.
+
+Needs a bit more community standards/best practices set out to help beginners."
+"Lack of static typing"
+"Lack of static typing in the compiler"
+"Lack of static typing limits its appeal with Java colleages :-/"
+"Lack of static typing makes Clojure easy to dismiss by proponents of Scala, Haskell or even Java. (core.typed looks promising but is far from production ready.)"
+"Lack of statistical libraries and its lack of interaction with C libraries."
+"Lack of strong educational material for understanding the bigger picture of what the language can really do."
+"Lack of testing. In my opinion to work on a project with a group of developers testing is an absolute must, and I don't see enough examples of robust testing in the wild. Also as a community we need to make it easier to implement solid authentication / authorization in our projects. "
+"Lack of visibility regarding next releases and new features."
+"Lack of visual debugger "
+"Languages like PHP and Java are more used and so the count of clojure developers are really low."
+"Languishing patches. I share blame in this."
+"Laziness by default (can kill performance and leads to some unpleasant surprises)"
+"Laziness.  For all of its benefits--and I love some of its benefits--it can be a pita, and not just for rank newbies.  And its benefits only apply some of the time.  Laziness is a source of bugs, confusions, etc.  (Everybody needs side effects sometimes.)  I suspect that once newbies get past their parenthephobia, laziness is the one thing that sends them back to Java.  Maybe it would be ideal if there were a way to turn it off.  I know that that would be too difficult to implement--core functions would have to be completely rewritten--so not worthwhile in practice."
+"Learning experience. I have trouble recommending Clojure to people because I know it will be a 6 month investment of their time to figure out how to be productive. And it's costly to me because I have to guide them through the install/dev env process."
+"Lein repl startup time. A close second are the awful compile time error messages. The are the pretty bad runtime error messages. "
+"Leiningen.  It seems to be the standard now for projects/libraries, but it, IMO, is a horrible, unusable mess.  "
+"Libraries.  There is never any kind of weak consensus about which libraries are best for a given task (if libraries exist at all)."
+"Library ecosystem "
+"Limited BDFL bandwidth."
+"Limited access to, usage by MS-.NET community. I think MS is a big piece of the market, but library support in Clojure-CLR is still limited (and good Visual Studio support is limited)"
+"Load performance is awful. This inhibits scripting and especially automated testing. Our commercial product takes 20 minutes to build and test, the vast majority of that time is taken up by namespace loading. I know that clojure 1.7 intends to address load time by omitting sections of clojure.core, but this will not help large commercial projects like ours.
+
+I would love to see alternative approaches used to improved loading, such as an optional "static/immutable namespace" option where a namespace is assumed to declare all vars as top-level forms that can be identified via a syntax walk, such that loading a namespace does not require running CLINIT to create each var."
+"Long startup time because of Java"
+"Long startup time makes it unsuitable for several classes of problems."
+"Long startup times. The solution being offered at the moment either don't solve the problem or lead to a crippled language without a repl."
+"Long-term viability of the Clojure-as-project management processes.  Although things have improved since Alex Miller joined Cognitect, the combination of a very limited pool of full-rights committers with their seemingly low interest in language maintenance creates a sense of stagnation.  Even when there is significant discussion and interest in a topic on clojure-dev, those with actual commit rights seldom participate, and it more often than not feels like the discussion accomplishes nothing.  This in turn discourages such discussions from even occurring, leaving a frequent sense that all real discussion of Clojure's future is happening out of the public eye, or just not happening at all."
+"Looking from here, its credibility in building large systems - static typing would help here."
+"Lousy error messages!"
+"Low performance
+Community not very big
+Lack of Libraries"
+"Maintaining CLJ + CLJS libraries is still a nightmare. I understand that there are platform differences, but I need a way to manage the inherit complexity. A better and blessed solution would be much appreciated."
+"Managing packages and release packages. "
+"Many people's perception that Lisp is weird and unfamiliar. (Clojure is Lisp, so people tend to deduce that.) Lack of static typing is another concern - core.typed is not part of Clojure, the language."
+"Marketing & performance"
+"Marketing: Clojure is currently the best language on the JVM but 99% of developers just don't know that yet."
+"Mathematical modelling, using GPUs for tasks such as Neural Networks"
+"May be startup time for client programs, mostly on mobile platrorms. It is not a problem for me, but a little problem for Clojure marketing and advertizing to my colleagues."
+"Maybe not the *most* glaring, but the opaque community processes are frustrating for anyone on the outside of the inner circle.  I don't doubt there are in-depth conversations going on somewhere, but all anyone else sees are long bouts of silence sprinkled with decisions out of the blue.  
+
+Empirically, this stops a lot of talented engineers I know from trying to make meaningful contributions to the core language and libraries."
+"Memory consumption during development can be a bit painful, `lein repl` and running CIDER stuff can lead to a very small application somehow eating multi-gigabytes of memory."
+"Memory usage and runtime performance should be close to java's by default without a lot of type hinting. I know there has been a lot of effort around trying to write the clojure compiler in clojure. But I feel that enough has been done towards that."
+"Missing: Good examples of large Clojure architecture and design that can be used in tutorials. Especially when learning functional style, larger examples could help allay fears that the small, friendly examples we always see can scale up to handle large systems."
+"More obvious Clojure utility functions found in general in other languages including for example Elixir."
+"Most libraries are awful and debugging is fucking hard"
+"Most of the beginner material is targeted at people who Already Get It(TM) and have probably accrued that experience over many segfaults. Maybe targeting total newbies to programming would be useful as well (although aphyr is apparently working on that)"
+"Multimethods are useful but limited. I want more CLOS-ish meta objects if I already know my dispatch function will be "type"."
+"Mutable, imperative programming. I think immutability and functional programming are awesome, but not perfect. I don't know these feature to be satisfied by language, idiom, or others."
+"Namespace handling. Namespaces are mutable, which makes it is trivial to have a repl that doesn't reflect the source even with a purely file oriented workflow. Renaming a function can mean your code will work until you start from scratch. Deleting a test (defined with `clojure.test/deftest`) results in that test still running in `test-ns`. I still don't know if it's possible to change a protocol. Clojure startup is slow, restarting the repl when making any of the above changes is a far too frequent frustration.
+
+On the topic of namespaces, if two namespaces define the same symbol, and I `:refer :all` both of them, I will get an error. Other languages let me disambiguate only the ambiguous call sites."
+"Namespaces are more complicated than they should be. Single-pass compiler can be a pain sometimes."
+"Native library interop (really a JVM problem)"
+"Need complete framework like rail or spring or ejb. "
+"Need more people to write documentation and tutorials."
+"Need more/better tools like IDEs, debugging, etc"
+"Needs a compile-time nil checker (something to compete with Scala). Needs a flag to force a Maybe proxy. "
+"Needs an easier on ramp for new people in regards to setup as well as development environment"
+"Needs wider adoption"
+"No "seminal" book for e.g. web development like rails had, skyrocketing Ruby's popularity. Good guides on structuring larger apps in namespaces for people not coming from Java-land."
+"No big commercial support right now.  It's mostly just a bunch of hipsters writing blog posts at this point.  There is a big gap between the hype and where the rubber hits the road.  Many unsexy things are needed to be done and there are a lot of sharp pointy parts to the ecosystem lying around.  There needs to be a TypeSafe for Clojure."
+"No problem so far (it has been 8 months)"
+"None"
+"None of the above bother me particularly, though I know that some are resistance points for others.
+
+My biggest issues are the lack of a graphical presentation toolset equivalent to R's ggplot and the general inconsistency of implementation in incanter. These two things mean I spend a lot of time in R that otherwise would be spent in Clojure and that I spend some time moving data back and forth."
+"None. I like the opinionated nature and the clean syntax. Performance performance performance though!"
+"None. Maybe tooling/IDE is still lacking, but improving rapidly."
+"Not a big problem, but I would like to see work on using Java 8's improved invokedynamic/switchpoint mechanisms to allow fn inlining and remove dynamic lookup of vars for long-running apps. Would be a good performance gain and be good PR for the language."
+"Not easy to do one-off scripts or programs."
+"Not enough users;)
+
+"
+"Not necessarily the biggest problem but the most obvious at least early on is the Java-y error messages. "
+"Not running on mobile"
+"Not sure yet... I'm only using Clojure for a couple months"
+"Not sure, but maybe the lack of a spec. With a spec, competing implementations could sharpen each other and target different use cases (e.g. performance vs. great exception messages)."
+"Not sure.  Just to say what's on my mind...a meta-issue is the integration with Leiningen is somewhat mysterious and difficult to understand the details of how a process is started and the environment is setup for it."
+"Nothing major (honestly). Official feature expressions would be nice, but I believe that's on the way - and Cljx is great in the meantime."
+"Official docs are a bit imposing; it's hard to just "jump in" as you can in other languages (python/ruby) without learning about leiningen or other build options, especially for those unfamiliar with java."
+"Official documentation doesn’t really help me. It’s poorly organized, lacks examples and it’s hard to find something unless you know exactly what you’re looking for. I usually end up searching stackoverflow for an answer which is something I rarely have to do for Ruby or Erlang. Clojuredocs is better, but not the solution either."
+"Official documentation is often opaque to the point of uselessness."
+"Official documentation is often pretty bad"
+"Oficial website for documentation.
+There also seems to be allot of confusion of how to properly use jdbc amd more importantly with connection pooling."
+"Often incomprehensible errors."
+"Organization of larger systems "
+"Other than requesting on-site training, I cannot easily find a suited training in the Netherlands. I'm really liking Clojure but alas only for hobby projects."
+"Our onboarding/new user story is still lacking"
+"Overall integration of language features.  For instance, dynamic variables as a way of carrying "library configuration" type information, and lazy implementations of for/map/etc. are both great features which make a developers' life easier.  However, use the two together and things break in ways which are non-obvious to newcomers and still annoy me from time to time.  In many cases, the answer seems to be "avoid dynamic variables" -- which seems like a shame, because in principle they're a powerful feature.
+
+Similarly, metadata seems powerful, but it's not always clear when it will be propagated and when it will be stripped.  There also doesn't seem to be much indication of when and where it should be used (is it really just for annotating programs, or does metadata on user data structures sometimes make sense?) "
+"Package manager like NPM. It would at least be useful to automatically add verions to project.clj files"
+"Painful debugging, reading stack traces"
+"People find it difficult to switch to Emacs as a development environment."
+"People's baggage, prejudices and preconceived notions about Lisps."
+"People's fear of the syntax
+"
+"Performance"
+"Performance"
+"Performance"
+"Performance"
+"Performance."
+"Perhaps some hubris/elitism."
+"Personally, I do want strict types (or at least I think I do), but that doesn't really make sense for Clojure, and my opinion overall is in flux. We use Prismatic/schema to try and cover certain things that are critical for us type-wise. Regardless, I wish more things were caught or linted at compile-time."
+"Please do something with the stack trace - tracking errors is terrible, especially for newcomers!!!"
+"Poor beginner experience. Issues with documentation."
+"Poor error message, coupled with Java's Jargon, hard to understand , requiring acquaintance with Clojure's implementation. "
+"Poor error messages, takes incredibly long to get even trivial patches accepted in core."
+"Poor feedback on errors."
+"Poor repl experience outside of Emacs,  makes it harder to train new devs "
+"Poor stacktraces can sometimes make it just about impossible to find a problem. I've actually had to resort in binary search (commenting out code) to find the root of problems."
+"Popular/common/easy contracts/preconditions system. There's a few, and preconditions are too verbose for common struct-type matching. This is annoying in large clojure programs, because it effectively limits the team size of a project + related libs. Rigorous documentation doesn't compensate for this as effectively."
+"Portability. JVM and Javascript cover most of my needs, but it would be nice to have LLVM back-end too."
+"Probably the start-up time performance?"
+"Problem - it is different enough from 'the norm' that something like Scala gets more noise.  Ironic as it is actually more consistent/predictable than Scala."
+"Process startup is the killer for many. Some of the core docs have brief descriptions and are hard for new users to grok, although the clojure docs site has made some more efforts into adding greater explanations and examples available."
+"Providing interfaces for non-Clojure JVM consumers of Clojure code is a source of unnecessary tar pits, particularly given the way transitive AOT compilation destroys library dependency chains.  (Last year I would have said the onboarding experience for new users, but I think Cursive/Counterclockwise/Light Table have improved that situation.)"
+"REPL speed & docs."
+"REPL startup > 10s"
+"Ramp up time. Visibility into code / debugging for large functions."
+"Reading other people's code and deducing the contents of their data structures. I guess the other would be that I don't think I could ever go back to programming in Java."
+"Real-world tutorial and case-studies that include domain modelling and persistence, implementation of REST services and so on. The environment is great, but the learning is steep, even for experienced system designers and developers."
+"Really good Eclipse or Visual Studio integration. I personally avoid these type of IDE's but I'm often confronted with this problem as new people get added to a team."
+"Regarding libs there exist sometimes too many possibilities, making the the selection process difficult (maturity, viability,...). No guidelines, especially for newcomers, and few solutions are backed by companies or larger community. Even promising solutions (e.g. Pedestal) pose somehow an unclear direction and future, and are more a work-in-progress. It probably just requires time, but meanwhile it makes decisions not easy, especially in a company context."
+"Relational Database access. Every app has a db, but the db libraries are third class, I feel like I should use plain java, if I'm not using datomic."
+"Relatively hard for newcomers because of the tooling and documentation. Also a bit arcane when it comes to profiling / improving performance (requires a fair amount of trial and error with things such as type hints, bit operations that may or may not be inlined, non-primitive math, etc)."
+"Reluctance to formally document/specify parts of the Clojure language and clean up old warts.
+
+E.g. edn vs clojure/clojurescript/clr reader vs tools.reader parsing. Invisible "features" and expectations build up a crust of unwritten legacy which will calcify clojure language porting and development efforts down the road.
+
+tools.* project is a step in the right direction, but it is still an implementation not a specification."
+"Resistance to refactoring because lack of static typing means that you break your code, but you only discover at runtime. Also lack of sophisticated refactoring tools comparable to other languages."
+"Run unit tests with midje is very slow! :("
+"Runtime and especially start-up performance. "lein repl" takes 10 seconds to give me a REPL!"
+"Scala's popularity"
+"Scripting"
+"Security related frameworks/libraries/documentation"
+"Server-side web development in Clojure is a bit broken.  Security was raised as a valid issue and it then was swept to the side, so much so that one of the original blog posts about it is no longer on the internet.  In some ways, patching together a bunch of libraries could be perceived as a massive issue for implementing 'best practices' for organisation, development and security."
+"Similar to most languages, library/dependency hell, and while leiningen/Maven are adequate to the task of dealing with it, they don't really offer anything beyond other systems."
+"Simple demo examples for projects. Many of them mix multiple technologies together so it is hard for a beginner to extract just the relevant parts. Especially when there is some client-server interaction."
+"Simplicity of getting a decent running environment together seamlessly interacting on host platform quickly. 
+It feels very amateurish still. 
+Changing with Cursive though but coming from C# on Win to Clojure on a Mac, it feels very fragmented"
+"Situations where strong typing is important. Would like to see more development of Typed Clojure."
+"Slow application/REPL startup"
+"Slow atrophy of libraries that are no longer maintained but are still useful and fill parts of the ecosystem. Some atrophy because they use old version of clojure, or have lots of documentation targeting old clojure versions such that they are hard to use with newer version of clojure"
+"Slow issue workflow in JIRA (and JIRA itself sucks) "
+"Slow start up on JVM, I am teaching clojure to highschoolers in Indonesia (where the average kids laptop's computing power are not that great), so expect a faster alternative for starting/restarting. It's ok to be slow starter for production app, but for toying, there must be a faster alternative."
+"Slow start-up time."
+"Slow startup speed"
+"Slow startup time makes development and testing painful. There are hacks around this, but it remains a big pain."
+"Slow startup."
+"Small Community"
+"So you understand where I'm coming from ... 
+
+I'm an experienced developer (> 50 years old) who owns my own small software company developing software products.  Our focus is ClojureScript.  I've just been through the learning process but my background involves python, C, C++, ActionScript/Flash, smalltalk, javascript, etc, but I'm familiar with Java, Scala, Erlang, etc. Lots of languages over the years.  I've seen a lot of evolution.
+
+One of my best ever technical decisions was choosing to use python many, many years ago.   What a brilliant tradeoff between the practical meat-and-potatoes practicality and "getting it right". 
+
+These days I have chosen to use ClojureScript instead of javascript for the front end HTML5 work, replacing our previous use of Flash/ActionScript. 
+
+My thoughts ... 
+
+The focus of the powers-that-be appears to be on the new sexy stuff like transducers (which is great by the way) but not on the practical, meat-and-potatoes issues:
+    - for the love of all that is holy  handle the simple things like getting triple quoted string into the language.  So simple, but seriously useful.  If you haven't ever used them, then you have no idea how useful they are at a practical level like documentation.
+    - improve the compiler warnings.  Some of them are so baffling to the beginner. This is a serious barrier to adoption. 
+    - viable documentation     (existence of competing sites like grimoire clearly means current official docs have failed, and I'm afraid the recent rewrite is more of the same).   Note: when it comes to the documentation EVERYONE skips the words and simply looks at the examples. Think about that.   
+    - allow clojure to spread by removing the JVM focus in the tooling.  This is big. Remove the need for the JVM by NOT directly using java classes in the tools.  Instead, for example, build a thin clojure wrapper over the java I/O classes and have the tools written in terms of this thin wrapper.  This would allow for quick porting of the tools. We could re-write the thin wrapper in terms of, say, NodeJS and suddenly we could have a  ClojureScript compiler  running on NodeJS.   At the moment, java I/O classes are so ingrained into the tools that heroic efforts have to be made to port.  But this should be easy.    So in summary:  allow for Clojure to easily spread to other VMs by abstracting away the use of the JVM (via thin wrappers) in the tools. 
+
+Overall, my advice and hope:  spend a year focusing on the current state, rather than introducing anything new.  Rally the troops around this goal. "
+"Sometimes more compile time checking would be nice."
+"Sometimes, dynamic typing and/or Lisp is simply a tough sell. Organizing big project regarding configuration is not clear. Clojure is not OO, but we still want to group things together as modules or components or somethings. Protocols sounds like kind of objects, but not really? is a datatype just a composite map with protocols? are we supposed to make our datatypes in Java? There seems to be a plethora of Clojure types. Base datatypes, structs, records, protocol, etc."
+"Source level debugging setup and use."
+"Speed. I get am getting bullied by the other programmers in the team - as Clojure can not match other programming languages when it comes to speed."
+"Stack Traces can be better.
+Even if we can not make them better, documentation best practices for how to go through them for general cases would be great too. "
+"Stack traces
+"
+"Stack traces are ENORMOUS and often not very useful."
+"Stack traces can still be very verbose and hard to parse without pre-filtering or third party tools. NPEs can be totally opaque with no context. Much worse stack traces than langs like python so harder to promote to python/ruby users."
+"Stacktraces"
+"Stacktraces"
+"Stacktraces :)."
+"Stacktraces are in Java. I'd like to see my clojure namespace/var's in the traces and Java only when I'm doing interop."
+"Stacktraces comprehension "
+"Stacktraces deter novices from learning Clojure."
+"Stacktraces, especially for exceptions during compilation (seen even compile-time NPE in combination of core.logic macros and destructing)"
+"Stacktraces. Compiler error messages. Lack of out of the box friendliness of repl. Without leiningen, clojure would not be viable in the workplace."
+"Staged computing through macros is awesome, but ultimately I think dynamic typing is doomed"
+"Stale or cljs-incompatible "core" libraries"
+"Start up time"
+"Start up time"
+"Start up time for any reasonably sized project is large"
+"Start-up performance in Android could be a lot better."
+"Start-up time is definitely still a pain point. "
+"Startup  time"
+"Startup cost which makes it unusable for android development."
+"Startup overhead"
+"Startup performance"
+"Startup performance"
+"Startup performance. I think Clojure on Android has the real potential to be amazing, repl driven development on a mobile platform is something to kill for."
+"Startup performance. JVM centric. JVM design philosophy is that the external ecosystem doesn't exist."
+"Startup problems making it unsuitable for quick system administration scripts."
+"Startup speed"
+"Startup speed. Also facilities for operating/snapshotting whole namespaces."
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time"
+"Startup time "
+"Startup time (esp. on mobile - we use it for Android and iOS app development via lein droid & lein fruit to great effect, and with lein droid in particular the startup time is prohibitive)"
+"Startup time - makes it too inconvenient for shell-like scripting"
+"Startup time always annoys me... Petty, I know, but there it is."
+"Startup time and deceiving stack traces. Emacs tooling (cider) is frustrating (partially due to startup time). I like the language features but am much faster in Python because the environment is so much more conducive to experimentation."
+"Startup time for scripting/mobile."
+"Startup time improvement would be good - even though it makes no difference to me in any rational way, it's slightly frustrating!"
+"Startup time is still *awful*.  Also, while lein is great for day-to-day development, we can't build something in my company that can pick up new stuff from the internet at any time. We *really* need a build tool which can build an uberjar from my sources and a directory full of libraries.  Deploying my own maven repository is also more than I can get into our corporate build structure -- I need something that will just take my code and a directory with libraries in it."
+"Startup time still. Also, slow adoption by more programmers."
+"Startup time, it's still quite heavy. I really can't wait to be able to use it on Android."
+"Startup time, lack of community standards for static typing options / adoption of static typing options in core clojure code"
+"Startup time, startup time, startup time. I'm not talking about requiring startup in milliseconds, but we have software that takes in the 30-60s range to startup. Substantially worse on an ec2 micro. It's one of the biggest complaints we've gotten from users, and there's only so much we can do. Tools like lein suffer from this as well, and that's run as part of CI or test automation where shorter cycle-time is valuable.
+
+Generally when this comes up, I feel that the community hand-waves it away. "Just use the REPL", or "who cares about startup time for a daemon". Turns out, a ton of users of the software we produce value this.
+
+It also prevents clojure from being useful for command-line tools. There are options like clojurescript, but then there are no best-practices from the clojurescript upstream about using it for CLI purposes. How does packaging and distribution work? Can we link to node.js libraries? Is it possible to create an uberjar-like artifact for these purposes? Given that there are shockingly few cli tools written in clojurescript, I have to believe that this information isn't readily available for folks."
+"Startup time."
+"Startup time."
+"Startup time."
+"Startup time."
+"Startup time."
+"Startup time."
+"Startup time.
+Dev environments (cider has been pretty rough lately, cursive isnt totally stable yet, etc.. etc..)"
+"Startup time. It makes us have to make command line tools in Ruby/Python/Shell."
+"Startup time. It's painful. REPL-oriented development is made moot since you have to be *extremely* careful with what you do in the REPL or you're screwed. It's like a steam locomotive. One moment you're going "choo-choo!" and then "screeeech!" and then "chug... chug... chug..."."
+"Startup time/the limited set of debugging tools provided out of the box really harm approachabillity.
+That, and a lot of error messages are not as descriptive as they could be."
+"Static Typing. As the code grows, it becomes harder to reason about what may break with what I change at one part of the code.
+TypedClojure maybe the solution for it but it hasn't been adopted much by the community yet I feel."
+"Static type system would be great, more than optional typing"
+"Static typing. It would be great if core.typed were really ready-to-roll, but I feel it's still a work-in-progress."
+"Steep learning curve"
+"Steep learning curve. People see a strange syntax & a lack of types and are scared away. It didn't scare me away, but I've seen that reaction numerous times. I also don't know that it's a problem with the language or something to be fixed - sometimes that keeps the cruft out."
+"Still a very new language, so it's limiting of documentation and lacking of knowing details on how to work with it."
+"Still find interactions of protocols, namespaces and code reloading at REPL confusing and error prone. "
+"Still lacks interest from big companies, thus prevents some non-startup teams from adopting Clojure."
+"Still not widely used in the workplace. Don't know if it will ever be."
+"Still sneaks around as Java."
+"Still the docs, though things do seem to be getting better."
+"Support for primitive functions with more than 4 (up to the jvm limit many) parameters including int and float to enable Java performance for (optimization) algorithms."
+"Support for refactoring large codebases"
+"Technical authors that paint Clojure as a silver bullet.  It's neat and solves a lot of problems but it's not euphoric."
+"The Clojure and ClojureScript ecosystems are diverging way more than they ought to because we don't have feature expressions or any other decently usable way to share host-agnostic code. cljx exists but it's a third-party hack."
+"The Clojure community. I've never seen a community so committed to avoiding documenting code at all costs. None of the standalone Clojure IDEs have any substantial documentation, or comments in their code.
+Additionally, Clojure's errors. Clojure is not java/js/whatever, and should not be using the errors of the host as the primary means of communicating to the user. "
+"The JVM is the single reason that I'm exploring alternatives (e.g. common lisp)"
+"The JVM startup time and the lack of a "lean" runtime (which could also be used for mobile)"
+"The JVM!"
+"The JVM. The Java interop is well designed but still onerous, especially when dealing with exception handling. I hate having to learn JVM tuning just to be able to fit a small Clojure web app in 512mb of RAM. As it is, I can only use Clojure at work where I'm provided with a beefy, powerful machine (and even *then* I frequently run out of memory). It'd be a big boon to the community to have some straightforward documentation on "taming the JVM for Clojure development / deployment."
+
+Also, start up times are just crazy. As my company has added more and more SLoC to our large Clojure projects the startup latency just gets worse and worse."
+"The barrier to entry is quite high since it couples the problem of learning a new programming environment (build tools, debuggers, library management, etc) with the problem of learning a new programming paradigm (e.g., functional programming and concurrent programming). Once over this initial hurdle, most of the difficult leg work of using Clojure is done, and the rest is a joy. Now if only it were easier to find all the libraries pertaining to any particular problem domain in an easy way..."
+"The benevolent dictatorship is beginning to become tiresome; time to move on. Need a large corporate champion: Java -> Sun, F# -> MS, rust -> Mozilla, go -> Google, D -> Facebook, clojure -> ?"
+"The biggest weakness of clojure proper is that it's a lisp, and newbies think of that as "weird", while experienced lisp wizards are set in their way and see clojure as being inferior to common lisp.
+
+Also, clojure lacks a "killer app"."
+"The clojurescript/clojure integration story still has a lot of friction even with cljx and clojurescript.test. Library maturity, availability, maintenance and documentation."
+"The combination of (at times) rather cryptic stack traces and the lack of typing can sometimes turn something simple into a frustrating debugging journey. Using core.typed is a huge help in these cases, but typing as an after-thought is currently quite difficult."
+"The communities lack of pragmatism."
+"The community's willingness to tolerate NIH syndrome as almost a language feature, i.e. composability is good, therefore let's write Yet Another Library instead of rallying around a decent existing library and improving it. I'd rather have two great libraries that are well-documented and tested, than twelve libraries which are half-baked and indeterminately maintained."
+"The compiler!"
+"The contributer's agreement for the core language, and the habit of Cognitect of doing non-open-source open-source (ie, the source is out there but patches are not welcome)"
+"The contribution process"
+"The contribution process!"
+"The core documentation is still weak, as is the documentation system. There is still no way to distinguish between a parameter, a function and a normal word in the docstring. Even a markdown or elisp like markup would be a great help. This needs to be happen and needs to be done in core so people can build tools around it."
+"The core of Clojure is beautiful and good.  The practical/pragmatic outsides are a bit difficult:
+
+1. Anything having to do with setting up, compiling ClojureScript
+2. Documentation for teaching people "The Clojure Way" and why everything is how it is (without having to explain _everything_ myself from first principles
+"
+"The developer community is generally very smart, which is great, but there are not a lot of resources for "average" developers.  Most of the existing books are good.  But tooling and documentation seem to mostly target advanced users.
+
+Likewise, performance and Java interop are both areas where one needs a very solid understanding of the JVM and Java language design in order to get anywhere.
+
+I think there needs to be a lot more cookbook-style documentation and tutorials in order to bring the less sophisticated developer community into the fold."
+"The documentation. I mean, I know what as-> does and how to use it now, but an example in the core docs would go so far for someone encountering it for the first time."
+"The ecosystem is still young. There's a lot of churn. Weak documentation is pervasive. Consensus and best practices are often hard to find.
+
+I think we're not doing too badly, though. Look how long it took for the Python and Ruby communities to develop Django and Rails.
+
+I guess my only suggestion would be to devote part of clojure.org to curating our progress. Both python.org and haskell.org have much more information on available libraries and frameworks."
+"The error messages are quite poor."
+"The error messages are still not very good. With better macros in all the core library we could improve this."
+"The huge, cryptic stack traces are very discouraging to beginners. Thankfully, people in #clojure have been very helpful, but that solution doesn't scale. :) I think that better error messages would go a long way in helping the language succeed with beginners. Another downside of the stack traces is that it made me think "Am I going to have to learn Java in order to use Clojure?" That's a problem, since learning one additional language is hard enough, yet alone two languages at once! :)"
+"The installation process for Leiningen on OS X and Linux is more painful than for many other languages, e.g. - Haskell. The last time I checked the Homebrew installation for Leiningen on OS X was broken."
+"The lack of a decent debugger."
+"The lack of a great IDE along with a debugger and profiler that work with the Clojure source code and also at the bytecode level."
+"The lack of a proper API documentation system (à la Javadoc)."
+"The lack of a quick and easy setup of a dev environment and tolls along with outdated documentation and tolling
+"
+"The lack of a single coherent web framework."
+"The lack of good tutorials for beginners."
+"The language itself is solid but the tooling needs love, for instance as an emacs user I've given up and now use cursive which so far has been excellent.  And the state of play for clojurescript is even worse."
+"The learning curve is steep. More/better online courses would help."
+"The legacy compiler. It isn't well documented (actually, it's not at all documented). It doesn't have hooks/extensibility. It isn't easily adapted for other platforms or lean/embedded deployments. tools.analyzer (and friends) really ought to be given higher priority."
+"The library > framework mantra often means a lot of reinvention of the wheel. Call it the lisp curse. This complicates deployment, maintenance. It would be nice to hear community leaders encourage development of frameworks.
+
+ClojureScript has been moving fast, but I think there is some very serious documentation debt that needs to be paid off. David has done good work in this area with his posts, talks, and so on, but ClojureScript really needs its own Clojure.org documentation at this point."
+"The lisp thing. Not being a C/Java curly brace style language is an impediment for some people (which is silly but true)."
+"The long startup time. For long-running applications, this is negligible. However, it leaves a bad initial impression and makes certain domains (CLI tools, for example) difficult to target."
+"The marketing of thé language. "
+"The more I work with Clojure, the more I feel like the idea of "libraries, not frameworks" is actually a mirage. The lack of idiomatic standards for configuration and interoperability means that it is difficult to get more than a few libraries to play nicely together. Furthermore, the investment of time spent on this rarely pays off on the next project unless you work with the same set of people time and time again.
+
+I also feel like working in Clojure is to endure a constant stream of "you're doing it wrong" from the community at large. For instance, weavejester maintains the most sane library for doing database migrations and yet routinely calls database migrations an antipattern that "real programmers" don't need. Leiningen calls itself a project automation tool and yet cautions its users against using it in production. Perhaps I suck as a programmer, but I often need to automate my projects even in production.
+
+To paraphrase Blade, using Clojure often makes me feel like I'm a motherf**cker ice skating uphill. While we use Clojure at the office, we increasingly consider it a mistake and are investigating other options like Elixir to provide the same benefits while also being part of a more pragmatic community."
+"The most annoying think is the lack of a marketing/sexy oriented web site explaining to the pointed hair bosses the benefits of using Clojure in their organisation.
+I saw improvement with the new Cognitect web site and this is great and I hope that soon the Clojure section will expand"
+"The need to integrate lots of diverse libraries to create solutions."
+"The non-linear getting started curve for newcomers. Hard to get a "just-works" editor/IDE. Hard to do traditional debugging. Multitude of half-broken tutorials. I know, they're getting a violin, not a kazoo, but still they need better "trialability" and an easy path into sampling how it is to actually play the violin. You know what I mean."
+"The only concern I have is finding staff who have the skills and motivation to use Clojure, as it's still a relatively small community. It doesn't stop me using it for my own business, because we can get so much done with the language, but it makes me wary of recommending it to others or using it when contracting. I would be worried my customers would struggle to support any applications built with oeur."
+"The outsized role of Cognitect in the community -- we need more active promoters and core team contributors!"
+"The places where the JVM is not as transparent as it should be, e.g. stack traces"
+"The platform shows through too much. Especially difficult for newcomers who are unfamiliar with the JVM."
+"The polished well maintained documentation preferably from a single source, and libraries that are from organizations rather than individuals."
+"The quality of documentation of Clojure's standard library is not adequate. It's documentation is often terse and lacks examples.
+
+Second place is startup time."
+"The reliance on the JVM/core parts of the language written in Java"
+"The resource footprint is heavier than I think is ideal, particularly on less beefy hardware like the laptop where I do most of my development. Things can bog down once I really get going. Program and REPL start-up time are a pain point, though mitigated by architectures and workflows like "component" and "reloaded" that make it easy to keep a single, long-running session alive and sane. Runtime performance is good, but can always be better; tuning Clojure programs seems to require a lot of in-depth knowledge relative to some other languages."
+"The seeming assumption that those trying to learn have prior programming and technical chops &, in my experience, very few of those jobs that are hiring for a clojure position seem willing to take on someone who's only learned clojure up to that point. Clojure is the reason i have a job as a programmer, but the two jobs that have hired me in my short career as a programmer up to this point have been scala and java shops. "
+"The stack traces are very often not very helpful for finding out what went wrong."
+"The standard library is small. This made a lot of sense in the JVM-only era, but with the proliferation of alternative runtimes one can easily see the value of having more standard functions/types to work with. This would make writing portable Clojure/ClojureScript/ClojureX code much easier as people won't have to use `cljx` for basic stuff."
+"The startup time for small command-line tools and/or when practising TDD could be improved. Nothing too bad, though."
+"The startup time get's pretty annoying when we deploy to wildfly."
+"The startup time on the JVM is pretty annoying"
+"The steep learning curve for a lisp language combined with the ability of a junior programmer to write horrible, unmaintainable code really really easily."
+"The steepness of the learning curve (adjusting to lisp takes a while, and for many people there's also an adjustment to a new editor) keeps a lot of people away, I think. "
+"The tools and install process are in constant flux."
+"The trace stack is difficult to associate with the code CLJ."
+"The use of JIRA for submitting and discussing all improvements to Clojure, and contrib libraries using maven build files.
+
+I'd also like to see a better story for managing conflicting dependency versions, i.e. OSGI but rethought for Clojure."
+"There are a lot of talks about Clojure which is great, as a >net developer trying to move to Clojure and ClojureScript I find few simple examples of how to get going. Most info is showing you what can be done rather than how.
+"
+"There are only a few editors with great integration, and the rest of the popular editors (Sublime, etc.) only have mediocre support."
+"There are state-of-the art JVM libraries for doing natural language processing (Stanford CoreNLP, OpenNLP, MALLET, etc), but the JVM libraries for doing more general machine learning are still not comparable to those available in the python/scipy ecosystem. Weka isn't really in the same class, and Spark MLLib is only designed to run in a distributed context."
+"There is no 'killer app' (think Rails)"
+"There's no "batteries included" standard tooling for development, so unless you're already familiar with a lot of the eco system, it's hard to get off the ground. Leiningen only gets you so far and even then it's only barely mentioned on the clojure.org pages.
+
+Overall the tooling situation is a lot better than 5 years ago, but improvement is very slow."
+"There’s no Rails with a 37signals behind it."
+"Thinking that "no syntax" means the language is easy to read or learn."
+"Third-party libraries are of substantially lower quality than those under clojure.org, and it can be hard to break them up into smaller, more usable pieces."
+"This is sort of outside scope of clojure, but jvm startup time is biggest gripe"
+"To accelerate Clojure adoption Cognitect should play the same role that Typesafe is playing with Scala. Strategies such as the "Typesafe Activator" would help more developers to adopt Clojure."
+"Too little hammock-driven development, too much hype-driven development. There are amazing libs, tools, practices out there. They are often overshadowed by less amazing but more popular (due to creator's charisma, etc.) ones. Not only does that hamper the community by getting it stuck into unproductive patterns, but also many outsiders to Clojure just see the hype, and not the great stuff beneath, which keeps them away."
+"Too many different ways to define types (records, types, reify, gen-class), each with annoying tradeoff. Using maps everywhere can become a mess as the codebase grows."
+"Too slow startup time specially on mobile devices.
+
+Looking forward to the optimizations in this area."
+"Tooling"
+"Tooling editor/ide
+Startup time
+Trailing JDK-releases(?)"
+"Tooling is sometimes buggy (nothing that can't be worked around, but still annoying) and error messages often are not very helpful (wastes more time than necessary)."
+"Tooling is the first issue I see in integrating clojure in a project. Editors like emacs are noto suitable for projects that often use java too."
+"Tooling, especially around debugging"
+"Tooling, hard to read stack traces"
+"Tooling, while getting better and better it still can be a major frustration and pain to get a full development environment especially with clojurescript."
+"Tooling.
+
+Debugging tools need to improve and be more accessible.  You can still see people using println debugging which implies a failure in the tools or at least their accessibility.  The REPL is great most of the time, but you still need the ability to set breakpoints, quickly step through the code, and quickly browse through any values you might be interested in.
+"
+"Tooling. Everything is there, but quite rough - like understanding the ClojureScript repl, or integration with editors... A mixed bag."
+"Tooling. It's not easy for a developer without Clojure experience to get up and running quickly."
+"Tooling: IDEs, debugging"
+"Traction."
+"Trying to figure out the structural properties of the data in other people's code. End up writing lots of log statements when trying to debug other people's work."
+"Type support"
+"Types"
+"Types, macros support in IDE"
+"Types."
+"Ugly website clojure.org. Ugly for the eyes, ugly for the promotion of Clojure. "
+"Understanding what went wrong in the error situations, stacktraces are not very human friendly"
+"Unfinished and orphaned libraries. There is a lot of "yet another lib with basic X support" - example: libs for RDMBS."
+"Unfriendly error messages and exceptions from the compiler. "
+"Until I found cursive, it was the dev environment, which isn't really a clojure issue per se.  "
+"Usability/approachability. Compare especially vs Racket."
+"VM requirement"
+"Vars - great for interactive development in the REPL, but prevent optimisation of production code. "
+"Very hard to get started. Needs a good integrated IDE that you don't have to setup and configure yourself. Most languages have this, like Xcode or Visual Studio, which don't require their users to be IDE engineers on top of software developers."
+"Very long startup time and strong JVM dependency."
+"Very! slow startup times when bringing in lots of libraries.  In some of my tests, the JVM startup times were subsecond and Clojure startup times were 30 seconds+."
+"Virtually impossible to get fixes/improvements into the core"
+"We are still in the stoneages in terms of debugging w/clojure. A nice reliable debugger that could be used w/many editor fronts would be fantastic."
+"We need the best libraries. To get that, we need more people building in Clojure/CLJR. To get more people building libraries, we need bring in more newbies. To bring in more newbies, we need better tooling - equal to the java tooling they are used to coming out of college. Static Clojure code analysis in the IDE, on par with Java. Even better than java tooling, structural editing in lisp, done right, could make coding easier for everyone."
+"Web app security "
+"What do you think is Clojure's most glaring weakness / blind spot / problem?"
+"While I don't agree with this, community perception simply because it is a LISP is often a huge barrier to acceptance/adoption."
+"Widespread acceptance."
+"Wish there were more jobs. Or, as for Sweden: wish there were ANY jobs."
+"Without types, function input and output is often guesswork and needs to be explored interactively on the REPL."
+"Would love to see a "bare metal" (LLVM say) compatible version. Not a big win for Clojure's target audience, but would really give it some cred and it might surprise us when folks use it as a "systems" language in places were, say, Go is starting to be used, or as something more easily embeddable."
+"Would really love to use Clojure on Android, presently startup time is too long."
+"Young data scientists choosing python or R. Resources that clearly contrast and demonstrate it's superority to other languages.  "
+"accepted norms for application structure. resources for finding libraries and previous solutions to common problems"
+"although the openness and flexibility of clojure is nice, the freedom makes it difficult for me to structure my code. this isn't a fault of clojure's alone, but it's the only significant problem i have when working in clojure.
+
+hm, i guess i want to model some Xs, okay, let's make a file for that. after a while i have too many Xs, i want them separated across files in a subfolder. i'm not aware of any refactoring tools so at this point i have to manually chop up the file and fix the namespaces. i could have separated them from the beginning, but if i do that for every possible "type" of thing in my program, maybe i spend too much time hopping files? sometimes there's only a few of X and i want them together.
+
+i don't know, maybe this isn't a valid complaint, i wish i had an example. the refactoring is a legit problem though."
+"array support"
+"before you try oop hell it is very difficult to understand what Rich did for us.
+ many students choose  languages like python, ruby. c# or java because of their popularity. After, it is very difficult to read and understand clojure code. It requires a brain restructuring or another way of thinking. I spent 3-4 month to change my way of thinking. It was hard."
+"books and documentation. large runtime that is too slow to bootup on Android"
+"cider etc is not a very reproducible development environment. Hard to keep the environment in a coherent shape. Dont know how to change log levels (?!).
+
+transducers are promising bit enigmatic.
+
+hard to know what servlet is running. hot swap?
+
+datomic is sort of free but commercial licenses and deployment to aws etc feels complicated.
+
+web app authentication is hard to make right.
+
+webapps looks ugly (this is not clojures problem but ror people usually havet better designs which is what Dilberts boss decides on).
+
+hard to structure an application in som predictable/standarfized way.
+
+connectoon stribg handling"
+"clojure compiled down to machine code in a way similar to Julia"
+"compile errors are awkward, especially in CLJS"
+"compile time errors. The best error reporting is something like clang: "we expected X, got Y, happened HERE, this is possibly the solution". Clojure's stack traces only HIDE the error, they don't help find or fix it."
+"crazy error messages, not addressed since the first versions."
+"debugger"
+"debugger, tools"
+"debugging"
+"debugging"
+"debugging"
+"debugging"
+"debugging - we need better way to handle errors (better debug info) and better debug experience while debuging"
+"debugging without type help, complicated stack traces due to JVM "
+"difficulty of debugging"
+"documentation"
+"documentations"
+"error handling"
+"error messages and debugging
+also suffers from JVM slow startup"
+"error messages are often cryptic and impossible decifer"
+"errors"
+"errors and stack traces are horrible to deal with"
+"everything is great in clojure :|
+The problems is just so natural that none of them bother me."
+"for beginners: discoverability of functions"
+"for me, data analysis stack. incanter leaves something to be desired compared to the python stack"
+"hard sell to management - low tiobe index, hard to find developers and if it's barely distinguishable at jvm level, just use java. Gotta love emacs - most don't"
+"heavy resource usage, large runtime size and startup time"
+"interop with C libraries"
+"java stack traces"
+"jvm"
+"jvm start up time - I would be nice to write fast executing command line scripts.
+"
+"lack of debugger in most IDEs"
+"lack of debugging system as clojure core like Common Lisp's condition system.
+lack of block commennt delimiter. (comment macro is not sufficient enough)
+lack of symbol macro
+lack of clojure for android.
+too slow command line startup. 
+
+
+  "
+"lack of recognition in enterprise/startup environments."
+"lack of respectable type system"
+"lack of standardised, promoted libraries for common tasks:
+
+- http client
+- network access (core.async.network would be amazing)"
+"lack of static var compilation option"
+"lengthy boot-strapping"
+"libraries and tool chain lack of integration, making them difficult to use together"
+"lip service to community contributions; this seems to be improving"
+"load time
+daemonisation on the JVM not that easy "
+"marketing"
+"marketing :)"
+"mature web-servers / frameworks"
+"memory consumption, not easily solved."
+"mono-culture"
+"more debug facilities other than println."
+"namespace function dependencies - all functions that a function depends on must be defined before that function, or else must manage declare, which is also not easy"
+"needs better, more standardized documentation tools"
+"nil"
+"no debuggers/tracers, lack of performance and profiling tools"
+"no high quality debugger"
+"no mobile story"
+"no opinion"
+"non-uniform sexpr"
+"not a mainstream language "
+"not many jobs for Clojure programmers"
+"not sure..."
+"parentheses? I don't know :)"
+"performance"
+"public perception of it's complexity / learning curve"
+"refactoring is not so easy because of dynamic typing ; stacktraces are not nice and sometimes brings not much information (because of the tooling?) ; it's sometimes hard to work on concrete types because most Clojure core functions transform their inputs to other types"
+"runtime performance"
+"see comment below"
+"slow and inefficent compilation i.e. abuse of classes."
+"slow program bootstrapping"
+"slow startup"
+"slow startup time"
+"slow startup; it takes a long time to get small patches merged"
+"source code documentation"
+"stacktraces - who woulda thought ;)"
+"stacktraces, startup speed"
+"start performance, light deploy "
+"start up performance"
+"start up time is long"
+"start-up time on the jvm"
+"starting to use clojure is very complicated: lein + emacs"
+"startup time"
+"startup time"
+"startup time during development"
+"startup time."
+"startup-time"
+"startup/compile time is pretty painful"
+"static type system
+
+marketing/availability
+difficulty with staffing"
+"static/dynamic program analysis
+lack of options for platforms other than jvm/js/clr"
+"steep learning curve, immediacy (environment setup)"
+"still haven't found good solutions for debugging and profiling. (possible that the tools have come up and I've missed them)"
+"suffering on still bad reputation of LISPs among "normal" programmers"
+"the challenge in being attractive and accessible for mainstream programmers"
+"the core librays need better documentation."
+"the error msg is difficult to understand, and stack trace contains too much garbage, also startup time is too long"
+"toolchain. lots of things to learn before you can get competent making packages and developing."
+"tooling"
+"tracing errors (for clojurescript).
+startup time (generally)"
+"try-catch error handling inherited from Java is a laugh, Clojure deserves something better."
+"tutorials and beginner material, but it's been getting way better"
+"unfriendly errors and unfriendly, long stack traces"
+"very slow startup time"
+"weakness in regards to popular adoption? probably the lisp syntax, but that doesn't bother me
+"
+"web debugging, unhelpful runtime and compile time error messages"
+"working inside a container i.g. application server, OSGi runtime"
