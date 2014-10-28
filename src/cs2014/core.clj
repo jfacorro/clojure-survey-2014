@@ -45,7 +45,7 @@
 (defn update-count
   [[ngram n]]
   (let [f (-> ngram (string/split #"-") count)]
-    [ngram (* n f f)]))
+    [ngram (* n f (Math/sqrt f))]))
 
 (defn process-file
   [filename exceptions]
@@ -57,13 +57,20 @@
     (map update-count)
     (sort-by second >)))
 
-(def features (process-file "clj-feature.txt" #{"clojure" "clojurescript" "better" "feature" "support" "like"}))
-(take 100 features)
+(defn generate-words
+  [fqs filename]
+  (->> (mapcat (fn [[w n]] (repeat n w)) fqs)
+    (interpose " ")
+    (apply str)
+    (spit filename)))
 
-(def weakness (process-file "clj-weakness.txt" #{"clojure" "clojurescript"}))
-(take 100 weakness)
+(def features (process-file "clj-feature.txt" #{"clojure" "clojurescript" "better" "feature" "support" "like"}))
+(generate-words (take 250 features) "clj-features.words.txt")
+
+(def weakness (process-file "clj-weakness.txt" #{"clojure" "clojurescript" "time" "startup" "lack" "like" "can"}))
+(generate-words (take 250 weakness) "clj-weakness.words.txt")
 
 (def general (process-file "clj-general.txt" #{"clojure" "clojurescript" "language"}))
-(take 100 general)
+(generate-words (take 250 general) "clj-general.words.txt")
 
 
