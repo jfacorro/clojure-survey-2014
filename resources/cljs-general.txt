@@ -1,0 +1,208 @@
+" This is really great work being done. Thank you. But as I see all of the other great work happening out there in the development world, it strikes me that ClojureScript has a lot of tough competition. Look at all those Haskell like languages compiling to JavaScript. Look at all the work being done to grab good ideas from ClojureScript and carry them over where they can be used from plain JavaScript. So my general comment is: the speed at which ClojureScript becomes more complete in the next year, will probably have a large impact on how popular it is a few years down the road."
+""No pull request" culture becoming pervasive and toxic, also if you say no pull request and then copy someone's code from a bug report, you've lost whatever legal stance you wanted and in fact violated copyright.  Instead of auditing a pull request for a contributor agreement, now you have to go audit every bug report to see who started copying code from the community and what customers are impacted."
+"A truely neat user-side programming tool."
+"About the staffing issue. I think this is a non-problem, mostly. Two dogmas may be the reason. Companies in the US and a fear of telecommuting. It's not simple to work for a US company, as an european (this includes telecommute option). Actually many don't even wish to do so, according to the decreasing US popularity. Still, founders think it's a great place to be today. Maybe it is, but then complain about staffing? A lot of people would like to work with Clojure outside the US, and they can't, because founders keep creating businesses in the same places. There are many unexplored hubs out there with great talent wishing to be hired for a Clojure job. So, why not go for it?
+
+There was a time I wanted to try ClojureScript with Appcelerator. There was only one gist about it. I think this is promising and worth exploring as it would open an whole niche for Clojure."
+"Among my colleagues, I've had problems of selling Om+simple ajax style of doing things since they are so fixated on AngularJS, which I myself don't know that much and seems at a distance not such a great solution after all. CLJS gives proper modularisation and the language benefits of Clojure. I'd need some stronger selling ability :)"
+"An amazing year of work so far!!  Would love to see ClojureScript from the ground up type tutorials that assume strong knowledge of Clojure but not ClojureScript.  Would also like to see more cljx style examples or tutorials.  "
+"Anything to make error messages better."
+"Big thanks to Rich Hickey, David Nolen and many others involved in creating and maintaining CLJS.
+
+CLJS gives live to  many interesting projects like Om, LightTable and it is a joy to follow the latest development (eg transducers and the speed which they were ported to CLJS).
+
+Thank you!"
+"Browser based repl is the killer app of clojurescript. It needs more attention to get the same experience you get with clojure. "
+"CLJS is awesome. Reagent is the best frontend framework that I've ever used... If I could only get the browser repl set up..."
+"CLJS needs an editing environment that is ‘of the web’, not just ‘for the web’. What about an editor within DevTools. A web interface for the browser REPL. A compilation service (with clojars support) that requires no processing from my own pc."
+"Clojure and cljs are amazing tools. Thanks the trame so much for making the browser slightly more civilised"
+"ClojureScript faces a bit of a crisis - cemeric is largely out of action and, as a father myself , my guess is that he will be for a few years to come. 
+
+That means there is going to be some serious bit-rot in the tooling and testing etc.  "
+"ClojureScript gives me opportunity to deal with JavaScript less. That makes me happy!
+Special thanks to David Nolan, all Cognitects and the whole ClojureScript community for your craft, wisdom and hard work!
+Keep on Rocking!
+"
+"ClojureScript is a masterpiece. It's the reason I do any web programming at all. I'm especially proud of the fact that so many interesting ideas seem to find their feet in ClojureScript, such as core.async, om (which helped popularize react.js), etc, etc.
+
+Please keep it going! ;)"
+"ClojureScript is great, but it feels like Cognitect is too humble about it. I mean, ClojureScript is really awesome but its homepage is years from the confidence you get from the project by visiting scala-js.org or even coffeescript.org :-)"
+"ClojureScript is now matured enough that I'm comfortable using it, but it still has quite a few pain points compared to Clojure."
+"ClojureScript upon Closure is clever."
+"ClojureScript used to be a neat way to avoid javascript, but with core.async and om, it is really incredible. I want to use it for everything!"
+"ClojureScript works well with ReactJS for functional UI programming. Of the several great interop libraries, IMHO Reagent is the easiest to work with."
+"Clojurescript + React is simply awesome.  Frankly, I don't know why anyone would develop web apps any other way.  "
+"Clojurescript has re-invigorated my fondness for client-side web development."
+"Clojurescript is amazingly useful. "
+"Clojurescript is awesome, thanks to everybody involved in creating and improving it"
+"Clojurescript still needs a lot of work, but it's improving greatly"
+"Clojurescript's browser repl and other repls (austin, weasel) are still cumbersome to use, need to setup the project in a particular way, open clojure repl then browser repl and so on. It really needs an integrated/smooth solution for browser REPL."
+"Clojurescript's load time blows Clojure out of the water, which is great, but it comes at the expense of slow build times. Compile times often vary significantly between builds, so it would be nice if clojurescript builds were released with some compilation and runtime benchmarking data to make it clearer when a new feature or change is impacting performance."
+"David Nolen is a dreambabe <3"
+"David Nolen is the best dressed clojure programmer, followed closely by kovas."
+"Even after couple of months of daily usage at work I still haven't figured out how to use browser REPL.
+
+The biggest pain point is a lack of tutorials on how to get standard web development stuff done: consuming REST API, working with web sockets, working with SVG, sessions, etc. The more - the better."
+"Figwheel is seriously wonderful. It would be great if this approach could be generalized. "
+"Figwheel is vital to me."
+"From a beginners perspective is awfully hard to get started."
+"Generally, wow. I could not fathom writing functionality I've shipped with ClojureScript in vanilla JavaScript."
+"Great Language."
+"Great language, rough edges."
+"Great to have it"
+"Greatly appreciate all the hard work from David Nolen."
+"Hate JavaScript, but ClojureScript (along with Om) makes UI's simple."
+"Having moved from coffeescript I am finding that clojurescript is (generally) a delightful experience. I notice that there's -always- an increase in compiled code size for every new clojurescript release though, using a standard code-base as reference. I'm not sure why this would be?"
+"Here is where you can leave any general comments or opinions you have:"
+"I didn't know there were any "ClojureScript REPLs", certainly not one in the browser... I'll have to look this up. There should be a ClojureScript tutorial on the official website!"
+"I find the versioning of ClojureScript somewhat confusing, but I guess there is a good reason for not using major.minor.patch. Also, often new versions are released with what seems to be very obvious bugs (like the compiler not working with a specific optimization setting)."
+"I hope we dont have to rely to "external" js libraries like react etc. Also it's annoying when most clojurescript libraries' tutorial written with an assumption that clojurescript programmer know javascript. I dont know java at all but now I can comfortably write production-level clojure app, I wish the same thing is true with clojurescript."
+"I learn ClojureScript and Clojure because i love it and push myself, people without that burning desire have an aversion to it because of a high barrier to entry"
+"I like bacon."
+"I looooove ClojureScript!! Please push it to the next level!"
+"I love Clojure & ClojureScript. Programming is fun by exploring every aspect of possible way. It is much easier rather than other languages in my opinion. Thanks for making & supporting the community.
+"
+"I love Clojure and ClojureScript. I think its going to be a harder sell for CLJS in the wider community - and will require a lot more outreach."
+"I love Clojurescript, and use it whenever I can. I've done a lot of front-end development in my time, and Clojurescript offers a language and environment that is far superior (and less error-prone) than plain-ol' Javascript, even with frameworks."
+"I love it"
+"I love the possibility of writing everything in clojure. I'm "all in" with jvm clojure as it works seamlessly with jvm. I'm still feeling growing pains with clojurescript. As I learn more about javascript and clojurescript, it's becoming easier. As an unofficial (and self appointed!) spokesperson for gov't contractors everywhere, I feel clojure is at the point where it's definitely possible to pitch to managers to use in projects, whereas clojurescript is still a very tough sell.  "
+"I really have to stretch to think of negatives, overall awesome development experience "
+"I really want to love ClojureScript, but it's been hard :(. Would love to help out, but not sure I've got what it takes :)."
+"I see advantages for expert users. The point where the additional complexity becomes worth the cost over well written JavaScript is not clear to me. I suspect I will decide that the tight connection with Google's closure compiler makes it all worth while. 
+
+For Clojure (I forgot to mention this in my Clojure response) and ClojureScript I'd like to see paredit selections evaluated in debugger at runtime. Something very similar was available in Smalltalk-80, however, I suspect this would be qualitatively harder than in Smalltalk because of the JVM/JavaScript host. Let Clojure be Clojure."
+"I started some projects with cljs awhile back and at this point have had so much pain (mostly with incompatible versions of cljs, lein-cljsbuild, libraries, but also with some abandoned & buggy libs) that I will not push for its adoption on projects for the foreseeable future.
+
+I like the *idea* of cljs and a lot of the language execution. But it's tough when stuff is broken in libraries and failures are essentially silent."
+"I think ClojureScript is the future of web development for Clojure developers."
+"I think most pain points are already identified and they are being addressed somehow."
+"I think that Om is a great library."
+"I think that the language is a great idea but some of the documentation and tutorials, especially for Om, need to be improved to express the thinking behind the library and how to use it in complex situations."
+"I think the richness of om components library increase productivity of UI greatly !"
+"I use figwheel more than a true repl."
+"I work with AngularJs everyday building complex single page apps in Javascript. There has never been a time where I did not have to debug the code in the browser. I am concerned that the real barrier of ClojureScript's adoption is this weak link of sourceMaps pointing to hard to read Javascript."
+"I'd like to see Clojure target more runtimes...  Other communities are converging on the same underlying principles in Clojure.  However, the one no one seems to be able to accomplish is homoiconicity and it's power."
+"I'd like to see web-workers used for some kind of parallelism/concurrency capabilities in CLJS."
+"I'm glad I made the switch from JavaScript to ClojureScript. "
+"I'm happy with Clojure(script) "
+"I've barely touched ClojureScript. Just worked through some sample coding and tinkered with it a tad in LightTable."
+"I've been using Om and related libraries for browser code and mostly loving it. The power I get from using CLJS has been worth the pain, and there has been plenty in getting tools set up as well as integration with Ruby on Rails."
+"It is difficult to write portable tests for Clojure-portable libraries."
+"It seems that the number of people and projects using ClojureScript is growing rapidly, and lots of very interesting work is being done."
+"It still the best language/environment for any client-side apps."
+"It takes far too much time and effort to find, learn about, and evaluate Clojure(Script) libraries.
+
+I think that "natural selection" of the often various libraries trying to solve the same task (whatever that task may be) needs to be explicitly accelerated by some agency acting as "benevolent dictator". (Cognitect?)
+
+To give just one example: Om, Reagent, Quiescent, etc., etc. Let's make (ideally) one superb library solution, optimize its performance, and document it beautifully. In this particular example's domain we've seen several good competitors in action. This accumulated experience should be used now to either pick the winning horse to ride or, even better, design a new and improved library using this experience."
+"It's impressive how far Clojurescript has come in a short period, but it still has some rough edges."
+"I’m confident there is no better option for writing software running in browser than ClojureScript. It’s unbelievably awesome and I’m sure all existing problems will be solved."
+"Just thank you ;-)"
+"Just thanks! Picking up Clojure and ClojureScript has rekindled my passion for programming. Its awesome!"
+"Keep up the awesome work!"
+"Lack of deep integration with npm. Npm is ruling the Javascript world. May just be temporary though. Also, this may be the problem of Lein, not CLJS. "
+"Lightable is probably the main reason I am using Clojurescript, other ways seem very counterproductive. "
+"Love ClojureScript"
+"Love the idea of clojurescript and it makes nice javascript but the documentation is lacking "
+"More Clojurescript material :)"
+"More beginner(i mean non-professional programmer) oriented documents, many of my hacker-minded had tried to get started but failed or lost interest very soon;
+
+Any ideas to get rid of JVM and use dart instead?"
+"My background -- quite strong in Clojure, expert level in JavaScript, expert level in Google Closure (I reviewed the book on it). Fond of all of these techs. I still find it pretty maddening trying to get this stuff all working together (see previous questions). I typically don't even bother trying to do any REPL work anymore.
+
+Also, if this is really targeted for large scale web development (fair enough), where is the support for modules (Closure Compiler)? I work on huge JavaScript/Closure projects, this is very necessary before I'd do anything bigger with cljs."
+"None"
+"Nothing really, ClojureScript is awesome, and I do a lot of UI programming and core.async is being really a life changer for me, it's really great! Thank you guys for everything, Clojure and ClojureScript are really awesome!"
+"OM + Core Async + Transducers with a clojure backend is epic,
+and for the first time ever I am writing UI code that can be shared
+between completely different projects."
+"Om (and the like) is the killer feature for ClojureScript :-).  Well, maybe persistent data structures are.  The combination of ClojureScript and React-based libraries make it very difficult to choose anything else, in my opinion."
+"Om might become the killer app/library for CLJS :)"
+"Once again, I will be dropping ClojureScript because of the reliance on the Google Closure Compiler. Even from Clojure projects. "
+"Once it's configured, the productivity with ClojureScript is pretty incredible. Thanks to everyone involved for their hard work!"
+"Overall, cljs is great. One thing though, it would be great if ClojureScript followed Clojure's release schedule when it comes to new features. It seems wierd that ClojureScript already has transducers when transducers isn't even released in a stable Clojure version."
+"Overall, love what's going on here.  Looking at the viability to switch my company over to using it"
+"Please delete ClojureScript completely, since it is only full of false promises.  That or completely rewrite."
+"Please improve documentation and library discoverable for newbies."
+"Please make Clojurescript a viable alternative for frontend development, I would love to use it properly! "
+"REPL support has really improved this year.  Last year I felt none of the solutions were anything more than toy prototypes.  Now it's possible to be productive in cljs."
+"Random thought: Too much core.async in most CLJS projects I see... Grumble grumble unnecessary non-determinism."
+"Really appreciate Om and using React.
+Also core.asyc and core.logic.
+Many Thanks to David Nolen for pushing clojurescript forward and for excellent presentations & talks online."
+"Self hosting would be nice. Macros are a bit confusing due to the JVM dependency."
+"Some other gripes...
+- lein-cljsbuild seems like it could use some love (e.g. #216 has been open for ages with +1s and PRs)
+- error messages are almost always inscrutable things like "cannot call method 'call' of undefined"
+- source map user experience is not great (not sure if this is a Chrome thing or a cljs thing)
+- browser REPLs (e.g. Austin) seem to spew out the entire source of functions more often than I'd like"
+"Still just learning, but excited about the possibilities of new developments such as Om."
+"Still, it's super fun once you get a workable environment."
+"Stopping development on Pedestal js was courageous & smart. Long live server side Pedestal!"
+"Super super promising, super awesome core of stuff going on (Om + core.async), language is of course great.  Docs and setup are unfortunately a total mess/slog right now though.
+
+This will be truly great very soon, though it's a little rough right now.
+
+Thank you for making such a great thing happen!"
+"Tell me more about the awesomeness of ClojureScript!
+
+I think Om is getting there ..."
+"Thank god for ReactJS."
+"Thank you"
+"Thank you all!"
+"Thank you for your time, survey making people.
+
+ClojureScript is an island of calm in a sea of restless roiling state."
+"Thanks for cljs! I'm having lots of fun working with it. Keep up the good work!"
+"Thanks to David Nolen for taking care of ClojureScript"
+"Thanks to all who put a lot of effort into making CLJS and the tooling top-notch."
+"Thanks!"
+"Thanks!"
+"Thanks!"
+"The advantages that CLJS the language offers over plain JavaScript are real, but the value proposition is hard to justify considering the learning curve."
+"The cljs work I've done is "tinkering in a work environment for small sideline web app projects", and I'm completely alone in doing clj/cljs work (our office has about 50 java devs and front end devs as we're an e-commerce house for oracle stack).
+
+Finding it difficult to find good docs/examples on testing web apps. Mostly using Om, and libraries that help that (kioo as templating engine).
+
+There's very little chance of take up within our company, so I'm limited to "have some fun with new techs and tell us what you think" for small internal projects.
+"
+"The clojurescript community is *amazing* (clojure too).  You need a checkbox for this.  So many mindblowing videos from conferences and really well written blogs."
+"The compilers error and warning mechanisms are woefully lacking. There is not a clean path for distinguishing errors from warnings, let alone reporting them sensibly. Everything thus shifts toward being a warning. This is a problem worth solving, and there is community support to provide patches given a direction on how to patch error detection effectively."
+"The documentation is quite frustrating - not because we have a lack of it, but because it can be quite high level and not useful for usual day to day. "
+"The fact that ClojureScript is not self hosting is a deal breaker. Having to have a JVM just to recompile some code, when for JS I don't need this is very onerous."
+"The focus on Om and the confusion/frustration over cursors and state management have made the main mailing list almost unreadable. Maybe it should have its own list. Just sayn.  Not a complaint about the library, just the noise on the list."
+"The great thing about cljs is that the community is much more tightly-knit, still. It seems to be in the same place as clojure was a couple of years ago. I hope we can transfer lessons from the development of clojure to clojurescript. Big thanks to David Nolen for his herculean effort in keeping the whole thing together."
+"The language is also crippled due to syntactic differences with Clojure. "
+"The node.js / browserify integration is really not so good. I'd like to require node.js modules in the (ns), and I need to be able to export my functions to other node.js modules easily. We are doing cross-platform development, where a library has to work both in node.js and the browser. For the browser side we use node.js modules + browserify and it serves us really well."
+"The tooling is very fragmented, i basically have no idea which repl to use."
+"There are cool ideas that exist in both languages, but many of the ideas don't reach the layman or persons who are new to specific development domains, and need simple examples to explore and understand the benefits of the languages and library ideas.
+
+clojurescript has grasped the attention of the intermediate/advanced web development community, and I believe it's time to cultivate the individual who is new to web development: A person who understands HTML and CSS, but wants to use clojurscript instead of javascript. By doing so the clojurescript community will grow allowing more individuals to propagate the ideas developed in the language.  
+
+Finding a layer of developers who can interpret what the language and library authors publish    in laymans terms is crucial, which has picked up in the last three to four months."
+"Very difficult to switch between optimization settings because, for example, :none and :advanced require fundamentally different ways of loading your code into the web page.  And if you try to mimic your actual deployment environment by using :advanced, the recompilation time is too slow."
+"Very excited by the Om/Reagent/React.js direction, but I haven't had a chance to do much with that yet. Pedestal was an unfortunate false start that left a sour taste in my mouth (but I'll get over that and I know it was well-intentioned)."
+"We may have two ClojureScript outputs: the current static full optimized, or the more dynamic with a runtime and eval. "
+"We need a 'big ClojureScript app' - to copy from - "ClojureScript In The Large - By Example". The last attempt to do this, Pedestal - was frightening and quickly superseded by Om. ClojureScript One was interesting but quickly out of date. We need a ClojureScript 'Pet Store'. 
+
+Also can we have dependent types please? (In my dreams). "
+"We've moved away from javascript and write 100% clojurescript on the client and its been a great fun development experience so far."
+"While I think clojurescript has a lot of potential, I'm unwilling to commit to it yet due to the unfeeling user experience. I've used clojure script for nearly 7 years, and JavaScript for about 10 so this should be a natural fit for me but somehow it isn't yet. "
+"Wishlist: 1. something like volatile! which compiles down to a mutable local; 2. locals clearing/nulling in nested scopes (like Clojure).
+
+I can never go back to Javascript. I basically use it like C now, for highly-optimized code that needs mutables."
+"Would Clojure in Clojure help with harmonizing Clojure/ClojureScript?"
+"Yeah, I know...I know...but: ClojureScript in ClojureScript, please?"
+"You forgot cljx"
+"cljs is awesome!
+"
+"cljs needs to be treated as a first class citizen in Leiningen...currently lein-cljsbuild feels like too much of an add-on."
+"clojurescript is awesome"
+"having dabbled with cljs in the past, i think with om, applications are now not only feasible with cljs, they're easy to get right. parts of my team has moved away from angularjs to om + om-bootstrap coming from a non-clojure background and transitioned succesfully."
+"i really am ready for cljs to be treated as a first class runtime with the same ease of setup as clojure.  WAY too much tooling is required to get it going.  That we have to produce all sorts of lein templates to get a working configuration is a little crazy."
+"i recognize that these problems are the growing pains of a language and it's rapidly-developing ecosystem."
+"more clojurescript frameworks/libraries will help make the experience better - using a pure-js api gets confusing when trying to convert between datatypes and doesn't feel much nicer than just using JavaScript directly."
+"overall a very refreshing experience for these projects that need to run on a JS engine."
+"progrmming in clojure(script) is pure fun and the community is great"
+"thanks to community"
+"thanks!"

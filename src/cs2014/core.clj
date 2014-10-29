@@ -40,12 +40,12 @@
     lines
     (map tokenize)
     (map remove-stop-words)
-    (map #(mapcat (fn [n] (ngrams n %)) [1 2 3]))))
+    (map #(mapcat (fn [n] (ngrams n %)) [2 3]))))
 
 (defn update-count
   [[ngram n]]
   (let [f (-> ngram (string/split #"-") count)]
-    [ngram (* n f (Math/sqrt f))]))
+    [ngram (* n 1)]))
 
 (defn process-file
   [filename exceptions]
@@ -57,9 +57,15 @@
     (map update-count)
     (sort-by second >)))
 
+(defn camel-case
+  [w]
+  (->> (string/split w #"-")
+    (map string/capitalize)
+    (apply str)))
+
 (defn generate-words
   [fqs filename]
-  (->> (mapcat (fn [[w n]] (repeat n w)) fqs)
+  (->> (mapcat (fn [[w n]] (repeat n (camel-case w))) fqs)
     (interpose " ")
     (apply str)
     (spit filename)))
@@ -73,4 +79,13 @@
 (def general (process-file "clj-general.txt" #{"clojure" "clojurescript" "language"}))
 (generate-words (take 250 general) "clj-general.words.txt")
 
+;; ClojureScript
 
+(def cljs-features (process-file "cljs-feature.txt" #{"clojure" "clojurescript" "better" "feature" "support" "like"}))
+(generate-words (take 250 cljs-features) "cljs-features.words.txt")
+
+(def cljs-weakness (process-file "cljs-weakness.txt" #{"clojure" "clojurescript" "time" "startup" "lack" "like" "can"}))
+(generate-words (take 250 cljs-weakness) "cljs-weakness.words.txt")
+
+(def cljs-general (process-file "cljs-general.txt" #{"clojure" "clojurescript" "language"}))
+(generate-words (take 250 cljs-general) "cljs-general.words.txt")

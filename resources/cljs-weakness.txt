@@ -1,0 +1,438 @@
+" Need browser debugging tools"
+""No pull request" culture becoming pervasive and toxic, also if you say no pull request and then copy someone's code from a bug report, you've lost whatever legal stance you wanted and in fact violated copyright.  Instead of auditing a pull request for a contributor agreement, now you have to go audit every bug report to see who started copying code from the community and what customers are impacted."
+"* compile times - incremental is nice, but clean builds still need to run often as part of CI/testing and they are very slow for our (largish) project -- 25-30 seconds for each build.
+* incorrect reused of cached compilation results -- it's still not unusual to have to strange behaviour that disappears when a clean build is run when macros are involved.
+* lack of support of modular artifacts -- see GWT's code splitting for example."
+"-"
+"-"
+"- CLJS the language is still somewhat raw.
+- The rest of the JS ecosystem is a nightmare. bower, NPM etc are broken & buggy
+- the production 'compilation' step is a pain. using e.g. bower to pull in the rest of your JS deps, and minimizing CSS etc. "
+"- when first starting had a problem finding inter-op examples with JavaScript
+- not easy to find tutorials of how to enable :advanced compilation with libs that don't support the Google Closure Compiler"
+"A baked in cljx would be nice."
+"A lot of people that would probably really love the experience of developing in a "isomorphic" (hate that word in this context) Clojure/ClojureScript environment are turned off by LISPiness/scary parens or the general foreignness of Clojure/ClojureScript (to people used to algol descendants) before they get deep enough into the gravity well."
+"A moving target without stablished best practices."
+"Acceptance as a platform of choice for web development, i.e. convincing others to use it vs. something like AngularJS.  It seems to be easier to make the argument for the backend."
+"Advanced compilation could be smarter"
+"All REPLs that I've used have been very fragile."
+"An official Javascript-based compiler. Even if the JS-based compiler only accomplished whitespace optimizations, it would be a massive win."
+"Aside from the current state of uncertainty of which development approach to take (e.g. Om vs Datascript based solutions?), the tooling (compilation, REPL, deployment, etc.) causes unnecessary incidental complexities."
+"B) My experience with Austin, has been that it consumes lots of memory, significantly slowing my REPL responsiveness. But I think this has to do with the 3rd party browser components that Austin uses. "
+"Being dependent of the jvm. "
+"Bloated js output. Clojure is the only language I know other than CLisp, and I hope I dont have to learn any JS to be able to create browser-side app that is efficient in both performance and filesize. "
+"Bugs keep appearing/reappearing across versions"
+"CIDER doesn't work with cljs-noderepl."
+"CLJS still seems to be a moving target. The Google Closure ecosystem is also pretty alien and presents a lot of cognitive overhead. I'm well versed in transpiled JS, and I like CLJS a lot, but I still feel its too divorced from the browser at times."
+"Can't choose between these two:
+
+1. Still too many steps between creating a project and interactive hacking. Needs better community-supported leiningen templates with built-in browser REPL.
+2. Libs can not cope with language updates. Often have to downgrade ClojureScript to fix library problems."
+"Challenge in debugging core.async (esp. performance)."
+"Clearly REPL integration, it seems close to impossible to do when not using Clojure as a web server too."
+"Clojure compatibility issues"
+"Clojure's weaknesses."
+"Clojure/clojure script incompatiblities"
+"ClojureScript accessibility to Javascript developers needs to be improved.  JS devs should be the target audience, not Clojure developers.  CLJS has a novelty to JS devs thanks to React.js, immutable.js, and js-csp, but that novelty will certainly expire if tooling and accessibility isn't mature.
+
+We cannot assume that JS devs are willing to learn Emacs+Cider to get the best ClojureScript experience.  Compiler errors could be improved to filter out unnecessary stack-traces by default, and a central website with good branding and tutorials/resources would help people consider a transition more seriously.
+
+(These are problems we're trying to solve at https://github.com/shaunlebron/welcome-to-cljs and https://github.com/oakmac/clojurescript.info)"
+"ClojureScript is designed to be hosted, but not designed to be hosted by more than one platform with the same code base.  For example, I have projects that I would love to run on NodeJS and a browser, but the way to get HTTP "GET /person/1234" are different , so it's hard to have one code base."
+"ClojureScript is not well promoted enough from the Clojure homepage. No real homepage (redirects to the Github repo)."
+"ClojureScript needs less arbitrary churn, obsession with micro-benchmarks.
+More real community process when making breaking changes."
+"Clojurescript REPL was a nigthmare. But lein-figwheel saved the day."
+"Clojurescript is the single worst language I have ever encountered.  It pains me to even think of Clojurescript as a language since it is so bad.  Specifically, its incomplete standard library when compared to Clojure.  This reduces Clojure -> Clojurscript portability to the point where Clojurescript is its own, buggy language that barely resembles the clean functional feel of Clojure.
+
+The compile time is ridiculously long. 
+
+Testing front-end html/jquery is a huge pain when compared to other languages"
+"Clojurescripts in clojurescript"
+"Clojurescripts main weakness is it's reliance on Javascript AND Java. To get a live coding web environment takes 3 - 4 terminal sessions all running different commands which is fine for tinkering on hobby projects but isn't ideal when working against deadlines. I'm not sure this is a solvable problem in the short-term. "
+"Code-sharing via cljx is a pain, time for a clean rebuild too."
+"Cognitive dissonance."
+"Community outreach and onboarding. ClojureScript is a great tool and it would be awesome to have a larger community -- would mean more discussions, more library developers, more meetups (there are 0 Clojure/Clojurescript meetups in my current city of Vancouver).
+
+Would be happy to help where needed :)"
+"Compared to Clojure starting to learn it takes a lot of jvm/java knowledge.
+Complexity in understanding the different compiler options.
+No bootstrapping, running it in the browser would make the repl and starting packages super easy.
+Clojure's interop story is awesome, Clojurescript's interop story with most JS code out there is pretty cumbersome due to the externs issue.
+"
+"Compared to Clojure, I have a hard time trusting the compiler implementation. When working with Clojure(JVM), if I see some strange behaviour I know it's my fault. When using cljs for some reason I assume it's the fault of the compiler and/or the build system (of course it's  still almost always my fault). CLJS is getting better for every release so I'm still very hopeful about the project."
+"Compilation speed and rock solid REPL integration"
+"Compilation speed."
+"Compile time error reporting. Compilation speed."
+"Compiler and runtime errors are difficult to understand."
+"Compiler error reporting."
+"Compiler speed. It can get quite slow with larger projects, which can really slow down the feedback loop."
+"Configuring the compiler and a ClojureScript repl seems really complicated to me. (Though that may be because that was how I spent my afternoon. Some of the tags in my :compiler map, and some of the script tags are there because they were in the examples in the readme of lein-cljsbuild or om, but I don't really know what they do. A co-worker suggested using enlive so that I could use the same html page for :advanced and :none, which works, but seems complicated."
+"DOCUMENTATION of the clojurescript library and google closure"
+"Debuggability of the resulting javascript."
+"Debugger  (we're working on this ourselves ... but lets have more things like clairvoyant)
+
+Not a big enough community yet.  The entry costs to getting new members is still too high:  
+   - poor compiler errors
+   - virtually no debugging 
+   - docs which are only just adequate. 
+
+The tools (compiler) has JVM specific code in it.  I can't easily port to NodeJS (or atom-shell). 
+"
+"Debugging"
+"Debugging can be extremely difficult. Especially when dealing with a null value that has made its way into a core or third party library. "
+"Debugging in browser based tools absorbs most productivity gains of the language"
+"Debugging messages, especially stack traces from lein-cljsbuild"
+"Debugging when something goes wrong."
+"Debugging."
+"Debugging. Source-maps adds to (sometimes already long) compile time, and isn't good enough (especially when debugging core.async code)."
+"Definitely the error messages. Sometimes it's pretty hard to figure out where the actual source of the error is, and what the exact problem is."
+"Definitely, the setup/development environment is really painful to get right. Finding the right REPL, assembling the right build incantations... makes the language somewhat unapproachable."
+"Demonstration of an actual production app written in ClojureScript with example of how the typical write/debug/test process goes. So far there are only trivial examples out there, and no one is actually showing a viable approach to developing real single-page apps in ClojureScript."
+"Dependency on Google Closure, so painful to interact with existing Javascript. Anybody looking at emscriptm, asm.js, LLVM as targets?"
+"Dependency on the JVM. It should be self-hosting and live better in the Node.js ecosystem which has become the dominant non-browser Javascript ecosystem."
+"Development environment compared to JVM Clojure"
+"Development environment."
+"Development setup is very difficult.
+For a working REPL you need to add stuff to HTML, to your editor, maybe some middleware, possibly in a Clojure (JVM) project, even if your target application is CLJS only."
+"Difficult setup"
+"Difficult to debug.
+
+For my project, I decided to use "om". I'm very proficient in JavaScript (pre-React/Angular era, I never used JS frameworks) and Clojure, but I didn't know om, React or ClojureScript. It was quite difficult to grok the "om way"/"react way" to do things, and I'm still not sure whether I'm doing things the right way. Easy tutorials are necessary, as well as explanations of how things fit together, how we're supposed to use these things, etc.
+
+It's also difficult to get an overview of the full stack (om -> React & cljs -> JS -> DOM). This problem doesn't exist for Clojure: Java is completely hidden and it's not necessary to know Java to use Clojure. At this moment, I feel it is necessary to really know JavaScript thoroughly to be able to use ClojureScript."
+"Difficult to deploy clojurescript alongside other javascript that uses goog closure"
+"Difficulty debugging errors that only occur in advanced compile code. "
+"Difficulty in setting up reliable live-coding dev environment (partially alleviated by Light Table, though only if you use Light Table)."
+"Difficulty of "getting started""
+"Docs and tutorials"
+"Documentation"
+"Documentation"
+"Documentation is extremely poor.
+
+The choice in repls is annoying. Browser repl configuration is a pain.
+
+I've seen tons of different setups for workflow. Pick one and document it. Bless it and link to other options."
+"Documentation is far behind clojure proper, particularly with respect to setup and environment. 
+"
+"Documentation/tutorial"
+"Ease of setting up development environment and REPL."
+"Easy editor support. It's such a fragile house of cards currently."
+"Easy templates to start a project would be neat. Have to look into cljs-start more."
+"Editor / IDE"
+"Effective REPL. I haven't managed to setup and use one that is stable and reliable. Figwheel goes a long to help the development process but it's not a REPL experience."
+"Error messages"
+"Error messages"
+"Error messages can be quite mysterious, particularly when errors occur in anonymous functions or when using core.async. In some cases I have to resort to blind guessing or brute-forcing debug problems."
+"Error messages."
+"Error messages. My god, the error messages."
+"Error reporting, and js interop more intuitive."
+"Even though ClojureScript has improved alot over the last year it still feels rough around the edges. "
+"Even though a lot of effort has gone into making CLJS as robust as Clojure, the development experience still isn't as interactive as it is in Clojure."
+"Examples on how to build and organize large projects (state management, configs, components, best practices) would be nice. "
+"Figuring out how to get started is for real not for the faint of heart"
+"For a working browser REPL setup several components are needed and when one's version is upgraded stuff breaks, more components == more breakage."
+"From my standpoint, the setup/deployment process is a weakness. I'm not sure improving this should be top priority, however. As a non-expert, my problems may be misleading."
+"Generated Javascript is not easy to debug, but it's usually required when you run into runtime errors (which is all the time).
+
+Might not be a problem in browser due to source maps, but certainly seems to be on node JS."
+"Getting a build process/dev env set up."
+"Getting a stable working environment."
+"Getting the REPL up and running. Having the REPL being stable. Even after I did get it up and running, it died and was a major pain to restart after the computer had gone idle (did a lot of work on the commute). Austin has helped a lot, but the restart was still too much of a hassle that I just gave up."
+"Google Closure Library. Whole lot of overhead unless using advanced optimizations, which is a lot of work when trying to use other 3rd party libraries."
+"Google Closure.
+
+While I think I appreciate why this dependency was included in the first place, it is not clear to me that it makes sense today, and I hope it will be reconsidered at some point.
+
+The use of the goog namespace in many ClosureScript examples seems incongruous, especially when high-quality idiomatic ClosureScript libraries exist for most things nowadays."
+"High runtime memory usage and GC pressure. (Mostly a problem on mobile platforms.)"
+"Hitching the CLJS wagon too closely to Om (in the sense that Ruby is hitched to Rails), and at the same time Om being overly complicated."
+"I am probably using ClojureScript too early.  Some of the documentation and tutorials for what I consider to be the better libraries to use range from poor to terrible to broken.  That makes it very difficult to get traction or productive.  I am also seeing a lot of breakages and the libraries quickly grow and improve and change their implementation ideas."
+"I couldn't find good programming environment for ClojureScript - Cursive Clojure has long way to go."
+"I had so much difficulty wrapping my head around externs/foreign libs. I got what I needed to work, but I still don't understand it."
+"I just don't think it's all that useful over JS itself. The problems most devs have with JS, in my mind, aren't really about the language... it's the DOM, the web stack, all of its complexity. And using something like CLJS can keep us from embracing some of the great new features that are coming down the pipeline in JS ~ things like modules, destructuring, generators, promises, etc -- features that address most of the "core" problems I have with JavaScript itself in a way that is more accessible, debuggable, and efficient to write over time than using CLJS. I haven't found CLJS to be much of a time-gain over writing JS, even for people who are new to both. In fact, it has been more of a time-sink. I believe that Clojure offers a superior DESIGN, but JS is a superior implementation at this point in most runtimes.
+
+I find it is difficult to debug because it often errors in ways that, to the uninitiated, really make very little sense. To me this means that CLJS, while relatively awesome in and of itself, isn't very useful in terms of delivering real value over JS. To put it more simply, if I don't know Clojure or JavaScript, I get much more benefit from learning JavaScript than using ClojureScript."
+"I just hope it get's better traction."
+"I love clojurescript and om. however it is difficult to understand and setup brepl environment.  I feel more difficulty to learn and use clojurescript than clojure(I am also a beginner of javascript).  Performance of compilation into JS is not good."
+"I think it's generally awesome. A little hard to debug at times, but manageable. The biggest problem is how damn confusing it is to try and set up a browser REPL. All the documentation I've read (for Austin, Piggieback, Weasel etc...) is horribly written and almost impossible to wrap your head around. Really need a straightforward way to setup a browser repl that doesn't require you being a clojure genius to figure out."
+"I think it's pretty great how it is :)"
+"I think just getting compilation/installation as simple as Leiningen + Clojure."
+"I think we need clojurescript-in-clojurescript. Writing macros in Clojure for ClojureScript feels wrong."
+"I use Node (grunt) for the rest of my build process. Dealing with the Google Closure Compiler is easily the biggest barrier to using this in any project outside of Clojure. This is enough of a barrier that I will drop it from future Clojure projects to reduce deployment and tooling complexity. "
+"I wish the ecosystem were less tied to Closure in general. cljs stacktraces are deep enough as it is--it's annoying to have to trace e.g. AJAX calls from my code -> cljs-ajax -> goog.net.XhrIo -> actual XHR. (I know I don't _have_ to use cljs-ajax, but this seems to be typical of the ecosystem...)"
+"I would like to see easier to set up/more reliable interactive dev in the browser, possibly through self hosting."
+"I'd say the extern / ... part can be very confusing. Maybe automate that a bit more?"
+"I'm not sure about this one. Some kind of configurable/programmable preprocessing facilities to emit non-js files (css for example)."
+"I've been using Clojure for 6+ years, and am competent in Javascript and web development (though I wouldn't say I'm a JS developer).  Despite this whenever I've tried to use Clojurescript I always struggle - particularly at getting a workflow/environment going.
+
+It's been about 9 months since I last tried, but it's finally looking like we might need to adopt Clojurescript to build a Rich Client Application interface for a Clojure backend...  So hopefully I'll find things easier this next time around!
+"
+"If ClojureScript is the answer to fast startup, we need more documentation on how to use it to solve common sysadmin tasks."
+"Incompatibilities with clojure."
+"Initial compile time. Difficulty setting up the repl in Emacs."
+"Initial setup of the development environment for browser code is a pain with too many moving parts that have to be set up just right. (At least using vim; maybe it's easier elsewhere.)"
+"Insuperable learning curve for part-time dabblers to do simple obvious things like hack on a running single-page app.  "
+"Integrating with other environments. For example, I am using CLJS with Ruby on Rails. Took a while to get that setup in a way that is simple to use. "
+"Integration with 3rd-party, non-Closure compatible javascript libraries"
+"Integration with third party libraries on the google closure level"
+"Integration/deployment."
+"Interacting with existing JavaScript ecosystems like npm. "
+"It is a bit of a tougher sell vs Clojure. JavaScript is seen by many to be sufficiently good nowadays, react + flux + immutablejs + webpack(browserify) makes people think whether Cljs is worth the switch. For me it is, but for masses, it is a tougher sell.
+"
+"It is very hard to get up and running."
+"It makes getting started with clojure look easy. I still have trouble cobbling together a stable arrangement of lein plugins and whatnot, and all attempts at getting a decent browser repl going have failed. It's not easy to use."
+"It needs to be 'obviously better' than the equivalent JavaScript for some use case. Otherwise it is just 'aren't my parens fun'. Now that is an integrated server-client application, but we need some open source examples. We need a ClojureScript 'Pet Store'. "
+"It really only works if you've bought into the Clojure wold view 100%, the setup process is kind of painful if you use for example Rails. Theoretically there's a Clojurescript compiler for Rails (clementine), but it's completely broken."
+"It's a horrible pain to get compiling correctly, build settings, interactions between otherwise reasonable packages (getting unit test setup with phantom??)"
+"It's biggest weakness from a conceptual standpoint is not being able to utilize Clojure libraries that have any sort of JVM dependency, causing a literal divide between Clojure and ClojureScript."
+"It's difficult to use JS libraries in CLJS unless someone has built wrappers. "
+"It's hard to start coding in ClojureScript. The learning curve is quite steep. "
+"It's not obvious from the beginner's perspective how to get a compilation to Javascript that isn't 900+KB."
+"It's not very widely known."
+"It's really difficult to achieve a development workflow approaching what I'm used to with plain JavaScript, working directly with the browser. Compilation can be slow."
+"It's still way too difficult to set up a repl, and very difficult to set up a browser repl. A newbie can't just jump right in and start coding."
+"It's still young enough as a language that there are some painful breaking changes that can cause bizarre library issues."
+"It's very easy to write code that fails at runtime with very oblique / obscure JS errors so a bit more type checking at runtime would really help."
+"Its repl and debug story"
+"JS interop with non-closure libraries."
+"JVM dependency"
+"JVM dependency."
+"Java reuse in Clojure is straight forward (pull a jar, add to project.clj, done).  Clojurescript is all over the map - lein-npm? npm? bower? grunt? just load it in the HTML file?  Which is good, and which is bad, who knows"
+"JavaScript is generally not intended to be a compilation target."
+"Javascript interop can be awkward."
+"Just haven't found the experience very simple or easy in some things such as getting a working ClojureScript REPL in a browser in my own app no matter where it's deployed. 
+
+Also with JavaScript it is easier to interoperate with other JavaScript libraries and the 
+whole build tool setup with grunt/gulp, npm, bower, et al is a bit of a mess and easier to handle when going pure JavaScript.
+
+Also I'm a bit concerned about the support for all the browsers I need to support in commercial work. Fortunately I think IE 6 is gone but IE 8 is at least still out there strong.
+
+Maybe all my concerns are already handled but I don't KNOW it. In this case (and concerning viability) I think some publicity effort is needed."
+"Laborious debugging"
+"Lack of a blessed "standard" client side component model "
+"Lack of employers and lack of friendliness for newbies"
+"Lack of good documentation/books, probably because it is still always moving so fast that it is hard to write a book about it. This also leads to a lot of outdated documentation (blog posts, etc) out there."
+"Lack of guidance on including external javascript libraries. The issues are well documented, but little guidance on updating javascript libraries to use Google Closure conventions exists, or even how to determine if this would be a worthwhile exercise."
+"Lack of native feature expressions and strange versioning a.k.a. not X.X.X"
+"Lack of robustness across  closure compiler modes, e.g. you can write code that runs with :none but fails with :advanced. "
+"Lack of semantic versioning on releases - by numbering releases by the number of commits since I have no idea how big a release is, or how likely it is to break my projects"
+"Lack of stability.  There's a ton of brittle failures I've seen while trying to integrate austin/weasel/piggieback with emacs, ranging from tools.reader incompatibilities causing bad compiled code to core issues in the tools.nrepl middleware stack.  Unfortunately I'm not using clojure at work anymore, which relegates my thoughts on this to nights/weekends."
+"Lack of support for approaches like Reagent. While Om is interesting for Lisp gurus, Reagent is a clearer path for those coming from Reactjs or languages like Ruby, Python, etc."
+"Like Clojure, lack of static typing is the biggest cause (from the language) of incidental complexity in my programs these days. And I still can't get a new ClojureScript project up and running with swannodette/mies. The whole process is still befuddling to me."
+"Lots and lots of moving parts to get a development environment working.  Amazing amount you have to know to get hello world working.  David Nolen's "mies" was a great help."
+"Many ways to do set up a browser repl. Austin is the clear winner after following many different tutorials.
+
+Having to rely on clj for macros makes things difficult due to clj having no access to cljs. 
+
+Stack traces during browser repl development are usually unhelpful use to a ton of closure compiler related things in the stack trace. "
+"Minor version (Joke:)"
+"Mission statement. Roadmap and dedication to 1.0. 
+
+I am sorry for such strong statement. David Nolen is doing great job in improving and maintaining CLJS. I am very happy that Cognitect hired him though I feel that priorities are elsewhere. I would be glad to support Kickstarter campaign to fund one person to focus full time on CLJS (like core.typed).
+
+From technical point of view, daily troubles with CLJ-CLJS development:
+
+- clj/cljs incompatibility brings accidental complexity. Different names of protocols, methods, different ns syntax. Different names for namespaces (eg clojure.async vs cljs.async vs cljs.async.core). I am used to short and efficient Clojure code, but dealing with differences clutters source code (and mind) with unnecessary garbage and tools for dealing with accidental complexity (CLJX).
+
+- javascript as a platform is a complete mess (this is not CLJS fault, just a general sad fact).
+
+- compiler speed. Could be improved with parallel compilation in CLJS and Google Closure.
+
+- more stable tooling. Too often one has to dive into source code and search why it is not working."
+"Most of my frustration is from ignorance of specifics about how the javascript environments work and probably just need to learn more. Here are a few more concrete gripes: 
+
+Switching between dev (simple compilation) mode and prod (advanced compilation) mode has been a bit of a pain for me. Sometimes strange bugs appear in compilation mode (it's always a bug in my code, but can be a pain to figure out). 
+
+Developer workflow doesn't feel as polished as working in jvm clojure. Each time I need to set up a new cljs project I sort of cringe at first. Then, once I get going it's better. 
+
+I'd love to create cljs components that are easy for other developers at work (who only know javascript) to use. I've had some success writing om components that javascript dev's could potentially use, but it's still noticeable that the component is written in cljs. I work primarily as gov't contractor and in order to use cljs at work, I'd need to be able to create a cljs library that looks and feels like a javascript library (not sure if that makes sense, but hope it's helpful!)
+
+
+"
+"My compilation seems to break with each version upgrade. I have to do a cljsbuild clean often. Even with advanced compilation the generated code can sometimes still seem quite large, especially if you're using libraries like async. Also Rhino or Nashorn seem to have problems with generated code."
+"Needing Clojure/JVM. "
+"Needs a really good canonical set of examples for how to work with it:
+
+ - when just using it to generate JS files
+ - when using it served up via an embedded web-server
+ - other modes (node.js or nodewebkit)
+
+I've found my way of working with it, but unlike Emacs/Cider or Cursive, new folks have a lot of trouble figuring out which of the blog entries on the subject to follow."
+"Needs a stable release w/ dependable fixes for bugs but no major changes under the hood. Development is moving too fast right now on the declared releases and frequently a build is released and then updated a day or so later. Too much of a moving target for a dependable build to base production code off of."
+"No defined best practices for developing a DOM-heavy app.  "
+"No eval and no native (without relying on Clojure's compiler) support for macros in ClojureScript.  See "The ClojureScript compiler's dependency upon Clojure / the JVM".
+This probably also limits the potential of ClojureScript's tooling which could be so much better."
+"No evals and ClojureScript macros, difficulties for setting up bREPL and source map, and strong dependency on JVM."
+"None"
+"None -- possibly learning curve for new people, reducing
+the number of total contributers"
+"Not a weakness per se but things have been moving very fast on many fronts and it is hard to keep up with it all. The progress has been great though."
+"Not being self hosted"
+"Not clear how supported it is. Luckily David Nolen does an awesome job."
+"Not enough examples."
+"Obviously the tooling, but it's gone a long way compared with only a year ago and it's going in the right direction!"
+"Om is a huge step forward for adoption, but not 1.0 yet."
+"Om, vs React, vs Kioo vs... many different projects to do the same things. Kioo is the best library I have found for web development, but afraid it may go so hard to convince to put it in production at different places. "
+"Other languages are starting to target JS as a compile target or are getting better."
+"Painful to setup automated testing"
+"Performance, hard to debug lazy sequences."
+"Problem using :none optimization, compatible with production profiles, and lack of good support for many relevant contrib libraries, like core.matrix."
+"Profiling"
+"REPL"
+"REPL support"
+"REPL/interactive development"
+"REPLs. Reading this survey made me discover there several REPLs : I realize it's a mess and I don't understand a single thing to this problem. Y U hard to set up ?"
+"Really steep entry level curve."
+"Reliance on the JVM"
+"Relying in the JVM as a compiler. "
+"Setting it up"
+"Setting up a CLJS repl for fast feedback. It's still too hard when the JVM is so simple"
+"Setting up a productive dev environment."
+"Setting up and running a simple compile"
+"Setup for a simple project is too complicated."
+"Setup of Repl-editor integration is too hard."
+"Setup process for beginners. No real comprehensive "standard way/out of the box" solution...but interesting solutions are very young but interesting (thinking for instance of Chestnut, lately)."
+"Setup. Although I haven't personally tried the new lein templates which are supposed to ease the setup. Other than that I think it is terrific language but getting up and running causes me to second guess my choice."
+"Sharing CLJ & CLJS code is possible, but not without considerable effort. cljx does the trick, but adds another layer (more cognitive load, more development workflow) required to do ClojureScript + Clojure (web) development"
+"Slow rebuild time, hard to debug in comparison to clj (tooling problem)"
+"So hard to get a REPL up with all the relevant dependencies and code loaded."
+"Solid development environment that is easy to setup and use"
+"Sometimes libraries cannot keep up with the rapid development of the core, and these problems are difficult to debug. But I personally think it is worth it at this stage of ClojureScript's development."
+"Source map debugging - getting the variable value"
+"Splitting macros into separate files."
+"Stacktraces, debugging and source maps."
+"Standardized Component Libraries.  At the very least we could define a set of Component Interfaces (i.e. functions).  PrimeFaces vs RichFaces vs IceFaces, all are pretty similar.  Can't we start to implement interfaces?"
+"Testing. it'd be wonderful for chas emerick's excellent clojurescript.test and doublecheck work to be brought up to the same level as clojure.test and core.test.check, with all the implications for getting started, using it, running a test runner, etc."
+"That for chunks of pure code, it's annoyingly close to being cross platform but not quite, resulting in hacks like cljx. Functional (and understandable due to the implementation) differences like needing :require-macros and not allowing multiple :require forms wouldn't be too bad if the same code worked and restrictions applied in jvm clojure, but there is no common denominator!"
+"The "one" feature I would like to see most is the sort of compound feature of bringing Clojure script and a stack of needed tools all jointly to a "complete" state. Where it is all 1.0+, it is all stable, and it "just works" when people grab it without knowing how to wander through the community seeking all the various bits and pieces to cobble together. I know this is a lot of work, I don't have a patch coming soon :-)"
+"The ClojureScript compiler's dependency upon Clojure / the JVM. Wouldn't it be nice if someone could Java->JavaScript transpile the Google Closure Compiler into an javascript application?"
+"The JavaScript target and JavaScript library compatibility and utilization."
+"The REPL experience (at least in vim) is a difficult one.  It's frustrating to have ClojureScript compile successfully and then hit a cryptic error (undefined!) in the browser on something like a missing/incorrectly named function. It may be my setup, but getting a REPL working in vim was a challenge to begin with. The situation is better than it was even 2 months ago, but it's not as smooth as normal Clojure."
+"The REPL. It's a mess.
+Then the documentation - too high level for beginner. "
+"The acceptance of "lot's of magic, completely opaque and complected, barely works" as an acceptable state of most of the clojurescript tools. Sure, it's early and they are in flux ... but at least write documentation for potential contributors. Because to use any of them you will probably need to dig into their guts."
+"The browser REPL is extremely helpful when it works."
+"The build process and (particularly) debugging."
+"The build story is still just a complex mess."
+"The compilation process."
+"The compilation still a bit complicated... Also the start time of it is pretty bad... Also the current REPL implementations can get much better, while using cljs-noderepl for example, there are a lot of cases where a mistake makes the REPL crashes, and then I have to restart it... So I think the REPL tools should get more mature on and stable."
+"The compiler is shackled to the JVM."
+"The compiler’s startup time."
+"The complexity and incompatibilities of various REPLs, runtimes and optimization levels."
+"The complexity of the tooling."
+"The development story is too complicated.  The jvm is particularly annoying in this context because both the JVM and javascript become compulsory overhead on any Clojurescript project."
+"The execution environment is very complex; between the Google closure compiler, leiningen, and a JS environment, there are a lot of steps between my code and my program."
+"The fact that it's not self-hosted (making macro use difficult and namespace declarations messy) and unnecessary incompatibilities with Clojure (i.e., cljs.core vs clojure.core)."
+"The google closure library. Compared to the rest of the JS [UI] libs out here, it sucks. When you have to replace your "standard" library as first step, something's gone wrong."
+"The hoops that one must jump through to get a reasonably reliable REPL going. It's a difficult task, and honestly most times I tell people that they should avoid the CLJS REPL unless absolutely necessary because it is so painful to get going."
+"The lack of searchable documentation that clojure has (i.e. clojure docs) especially where the ClojureScript implementation differs from Clojure"
+"The large payload (size of script to download)."
+"The most glaring weakness is not knowing what you don't know.  If you don't know browsers and Javascript inside and out can you really make use of ClojureScript at this point?  "
+"The project was essentially thrown over the wall and then abandoned. Difficulty of getting started is atrocious, often taking several days to get to "Hello World" + REPL. Documentation is non-existent."
+"The speed of the compile time. A lot of this problem might be in the Google Closure compiler, but our current build time for our ClojureScript application is ~8-10 min."
+"The story for Enterprise is less than compelling due to perpetual alpha state. No one seems to push for even a 0.1 release."
+"The tight relationship with Clojure is both a fantastic strength (for those of us who prefer Clojure in all the places and can leverage Clojure tooling) and a weakness (for those who use other backends). I understand that it is not hat difficult to use cljs with non-Clojure backends, but it seems like an awfully big bite from the perspective of folks in those spaces.
+
+Related is the clunky relationship (at least in my perception) with the asset toolchains that folks use for managing other elements of the website."
+"The toolchain complexity does not encourage new users.
+You have to have already drunk the kool-aid before you're going to get it up and running (and even then, you may need an experienced friend to help you)."
+"The tooling and library eco-system for ClojureScript is quite unapproachable for newbies. Discoverability of CLJS libraries is another problem. Books are very few - there's just one, that too is old."
+"The tooling is a nightmare!"
+"The tooling support and slow compile times (especially with source maps on). When trying to get people to switch from vanilla JavaScript the added development overhead is tough."
+"The use of Google Closure should be transparent and faster compilation"
+"The whole macro/cljx dance. I'd like to see any pure clojure code/library available in clojure script."
+"There are known performance problems that have been mentioned on the clojurescript mailing list, such as phrases like "closures are not free in clojurescript" and other vague suggestions, yet it has been noted that there is no comprehensive documented evidence of exactly what clojure idioms should *not* be used in clojurescript due to these performance losses. Thus, if you are not a JS developer who understand the Js runtime and can proof the compiled JS code, then you have no idea if you are doing something in cljs that is going to present performance problems, even though the same code in clojure on JVM would be considered good."
+"There are more JavaScript libraries adapting the Advantages of closurescript. Also the lack of developers is a clear disadvantage."
+"There are too many moving parts in the default build system.  It’s too hard to keep track of generates js files, source maps, external js libraries, etc."
+"There is a lot of experimentation in the available libraries, which is good thing, but causes a real headache when bundling everything together. Things are moving so fast, you often find incompatabilites. Not a real problem for the adventurous, but will may stifle further growth in the near term."
+"There's still a lot of rough edges compared to Clojure (understandably!). Biggest issue is just getting all the tooling to work (REPL + testing + Cljx, etc.). It's doable (and worth doing), but it definitely takes some doing :-)"
+"This not directly related to Clojure or Clojurescript.  I just want to say that I think Datomic is a dead end in terms of success and adoption if it's not open source.  I would recommend open sourcing it while it's got some hype left to it, so that it doesn't appear to be done out of recognition of failure.  Developing a high performance database is no small feat and clearly Datomic has a long way to go before it's really a mature contender. You can get there a lot faster by opening up the source code.  You'll also maintain your cash flow by being the foremost source of support for it.  I understand that you may want to keep it hidden so that you can overhaul the back-end implementation without peanut gallery critics (as I understand has occurred already more than once) but as soon as it feels stable, really please consider open source."
+"Too long compilation times!"
+"Too many errors not caught till runtime"
+"Too many widely-used community libraries depend on Cljx.  Code generators have a stigma that they produce less reliable code.  Cljx is better used as a tool for early prototyping."
+"Toolchain definitely has a high learning curve - though is quickly getting better."
+"Tooling"
+"Tooling"
+"Tooling and compile times."
+"Tooling and debugging. 
+If something goes wrong, it is very painful to find right spot."
+"Tooling and setup. Getting ClojureScript running with a REPL and interactive environment, with tests and compilation, is still kinda a pain.
+
+It is, however, a lot better than a year ago."
+"Tooling and sparse documentation of the core language. I often find non documented features used in vsrious libraries."
+"Tooling in two areas feels like it's in the early stages: A) straightforward source-maps in emacs and the browser, and B) browser REPL setup."
+"Tooling still kind of sucks"
+"Tooling. ClojureScript is painful to get up-and-running."
+"Tooling. If there was an easy to use Sublime Text/Eclipse/IntelliJ plugin I'd use it every day at work."
+"Tooling. It's hard to pick one aspect of ClojureScript's tooling that's "the worst", but probably unit tests. I want my test suite to auto-run on change, and be excluded from production builds. That's really, really hard to achieve."
+"Tooling. Setting up the development environment can be extremely frustrating. REPL experience is not comparable to the one I have with Clojure on the JVM. "
+"Tooling: proper IDEs, proper debugging"
+"Traction."
+"Up to date documentation to get up and running. I would love to see documentation on how to get started in the most commonly used editors."
+"Use of google closure libraries / their documentation"
+"Use with exiting java script lib."
+"Using Clojurescript we have to build from scratch many things while there are not many fluent developers"
+"Using JS libraries with CLJS"
+"We need more literature"
+"We've encountered a number of issues related to run-time compilation and evaluation of clojurescript"
+"We've had some issues with awkward tooling and version incompabillities (tools, libraries or combinations of the two). Not really the ClojureScript's fault per se, but it will attract all the bad rep."
+"Weakness are mostly mine's... ;)"
+"What do you think is ClojureScript's most glaring weakness / blind spot / problem?"
+"When something goes wrong, it's often not obvious what's happening"
+"Where to even start? OK, I think documentation is a good place to begin. As soon as I actually find it I'll give you some specifics. I think there's something helpful in the bottom of one of David Nolen's blog posts.
+
+Oh dear goodness do we need to talk about the horrid state of tooling. Do I use a brepl or an Austin or a piggieback or a WHAT IS ALL OF THIS CRAP?! How can any human being make sense of this?!?! Even the experts seem to have their eyes crossed on this. Total complete and utter mess. Please lock David Nolen in a room for 2 weeks, delete any trace of cljs REPL documentation from the Internet and start over."
+"While core.async begins to offer a solution to the difficulties founds with attempting to bridge the callback centric world of javascript and its interpreter with immutable datatypes, core.async itself seems poorly documented as to how to accomplish common tasks especially with regards to the limitations of the browser environment."
+"Widespread adoption."
+"With all the many plugins and approaches, it is still not obvious for newcomers, what would be an easy way to begin."
+"accepted norms for application structure. resources for finding libraries and previous solutions to common problems"
+"adding clojurescript to a current clojure project, and integrating clojurescript within an IDE is a painful feat. Currently there too many setup methods available, and most times I spend more energy dealing with setup rather than solving a problem."
+"better error tracing when compiling."
+"big compiled JS size + non-intuitive bootsraping process"
+"browser repl  startup"
+"build process (vs gulp)"
+"cljsbuild is slow and the brepl fragile. There needs to be a solid option in addition to the experimental dances."
+"compiler error messages.  "
+"debugging"
+"debugging"
+"debugging generated JavaScript is hard"
+"debugging is too hard"
+"debugging system"
+"dependence on Java."
+"dependency management with other javascript libraries is a problem. need to use node.js and bower to manage js in addition to using lein-cljs. Will be useful to specify all javscript library dependencies for a clojurescript project in the project file just like a clojure project"
+"development cycle: code - compile - refresh browser
+
+glad to see progress in this area as well, e.g. lein-figwheel
+"
+"difficulty debugging code through the browser and cljsbuild repls"
+"difficulty in getting started, especially with browser repl"
+"documentation"
+"documentation is a bit sparse, or assumes intimate knowledge of javascript"
+"documentation of newer/advanced features (this is worse than in clojure itself) - wiki only provides basic info (some out of date), some important features only documented in JIRA tickets or through 3rd party use cases"
+"error messages and debugging"
+"flaky compiler errors, or not catching errors"
+"getting a stable development environment is challenging - the combination of 
+cider, browser REPL, cljs-build, and clojurescript-version have to be in balance.  "
+"hard to debug"
+"hard to start a project from scratch"
+"lack of eval"
+"lacks a compiler running on V8"
+"lighten ,library share"
+"marketing not targeted toward JS devs"
+"most beginners struggle with installing and getting it running;"
+"my editor has terrible autocomplete for cljs (ccw).  laurent cites cljs as a moving target.  From my perspective it seems like the cljs team doesn't want to be nailed down  in terms of an api - or at least thats what it seems, people do a lot to work around the cljs moving target.  seems like a consistent theme echoed from other projects as well."
+"nil"
+"opening a ClojureScript repl requires a 10min of Googling every time, because it stops working at random time for some reason. I gave up on it for now."
+"poor debugging compared to vanilla javascript"
+"println debugging is much more common than it should be"
+"reliance on clojure for compilation"
+"starting is hard, there are many ways, I always have to copy and paste stuff.
+
+hard to get a repl working"
+"weak (unstandardized) integration with running JVM/Clojure process. Hard to have parallel REPLs without much emacs hackning.
+
+Himera or just a more seamless etapper for chosing where to evaluate the expression would be useful."
+"when writing vanilla js, I use the browser development tools a  ton (debugger/console/etc.).  I think the console continues to work relatively well with cljs, but what do I do about a debugger?"
+"working around the closure compiler optimizations and understanding how to integrate that into the leiningen build."
+"writing portable code that works with both clojure and clojurescript"
